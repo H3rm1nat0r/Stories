@@ -25,6 +25,7 @@ keyring
 markdown-it-py
 mdurl
 more-itertools
+nemo_library
 nh3
 numpy
 openpyxl

@@ -1,6 +1,6 @@
 #!/bin/sh
 git pull
-conda activate nemo_library
+conda activate stories
 conda update --all -y
 python --version
 python -m pip install --upgrade pip
