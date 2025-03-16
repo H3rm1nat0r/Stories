@@ -1,0 +1,64 @@
+[
+    {
+        "active": true,
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Advisor",
+        "displayNameTranslations": {},
+        "download": "",
+        "forecasts": [],
+        "formatCompact": false,
+        "internalName": "conservative_sales_advisor",
+        "links": [],
+        "models": [],
+        "pages": [
+            {
+                "order": 0,
+                "page": "conservative_sales_advisor_overview"
+            },
+            {
+                "order": 1,
+                "page": "conservative_sales_advisor_dso"
+            },
+            {
+                "order": 2,
+                "page": "conservative_sales_advisor_fot"
+            }
+        ],
+        "scopeName": "",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "active": true,
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Purchasing Advisor",
+        "displayNameTranslations": {},
+        "download": "",
+        "forecasts": [],
+        "formatCompact": false,
+        "internalName": "conservative_purchasing_advisor",
+        "links": [],
+        "models": [],
+        "pages": [
+            {
+                "order": 0,
+                "page": "conservative_purchasing_advisor_overview"
+            },
+            {
+                "order": 1,
+                "page": "conservative_purchasing_advisor_dpo"
+            },
+            {
+                "order": 2,
+                "page": "conservative_purchasing_advisor_otif"
+            }
+        ],
+        "scopeName": "",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]
