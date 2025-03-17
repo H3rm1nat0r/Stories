@@ -11,6 +11,9 @@ metrics = []
 for element in data:
     metrics.append(Metric(**element))  
     
+for metric in metrics:
+    metric.displayName = metric.displayName.replace("  ", " ")
+    
 with open(path, "w", encoding="utf-8") as file:
     json.dump(
         [metric.to_dict() for metric in metrics], file, indent=4, ensure_ascii=True
