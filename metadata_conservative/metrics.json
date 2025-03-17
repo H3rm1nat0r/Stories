@@ -338,6 +338,32 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "conservative_sales_delivery_deviation_late",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_late)",
+        "dateColumn": "order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Late Delivery Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_late": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_late_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_purchasing_goods_receipt_processing_time_on_time_boolean",
         "aggregateFunction": "mean(conservative_purchasing_goods_receipt_processing_time_on_time_boolean)",
         "dateColumn": "pur_stock_rec_doc_date",
@@ -860,6 +886,32 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "conservative_sales_delivery_deviation_early",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_early)",
+        "dateColumn": "order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Early Delivery Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_early": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_early_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_sales_delivery_deviation_days",
         "aggregateFunction": "mean(conservative_sales_delivery_deviation_days)",
         "dateColumn": "order_doc_date",
@@ -985,6 +1037,32 @@
         "focusOrder": "",
         "internalName": "conservative_sales_payment_deviation_on_time_rate",
         "parentAttributeGroupInternalName": "conservative_sales_on_time_payment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "conservative_sales_delivery_deviation_on_time",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_on_time)",
+        "dateColumn": "order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales On Time Delivery Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_on_time": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
