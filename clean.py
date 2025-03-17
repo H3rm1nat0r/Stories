@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 from typing import Any, List, Type, TypeVar, get_type_hints
 from nemo_library.model.metric import Metric
-from nemo_library.model.pages import Page    
 
 T = TypeVar("T")
 
@@ -51,20 +50,10 @@ def _export_data_to_json(file: str, data):
 path = Path(".") / "metadata_conservative" / "metrics.json"
 
 metrics = _load_data_from_json("metrics", Metric)
-pages = _load_data_from_json("pages", Page)
-
-metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
-print(metrics_in_visuals)
-
-# Split elements containing commas into separate elements
-split_metrics_in_visuals = []
-for item in metrics_in_visuals:
-    split_metrics_in_visuals.extend(item.split(','))
-
-split_metrics_in_visuals = list(set(split_metrics_in_visuals))
-
+    
 for metric in metrics:
-    if metric.internalName not in split_metrics_in_visuals:
-        print(metric.internalName)
+    metric.displayName = metric.displayName.replace("  ", " ")
+    
+_export_data_to_json("metrics", metrics)
 
 

@@ -179,7 +179,7 @@
         "hideIfColumns": [],
         "internalName": "conservative_purchasing_advisor_dpo",
         "numberOfColumns": 4,
-        "numberOfRows": 3,
+        "numberOfRows": 2,
         "showIfColumns": [],
         "visuals": [
             {
@@ -193,32 +193,12 @@
                 "type": "Prediction"
             },
             {
-                "column": 2,
-                "columnSpan": 1,
-                "content": "conservative_purchasing_dunning_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 3,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
                 "column": 4,
                 "columnSpan": 1,
                 "content": "conservative_purchasing_invoice_processing_time",
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "conservative_purchasing_number_of_suppliers_per_part",
-                "contentTranslations": {},
-                "id": "",
-                "row": 3,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
@@ -291,6 +271,16 @@
             {
                 "column": 4,
                 "columnSpan": 1,
+                "content": "conservative_sales_delivery_deviation_amount",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
                 "content": "conservative_sales_delivery_deviation_days",
                 "contentTranslations": {},
                 "id": "",
@@ -321,7 +311,7 @@
         "hideIfColumns": [],
         "internalName": "conservative_sales_advisor_dso",
         "numberOfColumns": 4,
-        "numberOfRows": 2,
+        "numberOfRows": 3,
         "showIfColumns": [],
         "visuals": [
             {
@@ -381,6 +371,16 @@
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "conservative_sales_payment_terms_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
                 "rowSpan": 1,
                 "type": "Prediction"
             }
