@@ -1,0 +1,1 @@
+pytest -v -x --log-cli-level=INFO "$@"

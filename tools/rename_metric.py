@@ -1,7 +1,11 @@
 import json
 from pathlib import Path
 from typing import Any, List, Type, TypeVar, get_type_hints
+from nemo_library.model.application import Application
+from nemo_library.model.attribute_group import AttributeGroup
+from nemo_library.model.defined_column import DefinedColumn
 from nemo_library.model.metric import Metric
+from nemo_library.model.pages import Page    
 
 T = TypeVar("T")
 
@@ -50,10 +54,23 @@ def _export_data_to_json(file: str, data):
 path = Path(".") / "metadata_conservative" / "metrics.json"
 
 metrics = _load_data_from_json("metrics", Metric)
+pages = _load_data_from_json("pages", Page)
     
 for metric in metrics:
-    metric.displayName = metric.displayName.replace("  ", " ")
+    internal_name = metric.displayName.replace("(C)", "conservative")
+    internal_name = internal_name.replace(" ", "_")
+    internal_name = internal_name.replace("(", "")
+    internal_name = internal_name.replace(")", "")
+    internal_name = internal_name.lower()
+    print(metric.displayName,"\t\t",internal_name)
+    for page in pages:
+        for visual in page.visuals:
+            if metric.internalName in visual.content:
+                visual.content = visual.content.replace(metric.internalName, internal_name)
+
+    metric.internalName = internal_name
     
 _export_data_to_json("metrics", metrics)
+_export_data_to_json("pages", pages)
 
 
