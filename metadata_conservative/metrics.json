@@ -443,6 +443,32 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "conservative_sales_delivery_deviation_days",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_days)",
+        "dateColumn": "order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Delivery Deviation (days)",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_days": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_days",
+        "parentAttributeGroupInternalName": "conservative_sales_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_purchasing_replenishment_deviation_too_low",
         "aggregateFunction": "mean(conservative_purchasing_replenishment_deviation_too_low)",
         "dateColumn": "pur_order_doc_date",
