@@ -297,6 +297,16 @@
                 "row": 1,
                 "rowSpan": 1,
                 "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "conservative_sales_delivery_deviation_underdelivery_rate,conservative_sales_delivery_deviation_overdelivery_rate,conservative_sales_delivery_deviation_in_full_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
             }
         ],
         "id": "",

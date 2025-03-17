@@ -156,6 +156,32 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "conservative_sales_delivery_deviation_underdelivery",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_underdelivery)",
+        "dateColumn": "order_doc_date",
+        "description": "Reflects the percentage of sales invoices that were under delivered",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Under Delivery Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_underdelivery": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_underdelivery_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_in_full_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_purchasing_delivery_deviation_amount",
         "aggregateFunction": "mean(conservative_purchasing_delivery_deviation_amount)",
         "dateColumn": "pur_order_doc_date",
@@ -307,6 +333,32 @@
         "focusOrder": "",
         "internalName": "conservative_purchasing_payment_deviation_on_time_rate",
         "parentAttributeGroupInternalName": "conservative_purchasing_on_time_payment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "conservative_sales_delivery_deviation_amount",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_amount)",
+        "dateColumn": "order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Delivery Deviation (amount)",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_amount": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_amount",
+        "parentAttributeGroupInternalName": "conservative_sales_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -678,6 +730,32 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "conservative_sales_delivery_deviation_overdelivery",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_overdelivery)",
+        "dateColumn": "order_doc_date",
+        "description": "Reflects the percentage of sales invoices that were over delivered",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Over Delivery Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_overdelivery": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_overdelivery_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_in_full_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_sales_payment_terms_days",
         "aggregateFunction": "mean(conservative_sales_payment_terms_days)",
         "dateColumn": "invoice_doc_date",
@@ -732,7 +810,7 @@
     {
         "aggregateBy": "conservative_purchasing_otif",
         "aggregateFunction": "mean(conservative_purchasing_otif)",
-        "dateColumn": "pur_order_line_delivery_date",
+        "dateColumn": "pur_order_doc_date",
         "description": "Reflects the percentage of Deliveries that were on time and in full",
         "descriptionTranslations": {},
         "displayName": "(C) Purch OTIF Rate",
@@ -740,9 +818,9 @@
         "groupByAggregations": {
             "conservative_purchasing_otif": "mean"
         },
-        "groupByColumn": "pur_order_line_i_d",
+        "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
-        "optimizationOrientation": "Min",
+        "optimizationOrientation": "Max",
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
@@ -1063,6 +1141,32 @@
         "focusOrder": "",
         "internalName": "conservative_sales_delivery_deviation_on_time_rate",
         "parentAttributeGroupInternalName": "conservative_sales_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "conservative_sales_delivery_deviation_in_full",
+        "aggregateFunction": "mean(conservative_sales_delivery_deviation_in_full)",
+        "dateColumn": "order_doc_date",
+        "description": "Reflects the percentage of sales invoices that were delivered in full",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales In Full Delivery Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_delivery_deviation_in_full": "mean"
+        },
+        "groupByColumn": "order_doc_line_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_delivery_deviation_in_full_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
