@@ -265,7 +265,7 @@
         "dateColumn": "pur_order_doc_date",
         "description": "Reflects the percentage of purchase invoices that were paid too early.",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Early Delivery Rate",
+        "displayName": "(C) Purch Deliveries  Deviation Too Early Rate",
         "displayNameTranslations": {},
         "groupByAggregations": {
             "conservative_purchasing_delivery_deviation_early": "mean"
@@ -343,7 +343,7 @@
         "dateColumn": "pur_inv_doc_date",
         "description": "Reflects the percentage of purchase invoices that were paid too early.",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Payment Deviation Too Early Rate",
+        "displayName": "(C) Purch Payments Deviation Too Early Rate",
         "displayNameTranslations": {},
         "groupByAggregations": {
             "conservative_global_payment_deviation_too_early": "mean"
@@ -578,7 +578,7 @@
         "dateColumn": "invoice_doc_date",
         "description": "Average days sales payments are too EARLY",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Payment Deviation",
+        "displayName": "(C) Sales Payments Deviation",
         "displayNameTranslations": {},
         "groupByAggregations": {
             "conservative_global_payment_deviation_days": "mean"
@@ -813,7 +813,7 @@
         "dateColumn": "pur_inv_doc_date",
         "description": "Average days purchasing payments are too EARLY",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Payment Deviation",
+        "displayName": "(C) Purch Payments Deviation",
         "displayNameTranslations": {},
         "groupByAggregations": {
             "conservative_global_payment_deviation_days": "mean"
@@ -865,7 +865,7 @@
         "dateColumn": "invoice_doc_date",
         "description": "Reflects the percentage of sales invoices that were paid too early.",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Early Payments Rate",
+        "displayName": "(C) Sales  Payments  Deviation Too Early Rate",
         "displayNameTranslations": {},
         "groupByAggregations": {
             "conservative_global_payment_deviation_too_early": "mean"
@@ -995,7 +995,7 @@
         "dateColumn": "order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Early Delivery Rate",
+        "displayName": "(C) Sales  Deliveries  Deviation Too Early Rate",
         "displayNameTranslations": {},
         "groupByAggregations": {
             "conservative_sales_delivery_deviation_early": "mean"
