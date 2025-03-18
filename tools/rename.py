@@ -59,6 +59,7 @@ def _export_data_to_json(file: str, data):
 def _get_internal_name(displayname: str) -> str:
     internal_name = displayname.replace("(C)", "conservative")
     internal_name = internal_name.replace("Purch", "purchasing")
+    internal_name = internal_name.replace("Del Dev", "Deliveries Deviation")
     internal_name = internal_name.replace(" ", "_")
     internal_name = internal_name.replace("-", "")
     internal_name = internal_name.replace("(", "")
@@ -104,6 +105,7 @@ for attributegroup in attributegroups:
 
 for metric in metrics:
     metric.displayName = metric.displayName.replace("  ", " ")
+    metric.displayName = metric.displayName.replace("Deliveries Deviation", "Del Dev")    
     internal_name = _get_internal_name(metric.displayName)
     if internal_name != metric.internalName:
         logging.info(
@@ -120,6 +122,7 @@ for metric in metrics:
 
 for defined_column in definedcolumns:
     defined_column.displayName = defined_column.displayName.replace("  ", " ")
+    defined_column.displayName = defined_column.displayName.replace("Deliveries Deviation", "Del Dev")    
     internal_name = _get_internal_name(defined_column.displayName)
     if internal_name != defined_column.internalName:
         logging.info(
