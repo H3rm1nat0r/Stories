@@ -651,6 +651,32 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "conservative_sales_fulfillment_on_time_fot_boolean",
+        "aggregateFunction": "mean(conservative_sales_fulfillment_on_time_fot_boolean)",
+        "dateColumn": "invoice_doc_date",
+        "description": "Reflects the percentage of Deliveries that were on time and in full",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales FOT Rate",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "conservative_sales_fulfillment_on_time_fot_boolean": "mean"
+        },
+        "groupByColumn": "invoice_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_fot_rate",
+        "parentAttributeGroupInternalName": "conservative_sales_fulfillment_on_time_fot",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_purchasing_deliveries_deviation_days",
         "aggregateFunction": "mean(conservative_purchasing_deliveries_deviation_days)",
         "dateColumn": "pur_order_doc_date",
