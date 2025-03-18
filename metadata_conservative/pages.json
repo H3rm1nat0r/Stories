@@ -397,19 +397,9 @@
         "hideIfColumns": [],
         "internalName": "conservative_sales_advisor_fot",
         "numberOfColumns": 4,
-        "numberOfRows": 4,
+        "numberOfRows": 3,
         "showIfColumns": [],
         "visuals": [
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "conservative_sales_deliveries_deviation_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
             {
                 "column": 4,
                 "columnSpan": 1,
@@ -423,7 +413,27 @@
             {
                 "column": 1,
                 "columnSpan": 3,
-                "content": "conservative_sales_deliveries_deviation_too_early_rate,conservative_sales_deliveries_deviation_too_late_rate,conservative_sales_on_time_delivery_rate",
+                "content": "conservative_sales_deliveries_deviation_underdelivered_rate,conservative_sales_deliveries_deviation_overdelivered_rate,conservative_sales_in_full_delivery_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "conservative_sales_order_lead_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "conservative_sales_deliveries_deviation_days",
                 "contentTranslations": {},
                 "id": "",
                 "row": 1,
@@ -433,10 +443,10 @@
             {
                 "column": 1,
                 "columnSpan": 3,
-                "content": "conservative_sales_deliveries_deviation_underdelivered_rate,conservative_sales_deliveries_deviation_overdelivered_rate,conservative_sales_in_full_delivery_rate",
+                "content": "conservative_sales_deliveries_deviation_too_early_rate,conservative_sales_deliveries_deviation_too_late_rate,conservative_sales_on_time_delivery_rate",
                 "contentTranslations": {},
                 "id": "",
-                "row": 2,
+                "row": 1,
                 "rowSpan": 1,
                 "type": "Prediction"
             }

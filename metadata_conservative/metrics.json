@@ -391,6 +391,33 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "order_doc_i_d",
+        "aggregateFunction": "mean(conservative_sales_order_lead_time_olt_days)",
+        "dateColumn": "invoice_doc_date",
+        "description": "Average Order Lead Time",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Order Lead Time (days)",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "order_doc_i_d": "max",
+            "conservative_sales_order_lead_time_olt_days": "mean"
+        },
+        "groupByColumn": "invoice_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "currency",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_order_lead_time_days",
+        "parentAttributeGroupInternalName": "conservative_sales_aov",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_sales_invoice_dunned",
         "aggregateFunction": "mean(conservative_sales_invoice_dunned)",
         "dateColumn": "invoice_doc_date",
