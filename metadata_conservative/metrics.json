@@ -1068,6 +1068,33 @@
         "tenant": ""
     },
     {
+        "aggregateBy": "order_doc_i_d",
+        "aggregateFunction": "mean(conservative_sales_order_processing_time_opt_days)",
+        "dateColumn": "invoice_doc_date",
+        "description": "Average Order Processing Time",
+        "descriptionTranslations": {},
+        "displayName": "(C) Sales Order Processing Time (days)",
+        "displayNameTranslations": {},
+        "groupByAggregations": {
+            "order_doc_i_d": "max",
+            "conservative_sales_order_processing_time_opt_days": "mean"
+        },
+        "groupByColumn": "invoice_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "currency",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "conservative_sales_order_processing_time_days",
+        "parentAttributeGroupInternalName": "conservative_sales_aov",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
         "aggregateBy": "conservative_sales_deliveries_deviation_too_early_boolean",
         "aggregateFunction": "mean(conservative_sales_deliveries_deviation_too_early_boolean)",
         "dateColumn": "invoice_doc_date",

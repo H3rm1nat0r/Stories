@@ -431,6 +431,16 @@
                 "type": "Prediction"
             },
             {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "conservative_sales_order_processing_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
                 "column": 4,
                 "columnSpan": 1,
                 "content": "conservative_sales_deliveries_deviation_days",
