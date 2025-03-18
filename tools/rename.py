@@ -74,15 +74,41 @@ logging.basicConfig(
 
 path = Path(".") / "metadata_conservative" / "metrics.json"
 
+path = Path(".") / "metadata_conservative" / "metrics.json"
+
+application = _load_data_from_json("applications", Application)
+attributegroups = _load_data_from_json("attributegroups", AttributeGroup)
+definedcolumns = _load_data_from_json("definedcolumns", DefinedColumn)
 metrics = _load_data_from_json("metrics", Metric)
 pages = _load_data_from_json("pages", Page)
-definedcolumns = _load_data_from_json("definedcolumns", DefinedColumn)
+
+for attributegroup in attributegroups:
+    internal_name = _get_internal_name(attributegroup.displayName)
+    if internal_name != attributegroup.internalName:
+        logging.info(
+            f"Replacing attribute group internal name {attributegroup.internalName} with {internal_name}"
+        )
+        for attribute_group_child in attributegroups:
+            if attribute_group_child.parentAttributeGroupInternalName == attribute_group_child.internalName:
+                attribute_group_child.parentAttributeGroupInternalName = internal_name
+                
+        for defined_column in definedcolumns:
+            if defined_column.parentAttributeGroupInternalName == attributegroup.internalName:
+                defined_column.parentAttributeGroupInternalName = internal_name
+        
+        for metric in metrics:
+            if metric.parentAttributeGroupInternalName == attributegroup.internalName:
+                metric.parentAttributeGroupInternalName = internal_name
+                
+        attributegroup.internalName = internal_name
 
 for metric in metrics:
     metric.displayName = metric.displayName.replace("  ", " ")
     internal_name = _get_internal_name(metric.displayName)
     if internal_name != metric.internalName:
-        logging.info(f"Replacing {metric.internalName} with {internal_name}")
+        logging.info(
+            f"Replacing metric internal name {metric.internalName} with {internal_name}"
+        )
         for page in pages:
             for visual in page.visuals:
                 if metric.internalName in visual.content:
@@ -97,7 +123,7 @@ for defined_column in definedcolumns:
     internal_name = _get_internal_name(defined_column.displayName)
     if internal_name != defined_column.internalName:
         logging.info(
-            f"Replacing '{defined_column.internalName}' with '{internal_name}'"
+            f"Replacing defined column internal name '{defined_column.internalName}' with '{internal_name}'"
         )
         for defined_column_relation in definedcolumns:
             if defined_column.internalName in defined_column_relation.formula:
@@ -128,3 +154,5 @@ for defined_column in definedcolumns:
 _export_data_to_json("metrics", metrics)
 _export_data_to_json("pages", pages)
 _export_data_to_json("definedcolumns", definedcolumns)
+_export_data_to_json("attributegroups", attributegroups)
+_export_data_to_json("applications", application)   
