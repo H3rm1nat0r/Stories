@@ -14,6 +14,3 @@ logging.basicConfig(
 )
 nl = NemoLibrary()
 nl.MetaDataCreate(projectname=PROJECT_NAME,prefix="(C)")
-
-# immediatly download the metadata again
-nl.MetaDataLoad(projectname=PROJECT_NAME, prefix="(C)")

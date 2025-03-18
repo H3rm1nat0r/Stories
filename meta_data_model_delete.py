@@ -13,3 +13,4 @@ logging.basicConfig(
 )
 nl = NemoLibrary()
 nl.MetaDataDelete(projectname=PROJECT_NAME,prefix="(Conservative)")
+nl.MetaDataDelete(projectname=PROJECT_NAME,prefix="(C)")
