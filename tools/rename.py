@@ -5,9 +5,10 @@ from nemo_library.model.application import Application
 from nemo_library.model.attribute_group import AttributeGroup
 from nemo_library.model.defined_column import DefinedColumn
 from nemo_library.model.metric import Metric
-from nemo_library.model.pages import Page    
+from nemo_library.model.pages import Page
 
 T = TypeVar("T")
+
 
 def _load_data_from_json(file: str, cls: Type[T]) -> List[T]:
     """
@@ -19,6 +20,7 @@ def _load_data_from_json(file: str, cls: Type[T]) -> List[T]:
         data = json.load(f)
 
     return [_deserializeMetaDataObject(item, cls) for item in data]
+
 
 def _deserializeMetaDataObject(value: Any, target_type: Type) -> Any:
     """
@@ -44,6 +46,7 @@ def _deserializeMetaDataObject(value: Any, target_type: Type) -> Any:
         return value  # Regular dictionary
     return value  # Primitive values
 
+
 def _export_data_to_json(file: str, data):
     path = Path(".") / "metadata_conservative" / f"{file}.json"
     with open(path, "w", encoding="utf-8") as file:
@@ -51,23 +54,44 @@ def _export_data_to_json(file: str, data):
             [element.to_dict() for element in data], file, indent=4, ensure_ascii=True
         )
 
-def test_metrics():
-    path = Path(".") / "metadata_conservative" / "metrics.json"
 
-    metrics = _load_data_from_json("metrics", Metric)
-    pages = _load_data_from_json("pages", Page)
+def _get_internal_name(displayname: str) -> str:
+    internal_name = displayname.replace("(C)", "conservative")
+    internal_name = internal_name.replace("Purch", "purchasing")
+    internal_name = internal_name.replace(" ", "_")
+    internal_name = internal_name.replace("(", "")
+    internal_name = internal_name.replace(")", "")
+    internal_name = internal_name.lower()
+    return internal_name
 
-    metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
 
-    # Split elements containing commas into separate elements
-    split_metrics_in_visuals = []
-    for item in metrics_in_visuals:
-        split_metrics_in_visuals.extend(item.split(','))
+path = Path(".") / "metadata_conservative" / "metrics.json"
 
-    split_metrics_in_visuals = list(set(split_metrics_in_visuals))
+metrics = _load_data_from_json("metrics", Metric)
+pages = _load_data_from_json("pages", Page)
+definedcolumns = _load_data_from_json("definedcolumns", DefinedColumn)
 
+for metric in metrics:
+    internal_name = _get_internal_name(metric.displayName)
+    print(metric.displayName, "\t\t", internal_name)
+    for page in pages:
+        for visual in page.visuals:
+            if metric.internalName in visual.content:
+                visual.content = visual.content.replace(
+                    metric.internalName, internal_name
+                )
+
+    metric.internalName = internal_name
+
+for defined_column in definedcolumns:
+    internal_name = _get_internal_name(defined_column.displayName)
+    print(defined_column.displayName, "\t\t", internal_name)
     for metric in metrics:
-        if metric.internalName not in split_metrics_in_visuals:
-            assert False,f"found metric that is not part of a visual: {metric.internalName}"
+        if defined_column.internalName in metric.formula:
+            metric.formula = metric.formula.replace(
+                defined_column.internalName, internal_name
+            )
+    defined_column.internalName = internal_name
 
-
+_export_data_to_json("metrics", metrics)
+_export_data_to_json("pages", pages)
