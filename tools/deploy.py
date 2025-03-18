@@ -8,7 +8,12 @@ logging.basicConfig(
 )
 
 PROJECT_NAME = "Business Processes"
-customers = ["amf", "pirlo", "emz", "wipotec"]
+customers = [
+    "amf",
+    "pirlo",
+    "emz",
+    "wipotec",
+]
 
 for customer in customers:
     logging.info(f"Deploying {customer}")
@@ -26,6 +31,4 @@ for customer in customers:
         password=password,
         environment=environment,
     )
-    nl.MetaDataDelete(projectname=PROJECT_NAME, prefix="(Conservative)")
-    nl.MetaDataDelete(projectname=PROJECT_NAME, prefix="(C)")
     nl.MetaDataCreate(projectname=PROJECT_NAME, prefix="(C)")
