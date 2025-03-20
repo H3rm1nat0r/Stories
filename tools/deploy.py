@@ -9,10 +9,10 @@ logging.basicConfig(
 
 PROJECT_NAME = "Business Processes"
 customers = [
-    "amf",
-    "pirlo",
-    "emz",
-    "wipotec",
+    # "amf",
+    # "pirlo",
+    # "emz",
+    # "wipotec",
     "proalpha",
 ]
 

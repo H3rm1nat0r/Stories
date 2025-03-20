@@ -1,0 +1,74 @@
+[
+    {
+        "active": true,
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "OptiMate Sales Cockpit",
+        "displayNameTranslations": {
+            "en": "OptiMate Sales Cockpit",
+            "de": "OptiMate Vertriebscockpit"
+        },
+        "download": "",
+        "forecasts": [],
+        "formatCompact": false,
+        "internalName": "optimate_sales_advisor",
+        "links": [],
+        "models": [],
+        "pages": [
+            {
+                "order": 0,
+                "page": "optimate_sales_advisor_overview"
+            },
+            {
+                "order": 1,
+                "page": "optimate_sales_advisor_dso"
+            },
+            {
+                "order": 2,
+                "page": "optimate_sales_advisor_fot"
+            }
+        ],
+        "scopeName": "",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "active": true,
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "OptiMate Purchasing Cockpit",
+        "displayNameTranslations": {
+            "de": "OptiMate Einkaufscockpit",
+            "en": "OptiMate Purchasing Cockpit"
+        },
+        "download": "",
+        "forecasts": [],
+        "formatCompact": false,
+        "internalName": "optimate_purchasing_advisor",
+        "links": [],
+        "models": [],
+        "pages": [
+            {
+                "order": 0,
+                "page": "optimate_purchasing_advisor_overview"
+            },
+            {
+                "order": 1,
+                "page": "optimate_purchasing_advisor_dpo"
+            },
+            {
+                "order": 2,
+                "page": "optimate_purchasing_advisor_otif"
+            }
+        ],
+        "scopeName": "",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]

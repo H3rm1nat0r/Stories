@@ -12,9 +12,11 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 nl = NemoLibrary()
-nl.MetaDataLoad(
+metrics = nl.getMetrics(
     projectname=PROJECT_NAME,
-    filter="optimate_",
-    filter_type=FilterType.STARTSWITH,
-    filter_value=FilterValue.INTERNALNAME,
 )
+
+for metric in metrics:
+    if metric.displayNameTranslations:
+        print(json.dumps(metric.to_dict(),indent=4))
+        exit()
