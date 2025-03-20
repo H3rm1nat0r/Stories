@@ -56,6 +56,16 @@ def test_applications():
         
         assert application.displayName == application.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {application.internalName}"
 
+# def test_attribute_groups():
+#     for attribute_group in attribute_groups:
+#         assert attribute_group.internalName.startswith(
+#             "optimate_"
+#         ), f"internal name does not start with optimate_: {attribute_group.internalName}"
+#         assert "en" in attribute_group.displayNameTranslations, f"displayNameTranslations does not contain 'en': {attribute_group.internalName}"    
+#         assert "de" in attribute_group.displayNameTranslations, f"displayNameTranslations does not contain 'de': {attribute_group.internalName}"    
+        
+#         assert attribute_group.displayName == attribute_group.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {attribute_group.internalName}"
+
 def test_pages():
     for page in pages:
         assert page.internalName.startswith(
@@ -81,6 +91,14 @@ def test_metrics():
             "purchasing",
             "sales",
         ], f"second part of internal name is not purchasing or sales: {metric.internalName}"
+
+        assert metric.internalName.startswith(
+            "optimate_"
+        ), f"internal name does not start with optimate_: {metric.internalName}"
+        assert "en" in metric.displayNameTranslations, f"displayNameTranslations does not contain 'en': {metric.internalName}"    
+        assert "de" in metric.displayNameTranslations, f"displayNameTranslations does not contain 'de': {metric.internalName}"    
+        
+        assert metric.displayName == metric.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {application.internalName}"
 
     # Check if all metrics are part of a visual
     metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]

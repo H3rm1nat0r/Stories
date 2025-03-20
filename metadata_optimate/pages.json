@@ -6,8 +6,231 @@
         },
         "displayName": "Overview",
         "displayNameTranslations": {
-            "en": "Overview",
-            "de": "Übersicht"
+            "de": "\u00dcbersicht",
+            "en": "Overview"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_purchasing_cockpit_overview",
+        "numberOfColumns": 2,
+        "numberOfRows": 3,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "d_p_o",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 2,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_otif_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 2,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_otif_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Metric"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "d_p_o",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Metric"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Fullfillment on Time",
+        "displayNameTranslations": {
+            "en": "Fullfillment on Time",
+            "de": "P\u00fcnktliche Lieferung"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_sales_cockpit_fot",
+        "numberOfColumns": 4,
+        "numberOfRows": 3,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_sales_deliveries_deviation_amount",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_sales_deliveries_deviation_too_early_rate,optimate_sales_deliveries_deviation_too_late_rate,optimate_sales_on_time_delivery_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_sales_order_lead_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_sales_deliveries_deviation_underdelivered_rate,optimate_sales_deliveries_deviation_overdelivered_rate,optimate_sales_in_full_delivery_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_sales_deliveries_deviation_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_sales_order_processing_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "DPO",
+        "displayNameTranslations": {
+            "en": "DPO",
+            "de": "DPO"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_purchasing_cockpit_dpo",
+        "numberOfColumns": 4,
+        "numberOfRows": 2,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_goods_receipt_processing_time",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_payments_deviation",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_invoice_processing_time",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 3,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_invoice_processing_time_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_goods_receipt_processing_time_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Overview",
+        "displayNameTranslations": {
+            "de": "\u00dcbersicht",
+            "en": "Overview"
         },
         "hideIfColumns": [],
         "internalName": "optimate_sales_cockpit_overview",
@@ -41,9 +264,9 @@
                 "content": "d_s_o",
                 "contentTranslations": {},
                 "id": "",
-                "row": 2,
-                "rowSpan": 2,
-                "type": "Prediction"
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Metric"
             },
             {
                 "column": 1,
@@ -51,231 +274,8 @@
                 "content": "d_s_o",
                 "contentTranslations": {},
                 "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Metric"
-            }
-        ],
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Overview",
-        "displayNameTranslations": {
-            "en": "Overview",
-            "de": "Übersicht"
-        },
-        "hideIfColumns": [],
-        "internalName": "optimate_purchasing_cockpit_overview",
-        "numberOfColumns": 2,
-        "numberOfRows": 3,
-        "showIfColumns": [],
-        "visuals": [
-            {
-                "column": 2,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_otif_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Metric"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "d_p_o",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Metric"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "d_p_o",
-                "contentTranslations": {},
-                "id": "",
                 "row": 2,
                 "rowSpan": 2,
-                "type": "Prediction"
-            },
-            {
-                "column": 2,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_otif_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 2,
-                "type": "Prediction"
-            }
-        ],
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "DPO",
-        "displayNameTranslations": {
-            "en": "DPO",
-            "de": "DPO"
-        },
-        "hideIfColumns": [],
-        "internalName": "optimate_purchasing_cockpit_dpo",
-        "numberOfColumns": 4,
-        "numberOfRows": 2,
-        "showIfColumns": [],
-        "visuals": [
-            {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 3,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_invoice_processing_time_on_time_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 2,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_goods_receipt_processing_time",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_invoice_processing_time",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_payments_deviation",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_goods_receipt_processing_time_on_time_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            }
-        ],
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Fullfillment on Time",
-        "displayNameTranslations": {
-            "en": "Fullfillment on Time",
-            "de": "Pünktliche Lieferung"
-        },
-        "hideIfColumns": [],
-        "internalName": "optimate_sales_cockpit_fot",
-        "numberOfColumns": 4,
-        "numberOfRows": 3,
-        "showIfColumns": [],
-        "visuals": [
-            {
-                "column": 2,
-                "columnSpan": 1,
-                "content": "optimate_sales_order_processing_time_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 3,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_sales_deliveries_deviation_too_early_rate,optimate_sales_deliveries_deviation_too_late_rate,optimate_sales_on_time_delivery_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "optimate_sales_order_lead_time_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 3,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_sales_deliveries_deviation_amount",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_sales_deliveries_deviation_underdelivered_rate,optimate_sales_deliveries_deviation_overdelivered_rate,optimate_sales_in_full_delivery_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_sales_deliveries_deviation_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
                 "type": "Prediction"
             }
         ],
@@ -290,8 +290,8 @@
         },
         "displayName": "On Time in Full",
         "displayNameTranslations": {
-            "en": "On Time in Full",
-            "de": "Pünktlich und vollständig"
+            "de": "P\u00fcnktlich und vollst\u00e4ndig",
+            "en": "On Time in Full"
         },
         "hideIfColumns": [],
         "internalName": "optimate_purchasing_cockpit_otif",
@@ -300,32 +300,12 @@
         "showIfColumns": [],
         "visuals": [
             {
-                "column": 2,
+                "column": 1,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_order_lead_time_days",
+                "content": "optimate_purchasing_order_confirmation_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 5,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_order_preparation_time_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 4,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_deliveries_deviation_amount",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
@@ -342,40 +322,30 @@
             {
                 "column": 1,
                 "columnSpan": 3,
-                "content": "optimate_purchasing_replenishment_deviation_on_time_rate,optimate_purchasing_replenishment_deviation_too_high_rate,optimate_purchasing_replenishment_deviation_too_low_rate",
+                "content": "optimate_purchasing_deliveries_deviation_underdelivered_rate,optimate_purchasing_deliveries_deviation_overdelivered_rate,optimate_purchasing_deliveries_deviation_in_full_rate",
                 "contentTranslations": {},
                 "id": "",
-                "row": 3,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_order_confirmation_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 5,
+                "row": 2,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
             {
                 "column": 4,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_replenishment_deviation_days",
+                "content": "optimate_purchasing_deliveries_deviation_amount",
                 "contentTranslations": {},
                 "id": "",
-                "row": 3,
+                "row": 2,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
             {
                 "column": 1,
                 "columnSpan": 3,
-                "content": "optimate_purchasing_deliveries_deviation_underdelivered_rate,optimate_purchasing_deliveries_deviation_overdelivered_rate,optimate_purchasing_deliveries_deviation_in_full_rate",
+                "content": "optimate_purchasing_replenishment_deviation_on_time_rate,optimate_purchasing_replenishment_deviation_too_high_rate,optimate_purchasing_replenishment_deviation_too_low_rate",
                 "contentTranslations": {},
                 "id": "",
-                "row": 2,
+                "row": 3,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
@@ -390,12 +360,42 @@
                 "type": "Prediction"
             },
             {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_order_preparation_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 4,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
                 "column": 1,
                 "columnSpan": 3,
                 "content": "optimate_purchasing_order_preparation_time_on_time_rate,optimate_purchasing_order_preparation_time_too_high_rate,optimate_purchasing_order_preparation_time_too_low_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 4,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_replenishment_deviation_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_order_lead_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 5,
                 "rowSpan": 1,
                 "type": "Prediction"
             }
@@ -411,8 +411,8 @@
         },
         "displayName": "DSO",
         "displayNameTranslations": {
-            "en": "DSO",
-            "de": "DSO"
+            "de": "DSO",
+            "en": "DSO"
         },
         "hideIfColumns": [],
         "internalName": "optimate_sales_cockpit_dso",
@@ -421,9 +421,9 @@
         "showIfColumns": [],
         "visuals": [
             {
-                "column": 2,
+                "column": 3,
                 "columnSpan": 1,
-                "content": "optimate_sales_goods_receipt_processing_time",
+                "content": "optimate_sales_on_time_goods_receipt_processing_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
@@ -441,22 +441,22 @@
                 "type": "Prediction"
             },
             {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_sales_aov",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
                 "column": 1,
                 "columnSpan": 3,
                 "content": "optimate_sales_payments_deviation_too_early_rate,optimate_sales_payments_deviation_too_late_rate,optimate_sales_payments_deviation_on_time_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 1,
-                "content": "optimate_sales_dunning_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
@@ -471,9 +471,9 @@
                 "type": "Prediction"
             },
             {
-                "column": 4,
+                "column": 2,
                 "columnSpan": 1,
-                "content": "optimate_sales_aov",
+                "content": "optimate_sales_goods_receipt_processing_time",
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
@@ -481,9 +481,9 @@
                 "type": "Prediction"
             },
             {
-                "column": 3,
+                "column": 1,
                 "columnSpan": 1,
-                "content": "optimate_sales_on_time_goods_receipt_processing_rate",
+                "content": "optimate_sales_dunning_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
