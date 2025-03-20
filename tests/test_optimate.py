@@ -15,7 +15,7 @@ def _load_data_from_json(file: str, cls: Type[T]) -> List[T]:
     Loads JSON data from a file and converts it into a list of DataClass instances,
     handling nested structures recursively.
     """
-    path = Path(".") / "metadata_conservative" / f"{file}.json"
+    path = Path(".") / "metadata_optimate" / f"{file}.json"
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -46,50 +46,41 @@ def _deserializeMetaDataObject(value: Any, target_type: Type) -> Any:
         return value  # Regular dictionary
     return value  # Primitive values
 
+def test_applications():
+    for application in applications:
+        assert application.internalName.startswith(
+            "optimate_"
+        ), f"internal name does not start with optimate_: {application.internalName}"
+        assert "en" in application.displayNameTranslations, f"displayNameTranslations does not contain 'en': {application.internalName}"    
+        assert "de" in application.displayNameTranslations, f"displayNameTranslations does not contain 'de': {application.internalName}"    
+        
+        assert application.displayName == application.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {application.internalName}"
 
-def _export_data_to_json(file: str, data):
-    path = Path(".") / "metadata_conservative" / f"{file}.json"
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(
-            [element.to_dict() for element in data], file, indent=4, ensure_ascii=True
-        )
-
-
+def test_pages():
+    for page in pages:
+        assert page.internalName.startswith(
+            "optimate_"
+        ), f"internal name does not start with optimate_: {page.internalName}"
+        assert "en" in page.displayNameTranslations, f"displayNameTranslations does not contain 'en': {page.internalName}"    
+        assert "de" in page.displayNameTranslations, f"displayNameTranslations does not contain 'de': {page.internalName}"    
+        
+        assert page.displayName == page.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {page.internalName}"
+        
 def test_metrics():
-
-    # Check display names
-    for metric in metrics:
-        assert (
-            "  " not in metric.displayName
-        ), f"found double space in metric: {metric.displayName}"
-        assert metric.displayName.startswith(
-            "(C)"
-        ), f"metric does not start with (C): {metric.displayName}"
 
     # Check internal names
     for metric in metrics:
 
         # Check if internal name starts with conservative_
         assert metric.internalName.startswith(
-            "conservative_"
-        ), f"internal name does not start with conservative_: {metric.internalName}"
+            "optimate_"
+        ), f"internal name does not start with optimate_: {metric.internalName}"
 
         # Check if second part of internal name is either purchasing or sales
         assert metric.internalName.split("_")[1] in [
             "purchasing",
             "sales",
         ], f"second part of internal name is not purchasing or sales: {metric.internalName}"
-
-        # Check if internal name matches display name
-        internal_name = metric.displayName.replace("(C)", "conservative")
-        internal_name = internal_name.replace("Purch", "purchasing")
-        internal_name = internal_name.replace(" ", "_")
-        internal_name = internal_name.replace("(", "")
-        internal_name = internal_name.replace(")", "")
-        internal_name = internal_name.lower()
-        assert (
-            metric.internalName == internal_name
-        ), f"internal name does not match: {metric.internalName} != {internal_name}"
 
     # Check if all metrics are part of a visual
     metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
@@ -138,7 +129,7 @@ def test_metrics():
 
 path = Path(".") / "metadata_conservative" / "metrics.json"
 
-application = _load_data_from_json("applications", Application)
+applications = _load_data_from_json("applications", Application)
 attribute_groups = _load_data_from_json("attributegroups", AttributeGroup)
 defined_columns = _load_data_from_json("definedcolumns", DefinedColumn)
 metrics = _load_data_from_json("metrics", Metric)

@@ -4,12 +4,13 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(C) Sales Overview",
+        "displayName": "Overview",
         "displayNameTranslations": {
-            "en": "Overview"
+            "en": "Overview",
+            "de": "Übersicht"
         },
         "hideIfColumns": [],
-        "internalName": "optimate_sales_advisor_overview",
+        "internalName": "optimate_sales_cockpit_overview",
         "numberOfColumns": 2,
         "numberOfRows": 3,
         "showIfColumns": [],
@@ -64,12 +65,13 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(C) Purch Overview",
+        "displayName": "Overview",
         "displayNameTranslations": {
-            "en": "Overview"
+            "en": "Overview",
+            "de": "Übersicht"
         },
         "hideIfColumns": [],
-        "internalName": "optimate_purchasing_advisor_overview",
+        "internalName": "optimate_purchasing_cockpit_overview",
         "numberOfColumns": 2,
         "numberOfRows": 3,
         "showIfColumns": [],
@@ -124,12 +126,13 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(C) Purch DPO",
+        "displayName": "DPO",
         "displayNameTranslations": {
-            "en": "DPO"
+            "en": "DPO",
+            "de": "DPO"
         },
         "hideIfColumns": [],
-        "internalName": "optimate_purchasing_advisor_dpo",
+        "internalName": "optimate_purchasing_cockpit_dpo",
         "numberOfColumns": 4,
         "numberOfRows": 2,
         "showIfColumns": [],
@@ -204,12 +207,13 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(C) Sales FOT",
+        "displayName": "Fullfillment on Time",
         "displayNameTranslations": {
-            "en": "FOT"
+            "en": "Fullfillment on Time",
+            "de": "Pünktliche Lieferung"
         },
         "hideIfColumns": [],
-        "internalName": "optimate_sales_advisor_fot",
+        "internalName": "optimate_sales_cockpit_fot",
         "numberOfColumns": 4,
         "numberOfRows": 3,
         "showIfColumns": [],
@@ -284,12 +288,13 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(C) Purch OTIF",
+        "displayName": "On Time in Full",
         "displayNameTranslations": {
-            "en": "OTIF"
+            "en": "On Time in Full",
+            "de": "Pünktlich und vollständig"
         },
         "hideIfColumns": [],
-        "internalName": "optimate_purchasing_advisor_otif",
+        "internalName": "optimate_purchasing_cockpit_otif",
         "numberOfColumns": 4,
         "numberOfRows": 5,
         "showIfColumns": [],
@@ -404,12 +409,13 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(C) Sales DSO",
+        "displayName": "DSO",
         "displayNameTranslations": {
-            "en": "DSO"
+            "en": "DSO",
+            "de": "DSO"
         },
         "hideIfColumns": [],
-        "internalName": "optimate_sales_advisor_dso",
+        "internalName": "optimate_sales_cockpit_dso",
         "numberOfColumns": 4,
         "numberOfRows": 3,
         "showIfColumns": [],

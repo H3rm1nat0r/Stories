@@ -13,21 +13,21 @@
         "download": "",
         "forecasts": [],
         "formatCompact": false,
-        "internalName": "optimate_sales_advisor",
+        "internalName": "optimate_sales_cockpit",
         "links": [],
         "models": [],
         "pages": [
             {
                 "order": 0,
-                "page": "optimate_sales_advisor_overview"
+                "page": "optimate_sales_cockpit_overview"
             },
             {
                 "order": 1,
-                "page": "optimate_sales_advisor_dso"
+                "page": "optimate_sales_cockpit_dso"
             },
             {
                 "order": 2,
-                "page": "optimate_sales_advisor_fot"
+                "page": "optimate_sales_cockpit_fot"
             }
         ],
         "scopeName": "",
@@ -49,21 +49,21 @@
         "download": "",
         "forecasts": [],
         "formatCompact": false,
-        "internalName": "optimate_purchasing_advisor",
+        "internalName": "optimate_purchasing_cockpit",
         "links": [],
         "models": [],
         "pages": [
             {
                 "order": 0,
-                "page": "optimate_purchasing_advisor_overview"
+                "page": "optimate_purchasing_cockpit_overview"
             },
             {
                 "order": 1,
-                "page": "optimate_purchasing_advisor_dpo"
+                "page": "optimate_purchasing_cockpit_dpo"
             },
             {
                 "order": 2,
-                "page": "optimate_purchasing_advisor_otif"
+                "page": "optimate_purchasing_cockpit_otif"
             }
         ],
         "scopeName": "",
