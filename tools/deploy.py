@@ -13,6 +13,7 @@ customers = [
     "pirlo",
     "emz",
     "wipotec",
+    "proalpha",
 ]
 
 for customer in customers:
@@ -31,4 +32,5 @@ for customer in customers:
         password=password,
         environment=environment,
     )
+    nl.MetaDataDelete(projectname=PROJECT_NAME, prefix="(Conservative)")
     nl.MetaDataCreate(projectname=PROJECT_NAME, prefix="(C)")
