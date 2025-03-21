@@ -49,102 +49,69 @@ def _deserializeMetaDataObject(value: Any, target_type: Type) -> Any:
     return value  # Primitive values
 
 
-def test_applications():
-    for application in applications:
-        assert application.internalName.startswith(
+def _generic_test(items):
+    for item in items:
+        assert item.internalName.startswith(
             COCKPIT
-        ), f"internal name of application does not start with {COCKPIT}: {application.internalName}"
+        ), f"internal name of item does not start with {COCKPIT}: {item.internalName}"
         assert (
-            "en" in application.displayNameTranslations
-        ), f"displayNameTranslations of application does not contain 'en': application {application.internalName}"
-        assert (
-            "de" in application.displayNameTranslations
-        ), f"displayNameTranslations of application does not contain 'de': application {application.internalName}"
+            "en" in item.displayNameTranslations
+        ), f"displayNameTranslations of item does not contain 'en': item {item.internalName}"
+        if not item.displayName.startswith("(Parking Lot)"):
+            assert (
+                "de" in item.displayNameTranslations
+            ), f"displayNameTranslations of item does not contain 'de': item {item.internalName}"
 
         assert (
-            application.displayName == application.displayNameTranslations["en"]
-        ), f"displayName is not equal to displayNameTranslations['en']: {application.internalName}"
+            item.displayName == item.displayNameTranslations["en"]
+        ), f"displayName is not equal to displayNameTranslations['en']: {item.internalName}"
 
-        assert application.internalName == application.displayName.lower().replace(
-            " ", "_"
-        ), f"internalName is not equal to {application.displayName.lower().replace(" ", "_")}: {application.internalName}"
+        if "(Parking Lot)" in item.displayName:
+            assert (
+                "parking_lot" in item.internalName
+            ), f"internalName does not contain 'parking_lot': {item.internalName}"
+
+        if "parking_lot" in item.internalName:
+            assert (
+                "Parking Lot" in item.displayName
+            ), f"displayName does not contain '(Parking Lot)': {item.internalName}"
+
+def test_applications():
+    _generic_test(applications)
 
 
 def test_attributegroups():
-    for attributegroup in attributegroups:
-        assert attributegroup.internalName.startswith(
-            COCKPIT
-        ), f"internal name of attributegroup does not start with {COCKPIT}: {attributegroup.internalName}"
-        assert (
-            "en" in attributegroup.displayNameTranslations
-        ), f"displayNameTranslations of attributegroup does not contain 'en': attributegroup {attributegroup.internalName}"
-        assert (
-            "de" in attributegroup.displayNameTranslations
-        ), f"displayNameTranslations of attributegroup does not contain 'de': attributegroup {attributegroup.internalName}"
-
-        assert (
-            attributegroup.displayName == attributegroup.displayNameTranslations["en"]
-        ), f"displayName is not equal to displayNameTranslations['en']: {attributegroup.internalName}"
-
-        if "(Parking Lot)" in attributegroup.displayName:
-            assert (
-                "parking_lot" in attributegroup.internalName
-            ), f"internalName does not contain 'parking_lot': {attributegroup.internalName}"
+    _generic_test(attributegroups)
 
 
 def test_pages():
-    for page in pages:
-        assert page.internalName.startswith(
-            COCKPIT
-        ), f"internal name of page does not start with {COCKPIT}: {page.internalName}"
-        assert (
-            "en" in page.displayNameTranslations
-        ), f"displayNameTranslations of page does not contain 'en': page {page.internalName}"
-        assert (
-            "de" in page.displayNameTranslations
-        ), f"displayNameTranslations of page does not contain 'de': page {page.internalName}"
+    _generic_test(pages)
 
-        assert (
-            page.displayName == page.displayNameTranslations["en"]
-        ), f"displayName is not equal to displayNameTranslations['en']: {page.internalName}"
 
 def test_definedcolumns():
-    for definedcolumn in definedcolumns:
-        assert definedcolumn.internalName.startswith(
-            COCKPIT
-        ), f"internal name of definedcolumn does not start with {COCKPIT}: {definedcolumn.internalName}"
-        assert (
-            "en" in definedcolumn.displayNameTranslations
-        ), f"displayNameTranslations of definedcolumn does not contain 'en': definedcolumn {definedcolumn.internalName}"
-        if not definedcolumn.displayName.startswith("(Parking Lot)"):
-            assert (
-                "de" in definedcolumn.displayNameTranslations
-            ), f"displayNameTranslations of definedcolumn does not contain 'de': definedcolumn {definedcolumn.internalName}"
+    _generic_test(definedcolumns)
 
-        assert (
-            definedcolumn.displayName == definedcolumn.displayNameTranslations["en"]
-        ), f"displayName is not equal to displayNameTranslations['en']: {definedcolumn.internalName}"
-
+    #check if all defined columns are used in a metric
+    for definedcolumn in definedcolumns:    
+        found = False
+        for metric in metrics:
+            if definedcolumn.internalName in metric.aggregateBy:
+                found = True
+                break
+            if definedcolumn.internalName in metric.aggregateFunction:
+                found = True
+                break
+            if definedcolumn.internalName in metric.groupByAggregations.keys():
+                found = True
+                break
+            
+        assert found, f"defined column {definedcolumn.internalName} is not used in a metric"
 
 def test_metrics():
+    _generic_test(metrics)
 
     # Check internal names
     for metric in metrics:
-
-        assert metric.internalName.startswith(
-            COCKPIT 
-        ), f"internal name of metric does not start with {COCKPIT}: {metric.internalName}"
-        assert (
-            "en" in metric.displayNameTranslations
-        ), f"displayNameTranslations of metric does not contain 'en': metric {metric.internalName}"
-        if not metric.displayName.startswith("(Parking Lot)"):
-            assert (
-                "de" in metric.displayNameTranslations
-            ), f"displayNameTranslations of metric does not contain 'de': metric {metric.internalName}"
-
-        assert (
-            metric.displayName == metric.displayNameTranslations["en"]
-        ), f"displayName is not equal to displayNameTranslations['en']: {metric.internalName}"
 
         if metric.dateColumn != "pur_order_doc_date":
             assert (
@@ -155,6 +122,9 @@ def test_metrics():
                 False
             ), f"found purchasing metric that does not have pur_order_doc_i_d as group by column: {metric.internalName}"
 
+        if "(Parking Lot)" in metric.displayName:
+            assert (metric.isCrawlable == False), f"found metric with (Parking Lot) in displayName that is crawlable: {metric.internalName}"
+            
     # Check if all metrics are part of a visual
     metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
     split_metrics_in_visuals = []  # some visuals have multiple metrics

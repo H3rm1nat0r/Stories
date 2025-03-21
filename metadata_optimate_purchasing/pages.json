@@ -77,19 +77,9 @@
         "showIfColumns": [],
         "visuals": [
             {
-                "column": 3,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_payments_deviation",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
                 "column": 4,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_deliveries_deviation_amount",
+                "content": "optimate_purchasing_parking_lot_deliveries_deviation_amount",
                 "contentTranslations": {},
                 "id": "",
                 "row": 3,
@@ -97,29 +87,9 @@
                 "type": "Prediction"
             },
             {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_purchasing_order_preparation_time_on_time_rate,optimate_purchasing_order_preparation_time_too_high_rate,optimate_purchasing_order_preparation_time_too_low_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 5,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
+                "column": 4,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_invoice_processing_time_on_time_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_purchasing_deliveries_deviation_too_early_rate,optimate_purchasing_deliveries_deviation_too_late_rate,optimate_purchasing_deliveries_deviation_on_time_rate",
+                "content": "optimate_purchasing_parking_lot_deliveries_deviation_days",
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
@@ -127,29 +97,69 @@
                 "type": "Prediction"
             },
             {
-                "column": 4,
+                "column": 3,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_order_preparation_time_days",
+                "content": "optimate_purchasing_parking_lot_payments_deviation",
                 "contentTranslations": {},
                 "id": "",
-                "row": 5,
+                "row": 1,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
             {
                 "column": 1,
                 "columnSpan": 3,
-                "content": "optimate_purchasing_deliveries_deviation_in_full_rate,optimate_purchasing_deliveries_deviation_overdelivered_rate,optimate_purchasing_deliveries_deviation_underdelivered_rate",
+                "content": "optimate_purchasing_parking_lot_replenishment_deviation_too_low_rate,optimate_purchasing_parking_lot_replenishment_deviation_too_high_rate,optimate_purchasing_parking_lot_replenishment_deviation_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 4,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_rate,optimate_purchasing_parking_lot_deliveries_deviation_too_late_rate,optimate_purchasing_deliveries_deviation_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_deliveries_deviation_in_full_rate,optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_rate,optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_parking_lot_order_preparation_time_on_time_rate,optimate_purchasing_parking_lot_order_preparation_time_too_high_rate,optimate_purchasing_parking_lot_order_preparation_time_too_low_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 5,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
             {
                 "column": 2,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_goods_receipt_processing_time_on_time_rate",
+                "content": "optimate_purchasing_parking_lot_goods_receipt_processing_time_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_invoice_processing_time_on_time_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 1,
@@ -159,20 +169,10 @@
             {
                 "column": 4,
                 "columnSpan": 1,
-                "content": "optimate_purchasing_deliveries_deviation_days",
+                "content": "optimate_purchasing_parking_lot_order_preparation_time_days",
                 "contentTranslations": {},
                 "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_purchasing_replenishment_deviation_too_low_rate,optimate_purchasing_replenishment_deviation_too_high_rate,optimate_purchasing_replenishment_deviation_on_time_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 4,
+                "row": 5,
                 "rowSpan": 1,
                 "type": "Prediction"
             }
@@ -188,8 +188,8 @@
         },
         "displayName": "DPO",
         "displayNameTranslations": {
-            "en": "DPO",
-            "de": "DPO"
+            "de": "DPO",
+            "en": "DPO"
         },
         "hideIfColumns": [],
         "internalName": "optimate_purchasing_cockpit_dpo",
@@ -210,7 +210,7 @@
             {
                 "column": 1,
                 "columnSpan": 2,
-                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
+                "content": "optimate_purchasing_parking_lot_payments_deviation_too_early_rate,optimate_purchasing_parking_lot_payments_deviation_on_time_rate,optimate_purchasing_parking_lot_payments_deviation_too_late_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 1,
