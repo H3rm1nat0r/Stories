@@ -5,8 +5,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Order Confirmation Rate",
         "displayNameTranslations": {
-            "de": "Auftragsbest\u00e4tigungsquote",
-            "en": "Order Confirmation Rate"
+            "en": "Order Confirmation Rate",
+            "de": "Auftragsbest\u00e4tigungsquote"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -209,8 +209,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) On Time Delivery",
         "displayNameTranslations": {
-            "en": "(Parking Lot) On Time Delivery",
-            "de": "(Parking Lot) On Time Delivery"
+            "de": "(Parking Lot) On Time Delivery",
+            "en": "(Parking Lot) On Time Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -243,8 +243,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Delivery",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Delivery",
-            "de": "(Parking Lot) Delivery"
+            "de": "(Parking Lot) Delivery",
+            "en": "(Parking Lot) Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",

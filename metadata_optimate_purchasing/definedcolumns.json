@@ -36,8 +36,8 @@
         },
         "displayName": "Invoice Verification Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)",
-            "en": "Invoice Verification Processing Time On-Time (boolean)"
+            "en": "Invoice Verification Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)"
         },
         "formula": "optimate_purchasing_invoice_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -363,8 +363,8 @@
         },
         "displayName": "Invoice Verification Processing Time (days)",
         "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time (days)",
-            "de": "Prozessdauer Rechnungskontrolle (Tage)"
+            "de": "Prozessdauer Rechnungskontrolle (Tage)",
+            "en": "Invoice Verification Processing Time (days)"
         },
         "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
         "groupByColumnInternalName": null,
@@ -383,13 +383,12 @@
         "columnType": "DefinedColumn",
         "containsSensitiveData": false,
         "dataType": "boolean",
-        "description": "Purchasing delivery in full (true/false)",
-        "descriptionTranslations": {
-            "en": "Purchasing delivery in full (true/false)"
-        },
-        "displayName": "(O) Purchasing Deliveries Deviation In Full (boolean)",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "In-Full Sourcing (IF) (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Deliveries Deviation In Full (boolean)"
+            "en": "In-Full Sourcing (IF) (boolean)",
+            "de": "Einkaufsmengentreue (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_amount == 0",
         "groupByColumnInternalName": null,
@@ -398,7 +397,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_in_full_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_sourcing_rate_if",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -408,13 +407,12 @@
         "columnType": "DefinedColumn",
         "containsSensitiveData": false,
         "dataType": "integer",
-        "description": "Purchasing Deliveries Deviation(amount). Number is POSITIVE, if the delivery amount was LESS than the requested amount. Numer is NEGATIVE, if the delivery amount is HIGHER than the requested amount",
-        "descriptionTranslations": {
-            "en": "Purchasing Deliveries Deviation(amount). Number is POSITIVE, if the delivery amount was LESS than the requested amount. Numer is NEGATIVE, if the delivery amount is HIGHER than the requested amount"
-        },
-        "displayName": "(O) Purchasing Deliveries Deviation (amount)",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "In-Full Sourcing Deviation (amount)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Deliveries Deviation (amount)"
+            "de": "Einkaufsmengentreue Abweichung (Menge)",
+            "en": "In-Full Sourcing Deviation (amount)"
         },
         "formula": "pur_order_line_qty-pur_stock_rec_line_qty",
         "groupByColumnInternalName": null,
@@ -423,7 +421,7 @@
         "unit": "days",
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_amount",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_sourcing_rate_if",
         "id": "",
         "projectId": "",
         "tenant": ""
