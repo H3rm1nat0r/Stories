@@ -33,9 +33,10 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Invoice Processing Time On-Time(boolean)",
+        "displayName": "Invoice Verification Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Invoice Processing Time On-Time(boolean)"
+            "en": "Invoice Verification Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)"
         },
         "formula": "optimate_purchasing_invoice_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -44,7 +45,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_invoice_processing_time_ontimeboolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_verification_processing_time",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -133,9 +134,10 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Goods Receipt Processing Time (days)",
+        "displayName": "Goods Receipt Processing Time (days)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Goods Receipt Processing Time (days)"
+            "de": "Prozessdauer Wareneingang (Tage)",
+            "en": "Goods Receipt Processing Time (days)"
         },
         "formula": "pur_stock_rec_line_creation_date-pur_stock_rec_doc_date",
         "groupByColumnInternalName": null,
@@ -358,9 +360,10 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Invoice Processing Time (days)",
+        "displayName": "Invoice Verification Processing Time (days)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Invoice Processing Time (days)"
+            "en": "Invoice Verification Processing Time (days)",
+            "de": "Prozessdauer Rechnungskontrolle (Tage)"
         },
         "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
         "groupByColumnInternalName": null,
@@ -369,7 +372,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_invoice_processing_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_verification_processing_time",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -458,9 +461,10 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Goods Receipt Processing Time On-Time(boolean)",
+        "displayName": "Goods Receipt Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Goods Receipt Processing Time On-Time(boolean)"
+            "en": "Goods Receipt Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)"
         },
         "formula": "optimate_purchasing_goods_receipt_processing_time_days == 0",
         "groupByColumnInternalName": null,
