@@ -310,9 +310,10 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Order Lead Time (days)",
+        "displayName": "Procurement Lead Time (PLT) (days)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Order Lead Time (days)"
+            "en": "Procurement Lead Time (PLT) (days)",
+            "de": "Bestellvorlaufzeit (Tage)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
         "groupByColumnInternalName": null,
@@ -321,7 +322,7 @@
         "unit": "days",
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_lead_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_procurement_lead_time_plt",
         "id": "",
         "projectId": "",
         "tenant": ""

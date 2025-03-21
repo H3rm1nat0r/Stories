@@ -222,7 +222,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_lead_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_procurement_lead_time_plt",
         "id": "",
         "projectId": "",
         "tenant": ""
