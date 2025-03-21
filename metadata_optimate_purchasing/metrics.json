@@ -193,7 +193,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -347,8 +347,8 @@
         "descriptionTranslations": {},
         "displayName": "On-Time Sourcing Rate (OT)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing Rate (OT)",
-            "de": "Einkaufstermintreue"
+            "de": "Einkaufstermintreue",
+            "en": "On-Time Sourcing Rate (OT)"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_on_time_boolean": "mean"
@@ -404,8 +404,8 @@
         "descriptionTranslations": {},
         "displayName": "Invoice Verification Processing Time",
         "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle",
-            "en": "Invoice Verification Processing Time"
+            "en": "Invoice Verification Processing Time",
+            "de": "Prozessdauer Rechnungskontrolle"
         },
         "groupByAggregations": {
             "optimate_purchasing_invoice_processing_time_days": "mean"
@@ -461,8 +461,8 @@
         "descriptionTranslations": {},
         "displayName": "Replenishment Time Deviation",
         "displayNameTranslations": {
-            "en": "Replenishment Time Deviation",
-            "de": "Wiederbeschaffungszeitenabweichung"
+            "de": "Wiederbeschaffungszeitenabweichung",
+            "en": "Replenishment Time Deviation"
         },
         "groupByAggregations": {
             "optimate_purchasing_replenishment_deviation_days": "mean"
@@ -506,7 +506,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -519,8 +519,8 @@
         "descriptionTranslations": {},
         "displayName": "On-Time Supplier Payments Rate",
         "displayNameTranslations": {
-            "en": "On-Time Supplier Payments Rate",
-            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen"
+            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen",
+            "en": "On-Time Supplier Payments Rate"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_on_time_boolean": "mean"
@@ -535,7 +535,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -661,8 +661,8 @@
         "descriptionTranslations": {},
         "displayName": "Order Confirmation Rate",
         "displayNameTranslations": {
-            "en": "Order Confirmation Rate",
-            "de": "Auftragsbest\u00e4tigungsquote"
+            "de": "Auftragsbest\u00e4tigungsquote",
+            "en": "Order Confirmation Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_confirmend_boolean": "mean"
