@@ -5,9 +5,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Del Dev Too Late Rate",
+        "displayName": "(Parking Lot) Del Dev Too Late Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Del Dev Too Late Rate"
+            "en": "(Parking Lot) Del Dev Too Late Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_too_late_boolean": "mean"
@@ -91,9 +91,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Del Dev Underdelivered Rate",
+        "displayName": "(Parking Lot) Del Dev Underdelivered Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Del Dev Underdelivered Rate"
+            "en": "(Parking Lot) Del Dev Underdelivered Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_underdelivered_boolean": "mean"
@@ -119,9 +119,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Goods Receipt Processing Time On Time Rate",
+        "displayName": "(Parking Lot) Goods Receipt Processing Time On Time Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Goods Receipt Processing Time On Time Rate"
+            "en": "(Parking Lot) Goods Receipt Processing Time On Time Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_goods_receipt_processing_time_ontimeboolean": "mean"
@@ -147,9 +147,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Del Dev (amount)",
+        "displayName": "(Parking Lot) Del Dev (amount)",
         "displayNameTranslations": {
-            "en": "(C) Purch Del Dev (amount)"
+            "en": "(Parking Lot) Del Dev (amount)"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_amount": "mean"
@@ -233,9 +233,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Replenishment Deviation Too Low Rate",
+        "displayName": "(Parking Lot) Replenishment Deviation Too Low Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Replenishment Deviation Too Low Rate"
+            "en": "(Parking Lot) Replenishment Deviation Too Low Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_replenishment_deviation_too_low": "mean"
@@ -250,7 +250,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_too_low_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -261,9 +261,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Order Preparation Time Too High Rate",
+        "displayName": "(Parking Lot) Order Preparation Time Too High Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Order Preparation Time Too High Rate"
+            "en": "(Parking Lot) Order Preparation Time Too High Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_preparation_time_too_high_boolean": "mean"
@@ -289,9 +289,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Order Preparation Time (days)",
+        "displayName": "(Parking Lot) Order Preparation Time (days)",
         "displayNameTranslations": {
-            "en": "(C) Purch Order Preparation Time (days)"
+            "en": "(Parking Lot) Order Preparation Time (days)"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_preparation_time_days": "mean"
@@ -317,9 +317,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Replenishment Deviation Too High Rate",
+        "displayName": "(Parking Lot) Replenishment Deviation Too High Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Replenishment Deviation Too High Rate"
+            "en": "(Parking Lot) Replenishment Deviation Too High Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_replenishment_deviation_too_high": "mean"
@@ -334,7 +334,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_too_high_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -374,9 +374,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Payments Deviation",
+        "displayName": "(Parking Lot) Payments Deviation",
         "displayNameTranslations": {
-            "en": "(C) Purch Payments Deviation"
+            "en": "(Parking Lot) Payments Deviation"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_days": "mean"
@@ -431,9 +431,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Del Dev Too Early Rate",
+        "displayName": "(Parking Lot) Del Dev Too Early Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Del Dev Too Early Rate"
+            "en": "(Parking Lot) Del Dev Too Early Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_too_early_boolean": "mean"
@@ -546,9 +546,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Del Dev Overdelivered Rate",
+        "displayName": "(Parking Lot) Del Dev Overdelivered Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Del Dev Overdelivered Rate"
+            "en": "(Parking Lot) Del Dev Overdelivered Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_overdelivered_boolean": "mean"
@@ -603,9 +603,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Replenishment Deviation On Time Rate",
+        "displayName": "(Parking Lot) Replenishment Deviation On Time Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Replenishment Deviation On Time Rate"
+            "en": "(Parking Lot) Replenishment Deviation On Time Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_replenishment_deviation_on_time": "mean"
@@ -620,7 +620,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -631,9 +631,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Order Preparation Time Too Low Rate",
+        "displayName": "(Parking Lot) Order Preparation Time Too Low Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Order Preparation Time Too Low Rate"
+            "en": "(Parking Lot) Order Preparation Time Too Low Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_preparation_time_too_low_boolean": "mean"
@@ -688,9 +688,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Invoice Processing Time On Time Rate",
+        "displayName": "(Parking Lot) Invoice Processing Time On Time Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Invoice Processing Time On Time Rate"
+            "en": "(Parking Lot) Invoice Processing Time On Time Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_invoice_processing_time_ontimeboolean": "mean"
@@ -716,9 +716,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Order Preparation Time On Time Rate",
+        "displayName": "(Parking Lot) Order Preparation Time On Time Rate",
         "displayNameTranslations": {
-            "en": "(C) Purch Order Preparation Time On Time Rate"
+            "en": "(Parking Lot) Order Preparation Time On Time Rate"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_preparation_time_on_time_boolean": "mean"
@@ -744,9 +744,9 @@
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Purch Del Dev (days)",
+        "displayName": "(Parking Lot) Del Dev (days)",
         "displayNameTranslations": {
-            "en": "(C) Purch Del Dev (days)"
+            "en": "(Parking Lot) Del Dev (days)"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_days": "mean"

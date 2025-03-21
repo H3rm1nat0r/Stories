@@ -60,9 +60,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Deliveries Deviation Too Late (boolean)",
+        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Too Late (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Deliveries Deviation Too Late (boolean)"
+            "en": "(Parking Lot) Purchasing Deliveries Deviation Too Late (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_days < 0",
         "groupByColumnInternalName": null,
@@ -85,9 +85,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Deliveries Deviation Too Early (boolean)",
+        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Too Early (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Deliveries Deviation Too Early (boolean)"
+            "en": "(Parking Lot) Purchasing Deliveries Deviation Too Early (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_days > 0",
         "groupByColumnInternalName": null,
@@ -110,9 +110,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Order Preparation Time too low (boolean)",
+        "displayName": "(Parking Lot) Purchasing Order Preparation Time too low (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Order Preparation Time too low (boolean)"
+            "en": "(Parking Lot) Purchasing Order Preparation Time too low (boolean)"
         },
         "formula": "optimate_purchasing_order_preparation_time_days < 0",
         "groupByColumnInternalName": null,
@@ -161,9 +161,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Replenishment Deviation Too LOW",
+        "displayName": "(Parking Lot) Purchasing Replenishment Deviation Too LOW",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Replenishment Deviation Too LOW"
+            "en": "(Parking Lot) Purchasing Replenishment Deviation Too LOW"
         },
         "formula": "optimate_purchasing_replenishment_deviation_days < 0",
         "groupByColumnInternalName": null,
@@ -172,7 +172,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_too_low",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -210,9 +210,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Order Preparation Time on Time (boolean)",
+        "displayName": "(Parking Lot) Purchasing Order Preparation Time on Time (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Order Preparation Time on Time (boolean)"
+            "en": "(Parking Lot) Purchasing Order Preparation Time on Time (boolean)"
         },
         "formula": "optimate_purchasing_order_preparation_time_days == 0",
         "groupByColumnInternalName": null,
@@ -235,9 +235,9 @@
         "descriptionTranslations": {
             "en": "Purchasing under delivery (true/false)"
         },
-        "displayName": "(O) Purchasing Deliveries Deviation Underdelivered (boolean)",
+        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Underdelivered (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Deliveries Deviation Underdelivered (boolean)"
+            "en": "(Parking Lot) Purchasing Deliveries Deviation Underdelivered (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_amount > 0",
         "groupByColumnInternalName": null,
@@ -260,9 +260,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Replenishment Deviation On Time",
+        "displayName": "(Parking Lot) Purchasing Replenishment Deviation On Time",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Replenishment Deviation On Time"
+            "en": "(Parking Lot) Purchasing Replenishment Deviation On Time"
         },
         "formula": "optimate_purchasing_replenishment_deviation_days == 0",
         "groupByColumnInternalName": null,
@@ -271,7 +271,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_on_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -335,9 +335,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Replenishment Deviation Too HIGH",
+        "displayName": "(Parking Lot) Purchasing Replenishment Deviation Too HIGH",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Replenishment Deviation Too HIGH"
+            "en": "(Parking Lot) Purchasing Replenishment Deviation Too HIGH"
         },
         "formula": "optimate_purchasing_replenishment_deviation_days > 0",
         "groupByColumnInternalName": null,
@@ -346,7 +346,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_too_high",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -434,9 +434,9 @@
         "descriptionTranslations": {
             "en": "Purchasing over delivery (true/false)"
         },
-        "displayName": "(O) Purchasing Deliveries Deviation Overdelivered (boolean)",
+        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Overdelivered (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Deliveries Deviation Overdelivered (boolean)"
+            "en": "(Parking Lot) Purchasing Deliveries Deviation Overdelivered (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_amount < 0",
         "groupByColumnInternalName": null,
@@ -536,9 +536,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Order Preparation Time (days)",
+        "displayName": "(Parking Lot) Purchasing Order Preparation Time (days)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Order Preparation Time (days)"
+            "en": "(Parking Lot) Purchasing Order Preparation Time (days)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_creation_date-part_replenishment_time",
         "groupByColumnInternalName": null,
@@ -561,9 +561,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Purchasing Order Preparation Time too high (boolean)",
+        "displayName": "(Parking Lot) Purchasing Order Preparation Time too high (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Order Preparation Time too high (boolean)"
+            "en": "(Parking Lot) Purchasing Order Preparation Time too high (boolean)"
         },
         "formula": "optimate_purchasing_order_preparation_time_days > 0",
         "groupByColumnInternalName": null,
