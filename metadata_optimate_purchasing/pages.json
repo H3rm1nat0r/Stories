@@ -188,8 +188,8 @@
         },
         "displayName": "DPO",
         "displayNameTranslations": {
-            "de": "DPO",
-            "en": "DPO"
+            "en": "DPO",
+            "de": "DPO"
         },
         "hideIfColumns": [],
         "internalName": "optimate_purchasing_cockpit_dpo",
@@ -208,22 +208,22 @@
                 "type": "Prediction"
             },
             {
-                "column": 1,
-                "columnSpan": 2,
-                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 1,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
                 "column": 2,
                 "columnSpan": 1,
                 "content": "optimate_purchasing_invoice_processing_time",
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 2,
+                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
                 "rowSpan": 1,
                 "type": "Prediction"
             }
