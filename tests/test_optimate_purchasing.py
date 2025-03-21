@@ -108,6 +108,23 @@ def test_pages():
             page.displayName == page.displayNameTranslations["en"]
         ), f"displayName is not equal to displayNameTranslations['en']: {page.internalName}"
 
+def test_definedcolumns():
+    for definedcolumn in definedcolumns:
+        assert definedcolumn.internalName.startswith(
+            COCKPIT
+        ), f"internal name of definedcolumn does not start with {COCKPIT}: {definedcolumn.internalName}"
+        assert (
+            "en" in definedcolumn.displayNameTranslations
+        ), f"displayNameTranslations of definedcolumn does not contain 'en': definedcolumn {definedcolumn.internalName}"
+        if not definedcolumn.displayName.startswith("(Parking Lot)"):
+            assert (
+                "de" in definedcolumn.displayNameTranslations
+            ), f"displayNameTranslations of definedcolumn does not contain 'de': definedcolumn {definedcolumn.internalName}"
+
+        assert (
+            definedcolumn.displayName == definedcolumn.displayNameTranslations["en"]
+        ), f"displayName is not equal to displayNameTranslations['en']: {definedcolumn.internalName}"
+
 
 def test_metrics():
 
@@ -155,6 +172,6 @@ def test_metrics():
 
 applications = _load_data_from_json("applications", Application)
 attributegroups = _load_data_from_json("attributegroups", AttributeGroup)
-defined_columns = _load_data_from_json("definedcolumns", DefinedColumn)
+definedcolumns = _load_data_from_json("definedcolumns", DefinedColumn)
 metrics = _load_data_from_json("metrics", Metric)
 pages = _load_data_from_json("pages", Page)

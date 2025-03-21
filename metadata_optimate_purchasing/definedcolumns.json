@@ -487,7 +487,8 @@
         },
         "displayName": "On-Time In-Full Sourcing (OTIF) (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time In-Full Sourcing (OTIF) (boolean)"
+            "en": "On-Time In-Full Sourcing (OTIF) (boolean)",
+            "de": "Einkaufstermintreue und Mengentreue (OTIF) (boolean)"
         },
         "formula": "if(pur_order_line_delivery_date<=pur_order_line_requested_date,if(pur_order_line_qty==pur_stock_rec_line_qty,1,0),0)",
         "groupByColumnInternalName": null,
