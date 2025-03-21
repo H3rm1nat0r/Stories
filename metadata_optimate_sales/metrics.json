@@ -5,9 +5,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation On Time Rate",
+        "displayName": "(Parking Lot) Sales Payments Deviation On Time Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation On Time Rate"
+            "en": "(Parking Lot) Sales Payments Deviation On Time Rate"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_on_time_boolean": "mean"
@@ -33,9 +33,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation (days)",
+        "displayName": "(Parking Lot) Sales Payments Deviation (days)",
         "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation (days)"
+            "en": "(Parking Lot) Sales Payments Deviation (days)"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_days": "mean"
@@ -61,9 +61,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation Too Late Rate",
+        "displayName": "(Parking Lot) Sales Payments Deviation Too Late Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation Too Late Rate"
+            "en": "(Parking Lot) Sales Payments Deviation Too Late Rate"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_too_late_boolean": "mean"
@@ -89,9 +89,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales AOV",
+        "displayName": "(Parking Lot) Sales AOV",
         "displayNameTranslations": {
-            "en": "(C) Sales AOV"
+            "en": "(Parking Lot) Sales AOV"
         },
         "groupByAggregations": {
             "order_doc_total_net_corp_cur": "mean",
@@ -118,9 +118,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev (amount)",
+        "displayName": "(Parking Lot) Sales Del Dev (amount)",
         "displayNameTranslations": {
-            "en": "(C) Sales Del Dev (amount)"
+            "en": "(Parking Lot) Sales Del Dev (amount)"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_amount": "mean"
@@ -146,9 +146,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Overdelivered Rate",
+        "displayName": "(Parking Lot) Sales Del Dev Overdelivered Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Overdelivered Rate"
+            "en": "(Parking Lot) Sales Del Dev Overdelivered Rate"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_overdelivered_boolean": "mean"
@@ -174,9 +174,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Too Late Rate",
+        "displayName": "(Parking Lot) Sales Del Dev Too Late Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Too Late Rate"
+            "en": "(Parking Lot) Sales Del Dev Too Late Rate"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_too_late_boolean": "mean"
@@ -202,9 +202,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales On Time Delivery Rate",
+        "displayName": "(Parking Lot) Sales On Time Delivery Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales On Time Delivery Rate"
+            "en": "(Parking Lot) Sales On Time Delivery Rate"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_on_time_boolean": "mean"
@@ -230,9 +230,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales FOT Rate",
+        "displayName": "(Parking Lot) Sales FOT Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales FOT Rate"
+            "en": "(Parking Lot) Sales FOT Rate"
         },
         "groupByAggregations": {
             "optimate_sales_fulfillment_on_time_fot_boolean": "mean"
@@ -258,9 +258,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev (days)",
+        "displayName": "(Parking Lot) Sales Del Dev (days)",
         "displayNameTranslations": {
-            "en": "(C) Sales Del Dev (days)"
+            "en": "(Parking Lot) Sales Del Dev (days)"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_days": "mean"
@@ -286,9 +286,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Dunning Rate",
+        "displayName": "(Parking Lot) Sales Dunning Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Dunning Rate"
+            "en": "(Parking Lot) Sales Dunning Rate"
         },
         "groupByAggregations": {
             "optimate_sales_invoice_dunned": "max"
@@ -314,9 +314,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Payment Terms (days)",
+        "displayName": "(Parking Lot) Sales Payment Terms (days)",
         "displayNameTranslations": {
-            "en": "(C) Sales Payment Terms (days)"
+            "en": "(Parking Lot) Sales Payment Terms (days)"
         },
         "groupByAggregations": {
             "optimate_sales_payment_terms_days": "mean"
@@ -342,9 +342,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Order Processing Time (days)",
+        "displayName": "(Parking Lot) Sales Order Processing Time (days)",
         "displayNameTranslations": {
-            "en": "(C) Sales Order Processing Time (days)"
+            "en": "(Parking Lot) Sales Order Processing Time (days)"
         },
         "groupByAggregations": {
             "order_doc_i_d": "max",
@@ -371,9 +371,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Underdelivered Rate",
+        "displayName": "(Parking Lot) Sales Del Dev Underdelivered Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Underdelivered Rate"
+            "en": "(Parking Lot) Sales Del Dev Underdelivered Rate"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_underdelivered_boolean": "mean"
@@ -399,9 +399,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales On Time Goods Receipt Processing Rate",
+        "displayName": "(Parking Lot) Sales On Time Goods Receipt Processing Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales On Time Goods Receipt Processing Rate"
+            "en": "(Parking Lot) Sales On Time Goods Receipt Processing Rate"
         },
         "groupByAggregations": {
             "optimate_sales_goods_receipt_processing_time_ontimeboolean": "mean"
@@ -427,9 +427,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation Too Early Rate",
+        "displayName": "(Parking Lot) Sales Payments Deviation Too Early Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation Too Early Rate"
+            "en": "(Parking Lot) Sales Payments Deviation Too Early Rate"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_too_early_boolean": "mean"
@@ -455,9 +455,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Order Lead Time (days)",
+        "displayName": "(Parking Lot) Sales Order Lead Time (days)",
         "displayNameTranslations": {
-            "en": "(C) Sales Order Lead Time (days)"
+            "en": "(Parking Lot) Sales Order Lead Time (days)"
         },
         "groupByAggregations": {
             "order_doc_i_d": "max",
@@ -484,9 +484,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Goods Receipt Processing Time",
+        "displayName": "(Parking Lot) Sales Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "(C) Sales Goods Receipt Processing Time"
+            "en": "(Parking Lot) Sales Goods Receipt Processing Time"
         },
         "groupByAggregations": {
             "optimate_sales_goods_receipt_processing_time_days": "mean"
@@ -512,9 +512,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales In Full Delivery Rate",
+        "displayName": "(Parking Lot) Sales In Full Delivery Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales In Full Delivery Rate"
+            "en": "(Parking Lot) Sales In Full Delivery Rate"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_in_full_boolean": "mean"
@@ -540,9 +540,9 @@
         "dateColumn": "invoice_doc_date",
         "description": "",
         "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Too Early Rate",
+        "displayName": "(Parking Lot) Sales Del Dev Too Early Rate",
         "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Too Early Rate"
+            "en": "(Parking Lot) Sales Del Dev Too Early Rate"
         },
         "groupByAggregations": {
             "optimate_sales_deliveries_deviation_too_early_boolean": "mean"

@@ -8,9 +8,9 @@
         "descriptionTranslations": {
             "en": "Sales Deliveries Deviation(amount). Number is POSITIVE, if the delivery amount was HIGHER than the requested amount. Numer is NEGATIVE, if the delivery amount is LOWER than the requested amount"
         },
-        "displayName": "(O) Sales Deliveries Deviation (amount)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation (amount)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation (amount)"
+            "en": "(Parking Lot) Sales Deliveries Deviation (amount)"
         },
         "formula": "shipping_doc_line_qty-order_doc_line_qty",
         "groupByColumnInternalName": null,
@@ -33,9 +33,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Payment Terms (days)",
+        "displayName": "(Parking Lot) Sales Payment Terms (days)",
         "displayNameTranslations": {
-            "en": "(O) Sales Payment Terms (days)"
+            "en": "(Parking Lot) Sales Payment Terms (days)"
         },
         "formula": "payment_netto_due_date-invoice_doc_date",
         "groupByColumnInternalName": null,
@@ -58,9 +58,9 @@
         "descriptionTranslations": {
             "en": "Sales under delivery (true/false)"
         },
-        "displayName": "(O) Sales Deliveries Deviation Underdelivered (boolean)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation Underdelivered (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation Underdelivered (boolean)"
+            "en": "(Parking Lot) Sales Deliveries Deviation Underdelivered (boolean)"
         },
         "formula": "optimate_sales_deliveries_deviation_amount < 0",
         "groupByColumnInternalName": null,
@@ -83,9 +83,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Order Processing Time (OPT) (days)",
+        "displayName": "(Parking Lot) Sales Order Processing Time (OPT) (days)",
         "displayNameTranslations": {
-            "en": "(O) Sales Order Processing Time (OPT) (days)"
+            "en": "(Parking Lot) Sales Order Processing Time (OPT) (days)"
         },
         "formula": "shipping_doc_date-order_doc_date",
         "groupByColumnInternalName": null,
@@ -108,9 +108,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Deliveries Deviation Too Early (boolean)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation Too Early (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation Too Early (boolean)"
+            "en": "(Parking Lot) Sales Deliveries Deviation Too Early (boolean)"
         },
         "formula": "optimate_sales_deliveries_deviation_days < 0",
         "groupByColumnInternalName": null,
@@ -133,9 +133,9 @@
         "descriptionTranslations": {
             "en": "Sales delivery in full (true/false)"
         },
-        "displayName": "(O) Sales Deliveries Deviation In Full (boolean)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation In Full (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation In Full (boolean)"
+            "en": "(Parking Lot) Sales Deliveries Deviation In Full (boolean)"
         },
         "formula": "optimate_sales_deliveries_deviation_amount == 0",
         "groupByColumnInternalName": null,
@@ -158,9 +158,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Fulfillment on Time FOT (boolean)",
+        "displayName": "(Parking Lot) Sales Fulfillment on Time FOT (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Fulfillment on Time FOT (boolean)"
+            "en": "(Parking Lot) Sales Fulfillment on Time FOT (boolean)"
         },
         "formula": "if(delivery_date ==order_doc_line_requested_date ,if(order_doc_line_qty==shipping_doc_line_qty,1,0),0)",
         "groupByColumnInternalName": null,
@@ -183,9 +183,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Goods Receipt Processing Time On-Time(boolean)",
+        "displayName": "(Parking Lot) Sales Goods Receipt Processing Time On-Time(boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Goods Receipt Processing Time On-Time(boolean)"
+            "en": "(Parking Lot) Sales Goods Receipt Processing Time On-Time(boolean)"
         },
         "formula": "optimate_sales_goods_receipt_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -208,9 +208,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Invoice Dunned",
+        "displayName": "(Parking Lot) Sales Invoice Dunned",
         "displayNameTranslations": {
-            "en": "(O) Sales Invoice Dunned"
+            "en": "(Parking Lot) Sales Invoice Dunned"
         },
         "formula": "payment_dunning == 1",
         "groupByColumnInternalName": null,
@@ -233,9 +233,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Goods Receipt Processing Time (days)",
+        "displayName": "(Parking Lot) Sales Goods Receipt Processing Time (days)",
         "displayNameTranslations": {
-            "en": "(O) Sales Goods Receipt Processing Time (days)"
+            "en": "(Parking Lot) Sales Goods Receipt Processing Time (days)"
         },
         "formula": "invoice_doc_date-shipping_doc_date",
         "groupByColumnInternalName": null,
@@ -258,9 +258,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Deliveries Deviation Too Late (boolean)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation Too Late (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation Too Late (boolean)"
+            "en": "(Parking Lot) Sales Deliveries Deviation Too Late (boolean)"
         },
         "formula": "optimate_sales_deliveries_deviation_days < 0",
         "groupByColumnInternalName": null,
@@ -283,9 +283,9 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(O) Sales Order Lead Time (OLT) (days)",
+        "displayName": "(Parking Lot) Sales Order Lead Time (OLT) (days)",
         "displayNameTranslations": {
-            "en": "(O) Sales Order Lead Time (OLT) (days)"
+            "en": "(Parking Lot) Sales Order Lead Time (OLT) (days)"
         },
         "formula": "order_doc_line_requested_date-order_doc_line_creation_date",
         "groupByColumnInternalName": null,
@@ -308,9 +308,9 @@
         "descriptionTranslations": {
             "en": "Sales over delivery (true/false)"
         },
-        "displayName": "(O) Sales Deliveries Deviation Overdelivered (boolean)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation Overdelivered (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation Overdelivered (boolean)"
+            "en": "(Parking Lot) Sales Deliveries Deviation Overdelivered (boolean)"
         },
         "formula": "optimate_sales_deliveries_deviation_amount > 0",
         "groupByColumnInternalName": null,
@@ -333,9 +333,9 @@
         "descriptionTranslations": {
             "en": "Sales delivery on time (true/false)"
         },
-        "displayName": "(O) Sales Deliveries Deviation On Time (boolean)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation On Time (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation On Time (boolean)"
+            "en": "(Parking Lot) Sales Deliveries Deviation On Time (boolean)"
         },
         "formula": "optimate_sales_deliveries_deviation_days == 0",
         "groupByColumnInternalName": null,
@@ -358,9 +358,9 @@
         "descriptionTranslations": {
             "en": "Sales Deliveries Deviation(days). Number is POSITIVE, if the delivery was AFTER the due date. It is NEGATIVE, if the delivery was BEFORE the due date"
         },
-        "displayName": "(O) Sales Deliveries Deviation (days)",
+        "displayName": "(Parking Lot) Sales Deliveries Deviation (days)",
         "displayNameTranslations": {
-            "en": "(O) Sales Deliveries Deviation (days)"
+            "en": "(Parking Lot) Sales Deliveries Deviation (days)"
         },
         "formula": "order_doc_line_requested_date - delivery_date",
         "groupByColumnInternalName": null,

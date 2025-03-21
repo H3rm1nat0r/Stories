@@ -35,8 +35,8 @@
         "descriptionTranslations": {},
         "displayName": "In-Full Sourcing Rate (IF)",
         "displayNameTranslations": {
-            "de": "Einkaufsmengentreue",
-            "en": "In-Full Sourcing Rate (IF)"
+            "en": "In-Full Sourcing Rate (IF)",
+            "de": "Einkaufsmengentreue"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_in_full_boolean": "mean"
@@ -64,8 +64,8 @@
         "descriptionTranslations": {},
         "displayName": "On-Time In-Full Sourcing Rate (OTIF)",
         "displayNameTranslations": {
-            "en": "On-Time In-Full Sourcing Rate (OTIF)",
-            "de": "Einkaufsliefertreue"
+            "de": "Einkaufsliefertreue",
+            "en": "On-Time In-Full Sourcing Rate (OTIF)"
         },
         "groupByAggregations": {
             "optimate_purchasing_on_time_in_full_otif_boolean": "mean"
@@ -177,8 +177,8 @@
         "descriptionTranslations": {},
         "displayName": "Late Supplier Payments Rate",
         "displayNameTranslations": {
-            "en": "Late Supplier Payments Rate",
-            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen"
+            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen",
+            "en": "Late Supplier Payments Rate"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_too_late_boolean": "mean"
@@ -278,7 +278,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_preparation_time_too_high_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -306,7 +306,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_preparation_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -347,8 +347,8 @@
         "descriptionTranslations": {},
         "displayName": "On-Time Sourcing Rate (OT)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing Rate (OT)",
-            "de": "Einkaufstermintreue"
+            "de": "Einkaufstermintreue",
+            "en": "On-Time Sourcing Rate (OT)"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_on_time_boolean": "mean"
@@ -461,8 +461,8 @@
         "descriptionTranslations": {},
         "displayName": "Replenishment Time Deviation",
         "displayNameTranslations": {
-            "de": "Wiederbeschaffungszeitenabweichung",
-            "en": "Replenishment Time Deviation"
+            "en": "Replenishment Time Deviation",
+            "de": "Wiederbeschaffungszeitenabweichung"
         },
         "groupByAggregations": {
             "optimate_purchasing_replenishment_deviation_days": "mean"
@@ -576,8 +576,8 @@
         "descriptionTranslations": {},
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang",
-            "en": "Goods Receipt Processing Time"
+            "en": "Goods Receipt Processing Time",
+            "de": "Prozessdauer Wareneingang"
         },
         "groupByAggregations": {
             "optimate_purchasing_goods_receipt_processing_time_days": "mean"
@@ -648,7 +648,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_preparation_time_too_low_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -733,7 +733,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_preparation_time_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
         "id": "",
         "projectId": "",
         "tenant": ""

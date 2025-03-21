@@ -88,23 +88,6 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) Order Preparation Time",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Order Preparation Time",
-            "de": "(Parking Lot) Order Preparation Time"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_order_preparation_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
         "displayName": "In-Full Sourcing Rate (IF)",
         "displayNameTranslations": {
             "en": "In-Full Sourcing Rate (IF)",
@@ -122,10 +105,27 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
+        "displayName": "(Parking Lot) Order Preparation Time",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Order Preparation Time",
+            "de": "(Parking Lot) Order Preparation Time"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) In Full Delivery",
         "displayNameTranslations": {
-            "en": "(Parking Lot) In Full Delivery",
-            "de": "(Parking Lot) In Full Delivery"
+            "de": "(Parking Lot) In Full Delivery",
+            "en": "(Parking Lot) In Full Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -141,8 +141,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Replenishment Time Deviation",
         "displayNameTranslations": {
-            "en": "Replenishment Time Deviation",
-            "de": "Wiederbeschaffungszeitenabweichung"
+            "de": "Wiederbeschaffungszeitenabweichung",
+            "en": "Replenishment Time Deviation"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -158,8 +158,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Replenishment",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Replenishment",
-            "de": "(Parking Lot) Replenishment"
+            "de": "(Parking Lot) Replenishment",
+            "en": "(Parking Lot) Replenishment"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -192,8 +192,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Delivery",
         "displayNameTranslations": {
-            "de": "(Parking Lot) Delivery",
-            "en": "(Parking Lot) Delivery"
+            "en": "(Parking Lot) Delivery",
+            "de": "(Parking Lot) Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -209,8 +209,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Invoice Verification Processing Time",
         "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time",
-            "de": "Prozessdauer Rechnungskontrolle"
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Verification Processing Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -243,8 +243,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "On Time in Full (OTIF)",
         "displayNameTranslations": {
-            "de": "P\u00fcnktlich und vollst\u00e4ndig",
-            "en": "On Time in Full (OTIF)"
+            "en": "On Time in Full (OTIF)",
+            "de": "P\u00fcnktlich und vollst\u00e4ndig"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -277,8 +277,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time",
-            "de": "Prozessdauer Wareneingang"
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
         },
         "isCoupled": false,
         "focusOrder": "",

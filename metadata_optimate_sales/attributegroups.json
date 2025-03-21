@@ -3,9 +3,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales On Time Payment",
+        "displayName": "(Parking Lot) Sales On Time Payment",
         "displayNameTranslations": {
-            "en": "(C) Sales On Time Payment"
+            "en": "(Parking Lot) Sales On Time Payment"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -19,9 +19,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales AOV",
+        "displayName": "(Parking Lot) Sales AOV",
         "displayNameTranslations": {
-            "en": "(C) Sales AOV"
+            "en": "(Parking Lot) Sales AOV"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -35,9 +35,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Payment",
+        "displayName": "(Parking Lot) Sales Payment",
         "displayNameTranslations": {
-            "en": "(C) Sales Payment"
+            "en": "(Parking Lot) Sales Payment"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -51,9 +51,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Order Lead Time (OLT)",
+        "displayName": "(Parking Lot) Sales Order Lead Time (OLT)",
         "displayNameTranslations": {
-            "en": "(C) Sales Order Lead Time (OLT)"
+            "en": "(Parking Lot) Sales Order Lead Time (OLT)"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -84,9 +84,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Delivery",
+        "displayName": "(Parking Lot) Sales Delivery",
         "displayNameTranslations": {
-            "en": "(C) Sales Delivery"
+            "en": "(Parking Lot) Sales Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -100,9 +100,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales On Time Delivery",
+        "displayName": "(Parking Lot) Sales On Time Delivery",
         "displayNameTranslations": {
-            "en": "(C) Sales On Time Delivery"
+            "en": "(Parking Lot) Sales On Time Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -116,9 +116,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Fulfillment On Time (FOT)",
+        "displayName": "(Parking Lot) Sales Fulfillment On Time (FOT)",
         "displayNameTranslations": {
-            "en": "(C) Sales Fulfillment On Time (FOT)"
+            "en": "(Parking Lot) Sales Fulfillment On Time (FOT)"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -132,9 +132,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Payment Terms",
+        "displayName": "(Parking Lot) Sales Payment Terms",
         "displayNameTranslations": {
-            "en": "(C) Sales Payment Terms"
+            "en": "(Parking Lot) Sales Payment Terms"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -148,9 +148,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Goods Receipt Processing Time",
+        "displayName": "(Parking Lot) Sales Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "(C) Sales Goods Receipt Processing Time"
+            "en": "(Parking Lot) Sales Goods Receipt Processing Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -164,9 +164,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales In Full Delivery",
+        "displayName": "(Parking Lot) Sales In Full Delivery",
         "displayNameTranslations": {
-            "en": "(C) Sales In Full Delivery"
+            "en": "(Parking Lot) Sales In Full Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -180,9 +180,9 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Sales Order Processing Time (OPT)",
+        "displayName": "(Parking Lot) Sales Order Processing Time (OPT)",
         "displayNameTranslations": {
-            "en": "(C) Sales Order Processing Time (OPT)"
+            "en": "(Parking Lot) Sales Order Processing Time (OPT)"
         },
         "isCoupled": false,
         "focusOrder": "",
