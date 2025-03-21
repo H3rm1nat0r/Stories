@@ -35,8 +35,8 @@
         "descriptionTranslations": {},
         "displayName": "In-Full Sourcing Rate (IF)",
         "displayNameTranslations": {
-            "en": "In-Full Sourcing Rate (IF)",
-            "de": "Einkaufsmengentreue"
+            "de": "Einkaufsmengentreue",
+            "en": "In-Full Sourcing Rate (IF)"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_in_full_boolean": "mean"
@@ -51,7 +51,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -108,7 +108,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_underdelivered_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -164,7 +164,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_amount",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -461,8 +461,8 @@
         "descriptionTranslations": {},
         "displayName": "Replenishment Time Deviation",
         "displayNameTranslations": {
-            "de": "Wiederbeschaffungszeitenabweichung",
-            "en": "Replenishment Time Deviation"
+            "en": "Replenishment Time Deviation",
+            "de": "Wiederbeschaffungszeitenabweichung"
         },
         "groupByAggregations": {
             "optimate_purchasing_replenishment_deviation_days": "mean"
@@ -519,8 +519,8 @@
         "descriptionTranslations": {},
         "displayName": "On-Time Supplier Payments Rate",
         "displayNameTranslations": {
-            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen",
-            "en": "On-Time Supplier Payments Rate"
+            "en": "On-Time Supplier Payments Rate",
+            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_on_time_boolean": "mean"
@@ -563,7 +563,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_overdelivered_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -576,8 +576,8 @@
         "descriptionTranslations": {},
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time",
-            "de": "Prozessdauer Wareneingang"
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
         },
         "groupByAggregations": {
             "optimate_purchasing_goods_receipt_processing_time_days": "mean"

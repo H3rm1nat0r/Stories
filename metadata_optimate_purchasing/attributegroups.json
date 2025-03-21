@@ -5,64 +5,13 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Parking Lot",
         "displayNameTranslations": {
-            "de": "Parkplatz",
-            "en": "Parking Lot"
+            "en": "Parking Lot",
+            "de": "Parkplatz"
         },
         "isCoupled": false,
         "focusOrder": "",
-        "internalName": "optimate_purchasing_cockpit_parking_lot",
+        "internalName": "optimate_purchasing_parking_lot",
         "parentAttributeGroupInternalName": "optimate_purchasing_cockpit",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) In Full Delivery",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) In Full Delivery",
-            "de": "(Parking Lot) In Full Delivery"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_in_full_delivery",
-        "parentAttributeGroupInternalName": "optimate_purchasing_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) Delivery",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Delivery",
-            "de": "(Parking Lot) Delivery"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_delivery",
-        "parentAttributeGroupInternalName": "optimate_purchasing_cockpit_parking_lot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) Payment",
-        "displayNameTranslations": {
-            "de": "(Parking Lot) Payment",
-            "en": "(Parking Lot) Payment"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_payment",
-        "parentAttributeGroupInternalName": "optimate_purchasing_cockpit_parking_lot",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -90,8 +39,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "On Time in Full",
         "displayNameTranslations": {
-            "de": "P\u00fcnktlich und vollst\u00e4ndig",
-            "en": "On Time in Full"
+            "en": "On Time in Full",
+            "de": "P\u00fcnktlich und vollst\u00e4ndig"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -113,7 +62,7 @@
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_invoice_processing_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_payment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -124,13 +73,13 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Confirmation",
         "displayNameTranslations": {
-            "de": "(Parking Lot) Confirmation",
-            "en": "(Parking Lot) Confirmation"
+            "en": "(Parking Lot) Confirmation",
+            "de": "(Parking Lot) Confirmation"
         },
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_confirmation",
-        "parentAttributeGroupInternalName": "optimate_purchasing_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -141,8 +90,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Supplier Payments",
         "displayNameTranslations": {
-            "de": "Lieferantenzahlungen",
-            "en": "Supplier Payments"
+            "en": "Supplier Payments",
+            "de": "Lieferantenzahlungen"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -158,13 +107,13 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Order Preparation Time",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Order Preparation Time",
-            "de": "(Parking Lot) Order Preparation Time"
+            "de": "(Parking Lot) Order Preparation Time",
+            "en": "(Parking Lot) Order Preparation Time"
         },
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_preparation_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -190,15 +139,32 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
+        "displayName": "(Parking Lot) In Full Delivery",
+        "displayNameTranslations": {
+            "de": "(Parking Lot) In Full Delivery",
+            "en": "(Parking Lot) In Full Delivery"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Replenishment",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Replenishment",
-            "de": "(Parking Lot) Replenishment"
+            "de": "(Parking Lot) Replenishment",
+            "en": "(Parking Lot) Replenishment"
         },
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment",
-        "parentAttributeGroupInternalName": "optimate_purchasing_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -209,13 +175,47 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) On Time Delivery",
         "displayNameTranslations": {
-            "en": "(Parking Lot) On Time Delivery",
-            "de": "(Parking Lot) On Time Delivery"
+            "de": "(Parking Lot) On Time Delivery",
+            "en": "(Parking Lot) On Time Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_on_time_delivery",
-        "parentAttributeGroupInternalName": "optimate_purchasing_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(Parking Lot) Payment",
+        "displayNameTranslations": {
+            "de": "(Parking Lot) Payment",
+            "en": "(Parking Lot) Payment"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(Parking Lot) Delivery",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Delivery",
+            "de": "(Parking Lot) Delivery"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -226,8 +226,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Invoice Verification Processing Time",
         "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time",
-            "de": "Prozessdauer Rechnungskontrolle"
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Verification Processing Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -243,13 +243,13 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) OTIF",
         "displayNameTranslations": {
-            "de": "(Parking Lot) OTIF",
-            "en": "(Parking Lot) OTIF"
+            "en": "(Parking Lot) OTIF",
+            "de": "(Parking Lot) OTIF"
         },
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_otif",
-        "parentAttributeGroupInternalName": "optimate_purchasing_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -277,8 +277,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang",
-            "en": "Goods Receipt Processing Time"
+            "en": "Goods Receipt Processing Time",
+            "de": "Prozessdauer Wareneingang"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -300,7 +300,7 @@
         "isCoupled": false,
         "focusOrder": "",
         "internalName": "optimate_purchasing_on_time_payment",
-        "parentAttributeGroupInternalName": "optimate_purchasing_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_payment",
         "id": "",
         "projectId": "",
         "tenant": ""
