@@ -210,7 +210,7 @@
             {
                 "column": 1,
                 "columnSpan": 2,
-                "content": "optimate_purchasing_parking_lot_payments_deviation_too_early_rate,optimate_purchasing_parking_lot_payments_deviation_on_time_rate,optimate_purchasing_parking_lot_payments_deviation_too_late_rate",
+                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
                 "contentTranslations": {},
                 "id": "",
                 "row": 1,
