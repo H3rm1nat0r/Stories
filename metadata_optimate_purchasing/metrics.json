@@ -677,7 +677,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_confirmation_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_confirmation",
+        "parentAttributeGroupInternalName": "optimate_purchasing_order_confirmation_rate",
         "id": "",
         "projectId": "",
         "tenant": ""

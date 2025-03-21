@@ -283,12 +283,11 @@
         "containsSensitiveData": false,
         "dataType": "boolean",
         "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(O) Purchasing Order Confirmend (boolean)",
+        "descriptionTranslations": {},
+        "displayName": "Order Confirmation (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Order Confirmend (boolean)"
+            "en": "Order Confirmation (boolean)",
+            "de": "Auftragsbestätigung (boolean)"
         },
         "formula": "pur_order_line_amount_conf > 0",
         "groupByColumnInternalName": null,
@@ -297,7 +296,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_confirmend_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_confirmation",
+        "parentAttributeGroupInternalName": "optimate_purchasing_order_confirmation_rate",
         "id": "",
         "projectId": "",
         "tenant": ""
