@@ -182,13 +182,12 @@
         "columnType": "DefinedColumn",
         "containsSensitiveData": false,
         "dataType": "integer",
-        "description": "Deviation in days between expected replenishment time (defined in proalpha) and the real time the supplier needed to ship",
-        "descriptionTranslations": {
-            "en": "Deviation in days between expected replenishment time (defined in proalpha) and the real time the supplier needed to ship"
-        },
-        "displayName": "(O) Purchasing Replenishment Deviation (days)",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Replenishment Time Deviation (days)",
         "displayNameTranslations": {
-            "en": "(O) Purchasing Replenishment Deviation (days)"
+            "en": "Replenishment Time Deviation (days)",
+            "de": "Wiederbeschaffungszeitenabweichung (Tage)"
         },
         "formula": "part_replenishment_time - (pur_stock_rec_line_creation_date - pur_order_line_creation_date)",
         "groupByColumnInternalName": null,
@@ -197,7 +196,7 @@
         "unit": "days",
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment_time_deviation",
         "id": "",
         "projectId": "",
         "tenant": ""

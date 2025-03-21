@@ -477,7 +477,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_replenishment_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment_time_deviation",
         "id": "",
         "projectId": "",
         "tenant": ""
