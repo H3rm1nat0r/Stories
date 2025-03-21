@@ -20,9 +20,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch In Full Delivery",
+        "displayName": "(Parking Lot) In Full Delivery",
         "displayNameTranslations": {
-            "en": "(C) Purch In Full Delivery"
+            "en": "(Parking Lot) In Full Delivery",
+            "de": "(Parking Lot) In Full Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -36,9 +37,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch Delivery",
+        "displayName": "(Parking Lot) Delivery",
         "displayNameTranslations": {
-            "en": "(C) Purch Delivery"
+            "en": "(Parking Lot) Delivery",
+            "de": "(Parking Lot) Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -52,9 +54,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch Payment",
+        "displayName": "(Parking Lot) Payment",
         "displayNameTranslations": {
-            "en": "(C) Purch Payment"
+            "de": "(Parking Lot) Payment",
+            "en": "(Parking Lot) Payment"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -70,8 +73,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Overview",
         "displayNameTranslations": {
-            "de": "\u00dcbersicht",
-            "en": "Overview"
+            "en": "Overview",
+            "de": "\u00dcbersicht"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -87,8 +90,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "On Time in Full",
         "displayNameTranslations": {
-            "en": "On Time in Full",
-            "de": "P\u00fcnktlich und vollst\u00e4ndig"
+            "de": "P\u00fcnktlich und vollst\u00e4ndig",
+            "en": "On Time in Full"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -102,9 +105,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch Invoice Processing Time",
+        "displayName": "(Parking Lot) Invoice Processing Time",
         "displayNameTranslations": {
-            "en": "(C) Purch Invoice Processing Time"
+            "en": "(Parking Lot) Invoice Processing Time",
+            "de": "(Parking Lot) Invoice Processing Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -118,9 +122,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch Confirmation",
+        "displayName": "(Parking Lot) Confirmation",
         "displayNameTranslations": {
-            "en": "(C) Purch Confirmation"
+            "de": "(Parking Lot) Confirmation",
+            "en": "(Parking Lot) Confirmation"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -151,9 +156,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch Order Preparation Time",
+        "displayName": "(Parking Lot) Order Preparation Time",
         "displayNameTranslations": {
-            "en": "(C) Purch Order Preparation Time"
+            "en": "(Parking Lot) Order Preparation Time",
+            "de": "(Parking Lot) Order Preparation Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -169,8 +175,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "OptiMate Purchasing Cockpit",
         "displayNameTranslations": {
-            "de": "OptiMate Einkaufscockpit",
-            "en": "OptiMate Purchasing Cockpit"
+            "en": "OptiMate Purchasing Cockpit",
+            "de": "OptiMate Einkaufscockpit"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -184,9 +190,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch Replenishment",
+        "displayName": "(Parking Lot) Replenishment",
         "displayNameTranslations": {
-            "en": "(C) Purch Replenishment"
+            "en": "(Parking Lot) Replenishment",
+            "de": "(Parking Lot) Replenishment"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -200,9 +207,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch On Time Delivery",
+        "displayName": "(Parking Lot) On Time Delivery",
         "displayNameTranslations": {
-            "en": "(C) Purch On Time Delivery"
+            "en": "(Parking Lot) On Time Delivery",
+            "de": "(Parking Lot) On Time Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -233,9 +241,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch OTIF",
+        "displayName": "(Parking Lot) OTIF",
         "displayNameTranslations": {
-            "en": "(C) Purch OTIF"
+            "de": "(Parking Lot) OTIF",
+            "en": "(Parking Lot) OTIF"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -251,8 +260,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "DPO",
         "displayNameTranslations": {
-            "en": "DPO",
-            "de": "DPO"
+            "de": "DPO",
+            "en": "DPO"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -268,8 +277,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time",
-            "de": "Prozessdauer Wareneingang"
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -283,9 +292,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(C) Purch On Time Payment",
+        "displayName": "(Parking Lot) On Time Payment",
         "displayNameTranslations": {
-            "en": "(C) Purch On Time Payment"
+            "de": "(Parking Lot) On Time Payment",
+            "en": "(Parking Lot) On Time Payment"
         },
         "isCoupled": false,
         "focusOrder": "",

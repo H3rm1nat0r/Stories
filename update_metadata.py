@@ -51,16 +51,9 @@ logging.basicConfig(
 )
 
 um = UpdateMetadata()
-# um.MetaDataCreate("optimate")
-# um.MetaDataLoad("optimate")
-# um.MetaDataCreate("optimate_purchasing")
+um.MetaDataCreate("optimate_purchasing")
 # um.MetaDataCreate("optimate_sales")
-# um.MetaDataLoad("optimate_sales")
-# um.MetaDataLoad("optimate_sales")
-# um.MetaDataDelete("optimate")
-# um.MetaDataDelete("conservative")
 
-um.MetaDataLoad("optimate")
 um.MetaDataLoad("optimate_purchasing")
-um.MetaDataLoad("optimate_sales")
+# um.MetaDataLoad("optimate_sales")
 

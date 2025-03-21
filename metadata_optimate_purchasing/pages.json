@@ -73,7 +73,7 @@
         "hideIfColumns": [],
         "internalName": "optimate_purchasing_parking_lot",
         "numberOfColumns": 4,
-        "numberOfRows": 3,
+        "numberOfRows": 5,
         "showIfColumns": [],
         "visuals": [
             {
@@ -98,6 +98,16 @@
             },
             {
                 "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_order_preparation_time_on_time_rate,optimate_purchasing_order_preparation_time_too_high_rate,optimate_purchasing_order_preparation_time_too_low_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 5,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
                 "columnSpan": 1,
                 "content": "optimate_purchasing_invoice_processing_time_on_time_rate",
                 "contentTranslations": {},
@@ -113,6 +123,16 @@
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_order_preparation_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 5,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
@@ -143,6 +163,16 @@
                 "contentTranslations": {},
                 "id": "",
                 "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_replenishment_deviation_too_low_rate,optimate_purchasing_replenishment_deviation_too_high_rate,optimate_purchasing_replenishment_deviation_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 4,
                 "rowSpan": 1,
                 "type": "Prediction"
             }
@@ -214,8 +244,8 @@
         },
         "hideIfColumns": [],
         "internalName": "optimate_purchasing_cockpit_otif",
-        "numberOfColumns": 4,
-        "numberOfRows": 4,
+        "numberOfColumns": 3,
+        "numberOfRows": 2,
         "showIfColumns": [],
         "visuals": [
             {
@@ -234,17 +264,17 @@
                 "content": "optimate_purchasing_order_confirmation_rate",
                 "contentTranslations": {},
                 "id": "",
-                "row": 4,
+                "row": 2,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
             {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_purchasing_replenishment_deviation_on_time_rate,optimate_purchasing_replenishment_deviation_too_high_rate,optimate_purchasing_replenishment_deviation_too_low_rate",
+                "column": 3,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_replenishment_deviation_days",
                 "contentTranslations": {},
                 "id": "",
-                "row": 2,
+                "row": 1,
                 "rowSpan": 1,
                 "type": "Prediction"
             },
@@ -259,42 +289,12 @@
                 "type": "Prediction"
             },
             {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_order_preparation_time_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 3,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 1,
-                "columnSpan": 3,
-                "content": "optimate_purchasing_order_preparation_time_on_time_rate,optimate_purchasing_order_preparation_time_too_high_rate,optimate_purchasing_order_preparation_time_too_low_rate",
-                "contentTranslations": {},
-                "id": "",
-                "row": 3,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
-                "column": 4,
-                "columnSpan": 1,
-                "content": "optimate_purchasing_replenishment_deviation_days",
-                "contentTranslations": {},
-                "id": "",
-                "row": 2,
-                "rowSpan": 1,
-                "type": "Prediction"
-            },
-            {
                 "column": 2,
                 "columnSpan": 1,
                 "content": "optimate_purchasing_order_lead_time_days",
                 "contentTranslations": {},
                 "id": "",
-                "row": 4,
+                "row": 2,
                 "rowSpan": 1,
                 "type": "Prediction"
             }
