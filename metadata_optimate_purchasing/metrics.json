@@ -655,8 +655,8 @@
         "tenant": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_days",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_days)",
+        "aggregateBy": "optimate_purchasing_deliveries_deviation_days",
+        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_days)",
         "dateColumn": "pur_order_doc_date",
         "description": "",
         "descriptionTranslations": {},
@@ -665,7 +665,7 @@
             "en": "(Parking Lot) Del Dev (days)"
         },
         "groupByAggregations": {
-            "optimate_purchasing_parking_lot_deliveries_deviation_days": "mean"
+            "optimate_purchasing_deliveries_deviation_days": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": false,

@@ -37,7 +37,7 @@
         "displayNameTranslations": {
             "en": "(Parking Lot) Purchasing Deliveries Deviation Too Late (boolean)"
         },
-        "formula": "optimate_purchasing_parking_lot_deliveries_deviation_days < 0",
+        "formula": "optimate_purchasing_deliveries_deviation_days < 0",
         "groupByColumnInternalName": null,
         "importName": "",
         "stringSize": null,
@@ -62,7 +62,7 @@
         "displayNameTranslations": {
             "en": "(Parking Lot) Purchasing Deliveries Deviation Too Early (boolean)"
         },
-        "formula": "optimate_purchasing_parking_lot_deliveries_deviation_days > 0",
+        "formula": "optimate_purchasing_deliveries_deviation_days > 0",
         "groupByColumnInternalName": null,
         "importName": "",
         "stringSize": null,
@@ -444,7 +444,7 @@
         "stringSize": 128,
         "unit": "days",
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_days",
+        "internalName": "optimate_purchasing_deliveries_deviation_days",
         "parentAttributeGroupInternalName": "optimate_purchasing_on_time_sourcing_rate_ot",
         "id": "",
         "projectId": "",
@@ -541,7 +541,7 @@
             "de": "Einkaufstermintreue (boolean)",
             "en": "On-Time Sourcing (boolean)"
         },
-        "formula": "optimate_purchasing_parking_lot_deliveries_deviation_days >= 0",
+        "formula": "optimate_purchasing_deliveries_deviation_days >= 0",
         "groupByColumnInternalName": null,
         "importName": "",
         "stringSize": null,
