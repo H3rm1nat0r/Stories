@@ -71,7 +71,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_too_late_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -96,7 +96,7 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_too_early_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""

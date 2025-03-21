@@ -22,7 +22,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -448,7 +448,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -761,7 +761,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_delivery",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""

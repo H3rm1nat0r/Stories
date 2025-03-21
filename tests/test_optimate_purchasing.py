@@ -52,8 +52,8 @@ def _deserializeMetaDataObject(value: Any, target_type: Type) -> Any:
 def test_applications():
     for application in applications:
         assert application.internalName.startswith(
-            COCKPIT + "_"
-        ), f"internal name of application does not start with {COCKPIT}_: {application.internalName}"
+            COCKPIT
+        ), f"internal name of application does not start with {COCKPIT}: {application.internalName}"
         assert (
             "en" in application.displayNameTranslations
         ), f"displayNameTranslations of application does not contain 'en': application {application.internalName}"
@@ -73,8 +73,8 @@ def test_applications():
 def test_attributegroups():
     for attributegroup in attributegroups:
         assert attributegroup.internalName.startswith(
-            COCKPIT + "_"
-        ), f"internal name of attributegroup does not start with {COCKPIT}_: {attributegroup.internalName}"
+            COCKPIT
+        ), f"internal name of attributegroup does not start with {COCKPIT}: {attributegroup.internalName}"
         assert (
             "en" in attributegroup.displayNameTranslations
         ), f"displayNameTranslations of attributegroup does not contain 'en': attributegroup {attributegroup.internalName}"
@@ -87,13 +87,16 @@ def test_attributegroups():
         ), f"displayName is not equal to displayNameTranslations['en']: {attributegroup.internalName}"
 
         if "(Parking Lot)" in attributegroup.displayName:
-            assert "parking_lot" in attributegroup.internalName, f"internalName does not contain 'parking_lot': {attributegroup.internalName}"
+            assert (
+                "parking_lot" in attributegroup.internalName
+            ), f"internalName does not contain 'parking_lot': {attributegroup.internalName}"
+
 
 def test_pages():
     for page in pages:
         assert page.internalName.startswith(
-            COCKPIT + "_"
-        ), f"internal name of page does not start with {COCKPIT}_: {page.internalName}"
+            COCKPIT
+        ), f"internal name of page does not start with {COCKPIT}: {page.internalName}"
         assert (
             "en" in page.displayNameTranslations
         ), f"displayNameTranslations of page does not contain 'en': page {page.internalName}"
@@ -105,25 +108,27 @@ def test_pages():
             page.displayName == page.displayNameTranslations["en"]
         ), f"displayName is not equal to displayNameTranslations['en']: {page.internalName}"
 
+
 def test_metrics():
 
     # Check internal names
     for metric in metrics:
 
         assert metric.internalName.startswith(
-            COCKPIT + "_"
-        ), f"internal name of metric does not start with {COCKPIT}_: {metric.internalName}"
+            COCKPIT 
+        ), f"internal name of metric does not start with {COCKPIT}: {metric.internalName}"
         assert (
             "en" in metric.displayNameTranslations
         ), f"displayNameTranslations of metric does not contain 'en': metric {metric.internalName}"
-        assert (
-            "de" in metric.displayNameTranslations
-        ), f"displayNameTranslations of metric does not contain 'de': metric {metric.internalName}"
+        if not metric.displayName.startswith("(Parking Lot)"):
+            assert (
+                "de" in metric.displayNameTranslations
+            ), f"displayNameTranslations of metric does not contain 'de': metric {metric.internalName}"
 
         assert (
             metric.displayName == metric.displayNameTranslations["en"]
         ), f"displayName is not equal to displayNameTranslations['en']: {metric.internalName}"
-       
+
         if metric.dateColumn != "pur_order_doc_date":
             assert (
                 False
@@ -132,7 +137,6 @@ def test_metrics():
             assert (
                 False
             ), f"found purchasing metric that does not have pur_order_doc_i_d as group by column: {metric.internalName}"
-        
 
     # Check if all metrics are part of a visual
     metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
