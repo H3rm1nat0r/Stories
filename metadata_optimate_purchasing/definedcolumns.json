@@ -10,8 +10,8 @@
         },
         "displayName": "On-Time Sourcing (days)",
         "displayNameTranslations": {
-            "de": "Einkaufstermintreue (Tage)",
-            "en": "On-Time Sourcing (days)"
+            "en": "On-Time Sourcing (days)",
+            "de": "Einkaufstermintreue (Tage)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_delivery_date",
         "groupByColumnInternalName": null,
@@ -36,8 +36,8 @@
         },
         "displayName": "Invoice Verification Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time On-Time (boolean)",
-            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)"
+            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)",
+            "en": "Invoice Verification Processing Time On-Time (boolean)"
         },
         "formula": "optimate_purchasing_invoice_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -137,8 +137,8 @@
         },
         "displayName": "Goods Receipt Processing Time (days)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang (Tage)",
-            "en": "Goods Receipt Processing Time (days)"
+            "en": "Goods Receipt Processing Time (days)",
+            "de": "Prozessdauer Wareneingang (Tage)"
         },
         "formula": "pur_stock_rec_line_creation_date-pur_stock_rec_doc_date",
         "groupByColumnInternalName": null,
@@ -286,7 +286,7 @@
         "displayName": "Order Confirmation (boolean)",
         "displayNameTranslations": {
             "en": "Order Confirmation (boolean)",
-            "de": "Auftragsbestätigung (boolean)"
+            "de": "Auftragsbest\u00e4tigung (boolean)"
         },
         "formula": "pur_order_line_amount_conf > 0",
         "groupByColumnInternalName": null,
@@ -362,8 +362,8 @@
         },
         "displayName": "Invoice Verification Processing Time (days)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle (Tage)",
-            "en": "Invoice Verification Processing Time (days)"
+            "en": "Invoice Verification Processing Time (days)",
+            "de": "Prozessdauer Rechnungskontrolle (Tage)"
         },
         "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
         "groupByColumnInternalName": null,
@@ -461,8 +461,8 @@
         },
         "displayName": "Goods Receipt Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)",
-            "en": "Goods Receipt Processing Time On-Time (boolean)"
+            "en": "Goods Receipt Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)"
         },
         "formula": "optimate_purchasing_goods_receipt_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -512,8 +512,8 @@
         },
         "displayName": "On-Time Sourcing (boolean)",
         "displayNameTranslations": {
-            "de": "Einkaufstermintreue (boolean)",
-            "en": "On-Time Sourcing (boolean)"
+            "en": "On-Time Sourcing (boolean)",
+            "de": "Einkaufstermintreue (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_days >= 0",
         "groupByColumnInternalName": null,

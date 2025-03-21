@@ -5,8 +5,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Order Confirmation Rate",
         "displayNameTranslations": {
-            "en": "Order Confirmation Rate",
-            "de": "Auftragsbest\u00e4tigungsquote"
+            "de": "Auftragsbest\u00e4tigungsquote",
+            "en": "Order Confirmation Rate"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -22,8 +22,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Parking Lot",
         "displayNameTranslations": {
-            "en": "Parking Lot",
-            "de": "Parkplatz"
+            "de": "Parkplatz",
+            "en": "Parking Lot"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -71,40 +71,6 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) Invoice Processing Time",
-        "displayNameTranslations": {
-            "de": "(Parking Lot) Invoice Processing Time",
-            "en": "(Parking Lot) Invoice Processing Time"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_payment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) Confirmation",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Confirmation",
-            "de": "(Parking Lot) Confirmation"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_confirmation",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
         "displayName": "Supplier Payments",
         "displayNameTranslations": {
             "de": "Lieferantenzahlungen",
@@ -124,8 +90,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Order Preparation Time",
         "displayNameTranslations": {
-            "de": "(Parking Lot) Order Preparation Time",
-            "en": "(Parking Lot) Order Preparation Time"
+            "en": "(Parking Lot) Order Preparation Time",
+            "de": "(Parking Lot) Order Preparation Time"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -158,8 +124,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) In Full Delivery",
         "displayNameTranslations": {
-            "de": "(Parking Lot) In Full Delivery",
-            "en": "(Parking Lot) In Full Delivery"
+            "en": "(Parking Lot) In Full Delivery",
+            "de": "(Parking Lot) In Full Delivery"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -175,8 +141,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Replenishment Time Deviation",
         "displayNameTranslations": {
-            "de": "Wiederbeschaffungszeitenabweichung",
-            "en": "Replenishment Time Deviation"
+            "en": "Replenishment Time Deviation",
+            "de": "Wiederbeschaffungszeitenabweichung"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -224,23 +190,6 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) Payment",
-        "displayNameTranslations": {
-            "de": "(Parking Lot) Payment",
-            "en": "(Parking Lot) Payment"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_payment",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
         "displayName": "(Parking Lot) Delivery",
         "displayNameTranslations": {
             "de": "(Parking Lot) Delivery",
@@ -260,8 +209,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Invoice Verification Processing Time",
         "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle",
-            "en": "Invoice Verification Processing Time"
+            "en": "Invoice Verification Processing Time",
+            "de": "Prozessdauer Rechnungskontrolle"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -311,8 +260,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "Procurement Lead Time (PLT)",
         "displayNameTranslations": {
-            "de": "Bestellvorlaufzeit",
-            "en": "Procurement Lead Time (PLT)"
+            "en": "Procurement Lead Time (PLT)",
+            "de": "Bestellvorlaufzeit"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -326,27 +275,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) OTIF",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) OTIF",
-            "de": "(Parking Lot) OTIF"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_otif",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang",
-            "en": "Goods Receipt Processing Time"
+            "en": "Goods Receipt Processing Time",
+            "de": "Prozessdauer Wareneingang"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -360,27 +292,10 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "(Parking Lot) On Time Payment",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) On Time Payment",
-            "de": "(Parking Lot) On Time Payment"
-        },
-        "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_on_time_payment",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_payment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "attributeGroupType": "Standard",
-        "defaultMetricGroup": false,
-        "defaultDefinedColumnGroup": false,
         "displayName": "Overview",
         "displayNameTranslations": {
-            "en": "Overview",
-            "de": "\u00dcbersicht"
+            "de": "\u00dcbersicht",
+            "en": "Overview"
         },
         "isCoupled": false,
         "focusOrder": "",
@@ -396,8 +311,8 @@
         "defaultDefinedColumnGroup": false,
         "displayName": "OptiMate Purchasing",
         "displayNameTranslations": {
-            "de": "OptiMate Einkauf",
-            "en": "OptiMate Purchasing"
+            "en": "OptiMate Purchasing",
+            "de": "OptiMate Einkauf"
         },
         "isCoupled": false,
         "focusOrder": "",

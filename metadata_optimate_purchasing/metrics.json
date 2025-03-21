@@ -35,8 +35,8 @@
         "descriptionTranslations": {},
         "displayName": "In-Full Sourcing Rate (IF)",
         "displayNameTranslations": {
-            "en": "In-Full Sourcing Rate (IF)",
-            "de": "Einkaufsmengentreue"
+            "de": "Einkaufsmengentreue",
+            "en": "In-Full Sourcing Rate (IF)"
         },
         "groupByAggregations": {
             "optimate_purchasing_deliveries_deviation_in_full_boolean": "mean"
@@ -206,8 +206,8 @@
         "descriptionTranslations": {},
         "displayName": "Procurement Lead Time (PLT)",
         "displayNameTranslations": {
-            "de": "Bestellvorlaufzeit",
-            "en": "Procurement Lead Time (PLT)"
+            "en": "Procurement Lead Time (PLT)",
+            "de": "Bestellvorlaufzeit"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_lead_time_days": "mean"
@@ -391,7 +391,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_payment",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -576,8 +576,8 @@
         "descriptionTranslations": {},
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time",
-            "de": "Prozessdauer Wareneingang"
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
         },
         "groupByAggregations": {
             "optimate_purchasing_goods_receipt_processing_time_days": "mean"
@@ -661,8 +661,8 @@
         "descriptionTranslations": {},
         "displayName": "Order Confirmation Rate",
         "displayNameTranslations": {
-            "de": "Auftragsbest\u00e4tigungsquote",
-            "en": "Order Confirmation Rate"
+            "en": "Order Confirmation Rate",
+            "de": "Auftragsbest\u00e4tigungsquote"
         },
         "groupByAggregations": {
             "optimate_purchasing_order_confirmend_boolean": "mean"
@@ -705,7 +705,7 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_invoice_processing_time_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
         "id": "",
         "projectId": "",
         "tenant": ""
