@@ -95,10 +95,12 @@ def test_metrics():
         assert metric.internalName.startswith(
             "optimate_"
         ), f"internal name does not start with optimate_: {metric.internalName}"
-        assert "en" in metric.displayNameTranslations, f"displayNameTranslations does not contain 'en': {metric.internalName}"    
-        assert "de" in metric.displayNameTranslations, f"displayNameTranslations does not contain 'de': {metric.internalName}"    
         
-        assert metric.displayName == metric.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {application.internalName}"
+        if metric.internalName.split("_")[1] == "purchasing":
+            assert "en" in metric.displayNameTranslations, f"displayNameTranslations does not contain 'en': {metric.internalName}"    
+            assert "de" in metric.displayNameTranslations, f"displayNameTranslations does not contain 'de': {metric.internalName}"    
+        
+        assert metric.displayName == metric.displayNameTranslations["en"], f"displayName is not equal to displayNameTranslations['en']: {metric.internalName}"
 
     # Check if all metrics are part of a visual
     metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]

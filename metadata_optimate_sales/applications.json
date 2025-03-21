@@ -1,0 +1,38 @@
+[
+    {
+        "active": true,
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "OptiMate Sales Cockpit",
+        "displayNameTranslations": {
+            "en": "OptiMate Sales Cockpit",
+            "de": "OptiMate Vertriebscockpit"
+        },
+        "download": "",
+        "forecasts": [],
+        "formatCompact": false,
+        "internalName": "optimate_sales_cockpit",
+        "links": [],
+        "models": [],
+        "pages": [
+            {
+                "order": 0,
+                "page": "optimate_sales_cockpit_overview"
+            },
+            {
+                "order": 1,
+                "page": "optimate_sales_cockpit_dso"
+            },
+            {
+                "order": 2,
+                "page": "optimate_sales_cockpit_fot"
+            }
+        ],
+        "scopeName": "",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]

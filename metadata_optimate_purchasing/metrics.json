@@ -1,33 +1,5 @@
 [
     {
-        "aggregateBy": "optimate_global_payments_deviation_on_time_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_on_time_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation On Time Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation On Time Rate"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_on_time_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_payments_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_payment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
         "aggregateBy": "optimate_purchasing_deliveries_deviation_too_late_boolean",
         "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_too_late_boolean)",
         "dateColumn": "pur_order_doc_date",
@@ -51,34 +23,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_too_late_rate",
         "parentAttributeGroupInternalName": "optimate_purchasing_on_time_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_days",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_days)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation (days)",
-        "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation (days)"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_days": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_payments_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_payment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -108,63 +52,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
         "parentAttributeGroupInternalName": "optimate_purchasing_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_too_late_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_too_late_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation Too Late Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation Too Late Rate"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_too_late_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_payments_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_payment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "order_doc_i_d",
-        "aggregateFunction": "mean(order_doc_total_net_corp_cur)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales AOV",
-        "displayNameTranslations": {
-            "en": "(C) Sales AOV"
-        },
-        "groupByAggregations": {
-            "order_doc_total_net_corp_cur": "mean",
-            "order_doc_i_d": "max"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "currency",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_aov",
-        "parentAttributeGroupInternalName": "optimate_sales_aov",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -222,62 +109,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_underdelivered_rate",
         "parentAttributeGroupInternalName": "optimate_purchasing_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_amount",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_amount)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev (amount)",
-        "displayNameTranslations": {
-            "en": "(C) Sales Del Dev (amount)"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_amount": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_deliveries_deviation_amount",
-        "parentAttributeGroupInternalName": "optimate_sales_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_overdelivered_boolean",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_overdelivered_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Overdelivered Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Overdelivered Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_overdelivered_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_deliveries_deviation_overdelivered_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -453,90 +284,6 @@
         "tenant": ""
     },
     {
-        "aggregateBy": "optimate_sales_deliveries_deviation_too_late_boolean",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_too_late_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Too Late Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Too Late Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_too_late_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_deliveries_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_on_time_boolean",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_on_time_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales On Time Delivery Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales On Time Delivery Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_on_time_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_on_time_delivery_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_fulfillment_on_time_fot_boolean",
-        "aggregateFunction": "mean(optimate_sales_fulfillment_on_time_fot_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales FOT Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales FOT Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_fulfillment_on_time_fot_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_fot_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_fulfillment_on_time_fot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
         "aggregateBy": "optimate_purchasing_order_preparation_time_days",
         "aggregateFunction": "mean(optimate_purchasing_order_preparation_time_days)",
         "dateColumn": "pur_order_doc_date",
@@ -560,62 +307,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_preparation_time_days",
         "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_days",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_days)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev (days)",
-        "displayNameTranslations": {
-            "en": "(C) Sales Del Dev (days)"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_days": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_deliveries_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_invoice_dunned",
-        "aggregateFunction": "mean(optimate_sales_invoice_dunned)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Dunning Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Dunning Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_invoice_dunned": "max"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_dunning_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_payment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -678,34 +369,6 @@
         "tenant": ""
     },
     {
-        "aggregateBy": "optimate_sales_payment_terms_days",
-        "aggregateFunction": "mean(optimate_sales_payment_terms_days)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Payment Terms (days)",
-        "displayNameTranslations": {
-            "en": "(C) Sales Payment Terms (days)"
-        },
-        "groupByAggregations": {
-            "optimate_sales_payment_terms_days": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_payment_terms_days",
-        "parentAttributeGroupInternalName": "optimate_sales_payment_terms",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
         "aggregateBy": "optimate_global_payments_deviation_days",
         "aggregateFunction": "mean(optimate_global_payments_deviation_days)",
         "dateColumn": "pur_order_doc_date",
@@ -758,63 +421,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_invoice_processing_time",
         "parentAttributeGroupInternalName": "optimate_purchasing_invoice_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "order_doc_i_d",
-        "aggregateFunction": "mean(optimate_sales_order_processing_time_opt_days)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Order Processing Time (days)",
-        "displayNameTranslations": {
-            "en": "(C) Sales Order Processing Time (days)"
-        },
-        "groupByAggregations": {
-            "order_doc_i_d": "max",
-            "optimate_sales_order_processing_time_opt_days": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "currency",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_order_processing_time_days",
-        "parentAttributeGroupInternalName": "optimate_sales_aov",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_underdelivered_boolean",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_underdelivered_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Underdelivered Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Underdelivered Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_underdelivered_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_deliveries_deviation_underdelivered_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_in_full_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -901,62 +507,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation_too_early_rate",
         "parentAttributeGroupInternalName": "optimate_purchasing_on_time_payment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_goods_receipt_processing_time_ontimeboolean",
-        "aggregateFunction": "mean(optimate_sales_goods_receipt_processing_time_ontimeboolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales On Time Goods Receipt Processing Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales On Time Goods Receipt Processing Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_goods_receipt_processing_time_ontimeboolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_on_time_goods_receipt_processing_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_goods_receipt_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_too_early_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_too_early_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Payments Deviation Too Early Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Payments Deviation Too Early Rate"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_too_early_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_payments_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_payment",
         "id": "",
         "projectId": "",
         "tenant": ""
@@ -1133,91 +683,6 @@
         "tenant": ""
     },
     {
-        "aggregateBy": "order_doc_i_d",
-        "aggregateFunction": "mean(optimate_sales_order_lead_time_olt_days)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Order Lead Time (days)",
-        "displayNameTranslations": {
-            "en": "(C) Sales Order Lead Time (days)"
-        },
-        "groupByAggregations": {
-            "order_doc_i_d": "max",
-            "optimate_sales_order_lead_time_olt_days": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "currency",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_order_lead_time_days",
-        "parentAttributeGroupInternalName": "optimate_sales_aov",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_goods_receipt_processing_time_days",
-        "aggregateFunction": "mean(optimate_sales_goods_receipt_processing_time_days)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Goods Receipt Processing Time",
-        "displayNameTranslations": {
-            "en": "(C) Sales Goods Receipt Processing Time"
-        },
-        "groupByAggregations": {
-            "optimate_sales_goods_receipt_processing_time_days": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_goods_receipt_processing_time",
-        "parentAttributeGroupInternalName": "optimate_sales_goods_receipt_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_in_full_boolean",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_in_full_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales In Full Delivery Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales In Full Delivery Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_in_full_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_in_full_delivery_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
         "aggregateBy": "optimate_purchasing_invoice_processing_time_ontimeboolean",
         "aggregateFunction": "mean(optimate_purchasing_invoice_processing_time_ontimeboolean)",
         "dateColumn": "pur_order_doc_date",
@@ -1241,34 +706,6 @@
         "focusOrder": "",
         "internalName": "optimate_purchasing_invoice_processing_time_on_time_rate",
         "parentAttributeGroupInternalName": "optimate_purchasing_invoice_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_sales_deliveries_deviation_too_early_boolean",
-        "aggregateFunction": "mean(optimate_sales_deliveries_deviation_too_early_boolean)",
-        "dateColumn": "invoice_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(C) Sales Del Dev Too Early Rate",
-        "displayNameTranslations": {
-            "en": "(C) Sales Del Dev Too Early Rate"
-        },
-        "groupByAggregations": {
-            "optimate_sales_deliveries_deviation_too_early_boolean": "mean"
-        },
-        "groupByColumn": "invoice_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_sales_deliveries_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "optimate_sales_on_time_delivery",
         "id": "",
         "projectId": "",
         "tenant": ""

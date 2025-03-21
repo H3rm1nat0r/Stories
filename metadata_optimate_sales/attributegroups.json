@@ -1,0 +1,195 @@
+[
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales On Time Payment",
+        "displayNameTranslations": {
+            "en": "(C) Sales On Time Payment"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_on_time_payment",
+        "parentAttributeGroupInternalName": "optimate_sales_payment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales AOV",
+        "displayNameTranslations": {
+            "en": "(C) Sales AOV"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_aov",
+        "parentAttributeGroupInternalName": "optimate_sales_payment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Payment",
+        "displayNameTranslations": {
+            "en": "(C) Sales Payment"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_payment",
+        "parentAttributeGroupInternalName": "optimate_sales",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Order Lead Time (OLT)",
+        "displayNameTranslations": {
+            "en": "(C) Sales Order Lead Time (OLT)"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_order_lead_time_olt",
+        "parentAttributeGroupInternalName": "optimate_sales_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "OptiMate Sales Cockpit",
+        "displayNameTranslations": {
+            "en": "OptiMate Sales Cockpit",
+            "de": "OptiMate Vertriebscockpit"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Delivery",
+        "displayNameTranslations": {
+            "en": "(C) Sales Delivery"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_delivery",
+        "parentAttributeGroupInternalName": "optimate_sales",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales On Time Delivery",
+        "displayNameTranslations": {
+            "en": "(C) Sales On Time Delivery"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_on_time_delivery",
+        "parentAttributeGroupInternalName": "optimate_sales_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Fulfillment On Time (FOT)",
+        "displayNameTranslations": {
+            "en": "(C) Sales Fulfillment On Time (FOT)"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_fulfillment_on_time_fot",
+        "parentAttributeGroupInternalName": "optimate_sales_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Payment Terms",
+        "displayNameTranslations": {
+            "en": "(C) Sales Payment Terms"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_payment_terms",
+        "parentAttributeGroupInternalName": "optimate_sales_payment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Goods Receipt Processing Time",
+        "displayNameTranslations": {
+            "en": "(C) Sales Goods Receipt Processing Time"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_goods_receipt_processing_time",
+        "parentAttributeGroupInternalName": "optimate_sales_payment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales In Full Delivery",
+        "displayNameTranslations": {
+            "en": "(C) Sales In Full Delivery"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_in_full_delivery",
+        "parentAttributeGroupInternalName": "optimate_sales_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "(C) Sales Order Processing Time (OPT)",
+        "displayNameTranslations": {
+            "en": "(C) Sales Order Processing Time (OPT)"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_sales_order_processing_time_opt",
+        "parentAttributeGroupInternalName": "optimate_sales_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]

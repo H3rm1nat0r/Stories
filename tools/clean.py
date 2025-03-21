@@ -14,7 +14,7 @@ def _load_data_from_json(file: str, cls: Type[T]) -> List[T]:
     Loads JSON data from a file and converts it into a list of DataClass instances,
     handling nested structures recursively.
     """
-    path = Path(".") / "metadata_conservative" / f"{file}.json"
+    path = Path(".") / "metadata_optimate" / f"{file}.json"
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -45,18 +45,19 @@ def _deserializeMetaDataObject(value: Any, target_type: Type) -> Any:
     return value  # Primitive values
 
 def _export_data_to_json(file: str, data):
-    path = Path(".") / "metadata_conservative" / f"{file}.json"
+    path = Path(".") / "metadata_optimate" / f"{file}.json"
     with open(path, "w", encoding="utf-8") as file:
         json.dump(
             [element.to_dict() for element in data], file, indent=4, ensure_ascii=True
         )
 
-path = Path(".") / "metadata_conservative" / "metrics.json"
+path = Path(".") / "metadata_optimate" / "metrics.json"
 
 metrics = _load_data_from_json("metrics", Metric)
     
 for metric in metrics:
-    metric.displayName = metric.displayName.replace("  ", " ")
+    metric.description = ""
+    metric.descriptionTranslations = {} 
     
 _export_data_to_json("metrics", metrics)
 
