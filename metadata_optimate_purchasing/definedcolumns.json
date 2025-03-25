@@ -135,8 +135,8 @@
         },
         "displayName": "Invoice Verification Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)",
-            "en": "Invoice Verification Processing Time On-Time (boolean)"
+            "en": "Invoice Verification Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)"
         },
         "formula": "optimate_purchasing_invoice_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -210,8 +210,8 @@
         "descriptionTranslations": {},
         "displayName": "Replenishment Time Deviation (days)",
         "displayNameTranslations": {
-            "en": "Replenishment Time Deviation (days)",
-            "de": "Wiederbeschaffungszeitenabweichung (Tage)"
+            "de": "Wiederbeschaffungszeitenabweichung (Tage)",
+            "en": "Replenishment Time Deviation (days)"
         },
         "formula": "part_replenishment_time - (pur_stock_rec_line_creation_date - pur_order_line_creation_date)",
         "groupByColumnInternalName": null,
@@ -261,8 +261,8 @@
         },
         "displayName": "On-Time Sourcing (days)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing (days)",
-            "de": "Einkaufstermintreue (Tage)"
+            "de": "Einkaufstermintreue (Tage)",
+            "en": "On-Time Sourcing (days)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_delivery_date",
         "groupByColumnInternalName": null,
@@ -310,8 +310,8 @@
         "descriptionTranslations": {},
         "displayName": "Order Confirmation (boolean)",
         "displayNameTranslations": {
-            "en": "Order Confirmation (boolean)",
-            "de": "Auftragsbest\u00e4tigung (boolean)"
+            "de": "Auftragsbest\u00e4tigung (boolean)",
+            "en": "Order Confirmation (boolean)"
         },
         "formula": "pur_order_line_amount_conf > 0",
         "groupByColumnInternalName": null,
@@ -336,8 +336,8 @@
         },
         "displayName": "Procurement Lead Time (PLT) (days)",
         "displayNameTranslations": {
-            "de": "Bestellvorlaufzeit (Tage)",
-            "en": "Procurement Lead Time (PLT) (days)"
+            "en": "Procurement Lead Time (PLT) (days)",
+            "de": "Bestellvorlaufzeit (Tage)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
         "groupByColumnInternalName": null,
@@ -462,8 +462,8 @@
         },
         "displayName": "Goods Receipt Processing Time On-Time (boolean)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)",
-            "en": "Goods Receipt Processing Time On-Time (boolean)"
+            "en": "Goods Receipt Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)"
         },
         "formula": "optimate_purchasing_goods_receipt_processing_time_days == 0",
         "groupByColumnInternalName": null,
@@ -514,8 +514,8 @@
         },
         "displayName": "On-Time Sourcing (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing (boolean)",
-            "de": "Einkaufstermintreue (boolean)"
+            "de": "Einkaufstermintreue (boolean)",
+            "en": "On-Time Sourcing (boolean)"
         },
         "formula": "optimate_purchasing_deliveries_deviation_days >= 0",
         "groupByColumnInternalName": null,
@@ -538,8 +538,8 @@
         "descriptionTranslations": {},
         "displayName": "In-Full Sourcing Deviation (amount)",
         "displayNameTranslations": {
-            "en": "In-Full Sourcing Deviation (amount)",
-            "de": "Einkaufsmengentreue Abweichung (Menge)"
+            "de": "Einkaufsmengentreue Abweichung (Menge)",
+            "en": "In-Full Sourcing Deviation (amount)"
         },
         "formula": "pur_order_line_qty-pur_stock_rec_line_qty",
         "groupByColumnInternalName": null,

@@ -1,6 +1,7 @@
 from configparser import ConfigParser
 import logging
 from nemo_library import NemoLibrary
+from nemo_library.utils.utils import FilterType, FilterValue
 
 # Configure logging
 logging.basicConfig(
@@ -9,10 +10,10 @@ logging.basicConfig(
 
 PROJECT_NAME = "Business Processes"
 customers = [
-    # "amf",
-    # "pirlo",
-    # "emz",
-    # "wipotec",
+    "amf",
+    "pirlo",
+    "emz",
+    "wipotec",
     "proalpha",
 ]
 
@@ -32,5 +33,43 @@ for customer in customers:
         password=password,
         environment=environment,
     )
-    nl.MetaDataDelete(projectname=PROJECT_NAME, prefix="(Conservative)")
-    nl.MetaDataCreate(projectname=PROJECT_NAME, prefix="(C)")
+    nl.MetaDataDelete(
+        projectname=PROJECT_NAME,
+        filter="(Conservative)",
+        filter_type=FilterType.STARTSWITH,
+        filter_value=FilterValue.DISPLAYNAME,
+    )
+    nl.MetaDataDelete(
+        projectname=PROJECT_NAME,
+        filter="(C)",
+        filter_type=FilterType.STARTSWITH,
+        filter_value=FilterValue.DISPLAYNAME,
+    )
+
+    nl = NemoLibrary(
+        tenant=tenant,
+        userid=userid,
+        password=password,
+        environment=environment,
+        metadata="./metadata_optimate_purchasing"
+    )
+    nl.MetaDataCreate(
+        projectname=PROJECT_NAME,
+        filter="optimate_purchasing",
+        filter_type=FilterType.STARTSWITH,
+        filter_value=FilterValue.DISPLAYNAME,
+    )
+
+    nl = NemoLibrary(
+        tenant=tenant,
+        userid=userid,
+        password=password,
+        environment=environment,
+        metadata="./metadata_optimate_global"
+    )
+    nl.MetaDataCreate(
+        projectname=PROJECT_NAME,
+        filter="optimate_global",
+        filter_type=FilterType.STARTSWITH,
+        filter_value=FilterValue.DISPLAYNAME,
+    )
