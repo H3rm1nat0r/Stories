@@ -1,0 +1,306 @@
+[
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Overview",
+        "displayNameTranslations": {
+            "de": "\u00dcbersicht",
+            "en": "Overview"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_purchasing_cockpit_overview",
+        "numberOfColumns": 2,
+        "numberOfRows": 3,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "d_p_o",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 2,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_otif_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 2,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_otif_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Metric"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "d_p_o",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Metric"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Parking Lot",
+        "displayNameTranslations": {
+            "de": "Parkplatz",
+            "en": "Parking Lot"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_purchasing_parking_lot",
+        "numberOfColumns": 4,
+        "numberOfRows": 5,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_deliveries_deviation_amount",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_deliveries_deviation_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 3,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_payments_deviation",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_parking_lot_replenishment_deviation_too_low_rate,optimate_purchasing_parking_lot_replenishment_deviation_too_high_rate,optimate_purchasing_parking_lot_replenishment_deviation_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 4,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_rate,optimate_purchasing_parking_lot_deliveries_deviation_too_late_rate,optimate_purchasing_deliveries_deviation_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_deliveries_deviation_in_full_rate,optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_rate,optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_parking_lot_order_preparation_time_on_time_rate,optimate_purchasing_parking_lot_order_preparation_time_too_high_rate,optimate_purchasing_parking_lot_order_preparation_time_too_low_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 5,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_goods_receipt_processing_time_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_invoice_processing_time_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 4,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_parking_lot_order_preparation_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 5,
+                "rowSpan": 1,
+                "type": "Prediction"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "DPO",
+        "displayNameTranslations": {
+            "en": "DPO",
+            "de": "DPO"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_purchasing_cockpit_dpo",
+        "numberOfColumns": 2,
+        "numberOfRows": 2,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_goods_receipt_processing_time",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_invoice_processing_time",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 2,
+                "content": "optimate_purchasing_payments_deviation_too_early_rate,optimate_purchasing_payments_deviation_on_time_rate,optimate_purchasing_payments_deviation_too_late_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "On Time in Full",
+        "displayNameTranslations": {
+            "de": "P\u00fcnktlich und vollst\u00e4ndig",
+            "en": "On Time in Full"
+        },
+        "hideIfColumns": [],
+        "internalName": "optimate_purchasing_cockpit_otif",
+        "numberOfColumns": 3,
+        "numberOfRows": 2,
+        "showIfColumns": [],
+        "visuals": [
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_deliveries_deviation_on_time_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 1,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_order_confirmation_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 3,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_replenishment_deviation_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_deliveries_deviation_in_full_rate",
+                "contentTranslations": {},
+                "id": "",
+                "row": 1,
+                "rowSpan": 1,
+                "type": "Prediction"
+            },
+            {
+                "column": 2,
+                "columnSpan": 1,
+                "content": "optimate_purchasing_order_lead_time_days",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Prediction"
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]

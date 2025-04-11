@@ -1,7 +1,7 @@
 import logging
 from pathlib import Path
 
-from nemo_library.nemo_library import NemoLibrary
+from nemo_library import NemoLibrary
 from nemo_library.utils.utils import FilterType, FilterValue
 
 PROJECT_NAME = "Business Processes"
@@ -51,11 +51,11 @@ logging.basicConfig(
 )
 
 um = UpdateMetadata()
-um.MetaDataCreate("optimate_purchasing")
+# um.MetaDataCreate("optimate_purchasing")
 # um.MetaDataCreate("optimate_global")
 
-um.MetaDataLoad("optimate_purchasing")
+# um.MetaDataLoad("optimate")
 # um.MetaDataLoad("optimate_sales")
 # um.MetaDataLoad("optimate_global")
 
-# um.MetaDataDelete("conservative")
+um.MetaDataDelete("optimate")

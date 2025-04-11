@@ -1,0 +1,769 @@
+[
+    {
+        "aggregateBy": "optimate_purchasing_goods_receipt_processing_time_ontimeboolean",
+        "aggregateFunction": "mean(optimate_purchasing_goods_receipt_processing_time_ontimeboolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Goods Receipt Processing Time On Time Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Goods Receipt Processing Time On Time Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_goods_receipt_processing_time_ontimeboolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_goods_receipt_processing_time_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_deliveries_deviation_in_full_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_in_full_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "In-Full Sourcing Rate (IF)",
+        "displayNameTranslations": {
+            "de": "Einkaufsmengentreue",
+            "en": "In-Full Sourcing Rate (IF)"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_deliveries_deviation_in_full_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_sourcing_rate_if",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_on_time_in_full_otif_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_on_time_in_full_otif_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "On-Time In-Full Sourcing Rate (OTIF)",
+        "displayNameTranslations": {
+            "de": "Einkaufsliefertreue",
+            "en": "On-Time In-Full Sourcing Rate (OTIF)"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_on_time_in_full_otif_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_otif_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_in_full_otif_rate",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_replenishment_deviation_too_low",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_replenishment_deviation_too_low)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Replenishment Deviation Too Low Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Replenishment Deviation Too Low Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_replenishment_deviation_too_low": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_too_low_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Del Dev Too Early Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Del Dev Too Early Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Del Dev Underdelivered Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Del Dev Underdelivered Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_order_lead_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_order_lead_time_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Procurement Lead Time (PLT)",
+        "displayNameTranslations": {
+            "en": "Procurement Lead Time (PLT)",
+            "de": "Bestellvorlaufzeit"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_order_lead_time_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_order_lead_time_days",
+        "parentAttributeGroupInternalName": "optimate_purchasing_procurement_lead_time_plt",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_replenishment_deviation_on_time",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_replenishment_deviation_on_time)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Replenishment Deviation On Time Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Replenishment Deviation On Time Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_replenishment_deviation_on_time": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Order Preparation Time Too High Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Order Preparation Time Too High Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_too_high_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_invoice_processing_time_ontimeboolean",
+        "aggregateFunction": "mean(optimate_purchasing_invoice_processing_time_ontimeboolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Invoice Processing Time On Time Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Invoice Processing Time On Time Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_invoice_processing_time_ontimeboolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_invoice_processing_time_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Order Preparation Time On Time Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Order Preparation Time On Time Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_deliveries_deviation_on_time_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_on_time_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "On-Time Sourcing Rate (OT)",
+        "displayNameTranslations": {
+            "de": "Einkaufstermintreue",
+            "en": "On-Time Sourcing Rate (OT)"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_deliveries_deviation_on_time_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_deliveries_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_sourcing_rate_ot",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Del Dev Overdelivered Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Del Dev Overdelivered Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_days",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Payments Deviation",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Payments Deviation"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_payments_deviation",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_invoice_processing_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_invoice_processing_time_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Invoice Verification Processing Time",
+        "displayNameTranslations": {
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Verification Processing Time"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_invoice_processing_time_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_invoice_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_verification_processing_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_on_time_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_on_time_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "On-Time Supplier Payments Rate",
+        "displayNameTranslations": {
+            "en": "On-Time Supplier Payments Rate",
+            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_on_time_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_payments_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_too_late_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_too_late_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Late Supplier Payments Rate",
+        "displayNameTranslations": {
+            "en": "Late Supplier Payments Rate",
+            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_too_late_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_payments_deviation_too_late_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_replenishment_deviation_days",
+        "aggregateFunction": "mean(optimate_purchasing_replenishment_deviation_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Replenishment Time Deviation",
+        "displayNameTranslations": {
+            "en": "Replenishment Time Deviation",
+            "de": "Wiederbeschaffungszeitenabweichung"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_replenishment_deviation_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_replenishment_deviation_days",
+        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment_time_deviation",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_too_early_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_too_early_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Early Supplier Payments Rate",
+        "displayNameTranslations": {
+            "de": "Anteil Verfr\u00fchte Lieferantenzahlungen",
+            "en": "Early Supplier Payments Rate"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_too_early_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_payments_deviation_too_early_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_goods_receipt_processing_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_goods_receipt_processing_time_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Goods Receipt Processing Time",
+        "displayNameTranslations": {
+            "en": "Goods Receipt Processing Time",
+            "de": "Prozessdauer Wareneingang"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_goods_receipt_processing_time_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_goods_receipt_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Order Preparation Time (days)",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Order Preparation Time (days)"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_order_preparation_time_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_days",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_replenishment_deviation_too_high",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_replenishment_deviation_too_high)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Replenishment Deviation Too High Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Replenishment Deviation Too High Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_replenishment_deviation_too_high": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_too_high_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_order_confirmend_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_order_confirmend_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Order Confirmation Rate",
+        "displayNameTranslations": {
+            "de": "Auftragsbest\u00e4tigungsquote",
+            "en": "Order Confirmation Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_order_confirmend_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_order_confirmation_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_order_confirmation_rate",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_deliveries_deviation_days",
+        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Del Dev (days)",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Del Dev (days)"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_deliveries_deviation_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_days",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_deliveries_deviation_amount",
+        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_amount)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Del Dev (amount)",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Del Dev (amount)"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_deliveries_deviation_amount": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_amount",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Order Preparation Time Too Low Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Order Preparation Time Too Low Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_too_low_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "(Parking Lot) Del Dev Too Late Rate",
+        "displayNameTranslations": {
+            "en": "(Parking Lot) Del Dev Too Late Rate"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": false,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_too_late_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]

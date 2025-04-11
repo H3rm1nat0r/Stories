@@ -1,0 +1,42 @@
+[
+    {
+        "active": true,
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "OptiMate Purchasing Cockpit",
+        "displayNameTranslations": {
+            "de": "OptiMate Einkaufscockpit",
+            "en": "OptiMate Purchasing Cockpit"
+        },
+        "download": "",
+        "forecasts": [],
+        "formatCompact": false,
+        "internalName": "optimate_purchasing_cockpit",
+        "links": [],
+        "models": [],
+        "pages": [
+            {
+                "order": 0,
+                "page": "optimate_purchasing_cockpit_overview"
+            },
+            {
+                "order": 1,
+                "page": "optimate_purchasing_cockpit_dpo"
+            },
+            {
+                "order": 2,
+                "page": "optimate_purchasing_cockpit_otif"
+            },
+            {
+                "order": 3,
+                "page": "optimate_purchasing_parking_lot"
+            }
+        ],
+        "scopeName": "",
+        "id": "",
+        "projectId": "",
+        "tenant": ""
+    }
+]
