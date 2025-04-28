@@ -37,8 +37,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
+                    "de": "Ist",
+                    "en": "Act"
                 }
             },
             {
@@ -48,8 +48,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             }
         ],
@@ -99,8 +99,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             },
             {
@@ -266,8 +266,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -377,8 +377,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             },
             {
@@ -418,8 +418,8 @@
         },
         "displayName": "Share of early, on-time and late deliveries",
         "displayNameTranslations": {
-            "en": "Share of early, on-time and late deliveries",
-            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen"
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen",
+            "en": "Share of early, on-time and late deliveries"
         },
         "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "report": "dummy",
@@ -429,6 +429,16 @@
             "en": "Share (%)"
         },
         "values": [
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "id": "",
+                "legend": "Too late",
+                "legendTranslations": {
+                    "en": "Too late (Act)"
+                }
+            },
             {
                 "aggregation": "prediction",
                 "chartType": "stackedbar",
@@ -452,31 +462,11 @@
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
-                "id": "",
-                "legend": "Too late",
-                "legendTranslations": {
-                    "en": "Too late (Act)"
-                }
-            },
-            {
-                "aggregation": "actuals",
-                "chartType": "stackedbar",
                 "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
                 "id": "",
-                "legend": "On Time",
+                "legend": "On Time (Act)",
                 "legendTranslations": {
                     "en": "On Time (Act)"
-                }
-            },
-            {
-                "aggregation": "actuals",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
-                "id": "",
-                "legend": "Too early",
-                "legendTranslations": {
-                    "en": "Too early (Act)"
                 }
             },
             {
@@ -487,6 +477,16 @@
                 "legend": "Too early (Pred)",
                 "legendTranslations": {
                     "en": "Too early (Pred)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "id": "",
+                "legend": "Too early",
+                "legendTranslations": {
+                    "en": "Too early (Act)"
                 }
             }
         ],
@@ -536,8 +536,8 @@
                 "id": "",
                 "legend": "Too late (act)",
                 "legendTranslations": {
-                    "en": "Too late (act)",
-                    "de": "Zu sp\u00e4t (ist)"
+                    "de": "Zu sp\u00e4t (ist)",
+                    "en": "Too late (act)"
                 }
             },
             {
@@ -547,8 +547,8 @@
                 "id": "",
                 "legend": "On-Time (pred)",
                 "legendTranslations": {
-                    "en": "On-Time (pred)",
-                    "de": "P\u00fcnktlich (progn)"
+                    "de": "P\u00fcnktlich (progn)",
+                    "en": "On-Time (pred)"
                 }
             },
             {
@@ -569,8 +569,8 @@
                 "id": "",
                 "legend": "On-Time (act)",
                 "legendTranslations": {
-                    "en": "On-Time (act)",
-                    "de": "P\u00fcnktlich (ist)"
+                    "de": "P\u00fcnktlich (ist)",
+                    "en": "On-Time (act)"
                 }
             },
             {
@@ -580,8 +580,8 @@
                 "id": "",
                 "legend": "Too late (pred)",
                 "legendTranslations": {
-                    "de": "Zu sp\u00e4t (progn)",
-                    "en": "Too late (pred)"
+                    "en": "Too late (pred)",
+                    "de": "Zu sp\u00e4t (progn)"
                 }
             },
             {
@@ -639,8 +639,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             },
             {
@@ -701,8 +701,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             },
             {
@@ -712,8 +712,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
+                    "de": "Ist",
+                    "en": "Act"
                 }
             }
         ],
