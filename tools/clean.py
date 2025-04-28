@@ -6,6 +6,12 @@ from nemo_library.model.attribute_group import AttributeGroup
 from nemo_library.model.defined_column import DefinedColumn
 from nemo_library.model.metric import Metric
 from nemo_library.model.pages import Page    
+from nemo_library.model.attribute_link import AttributeLink
+from nemo_library.model.diagram import Diagram
+from nemo_library.model.report import Report
+from nemo_library.model.rule import Rule
+from nemo_library.model.subprocess import SubProcess
+from nemo_library.model.tile import Tile
 
 T = TypeVar("T")
 
@@ -53,11 +59,35 @@ def _export_data_to_json(file: str, data):
 
 path = Path(".") / "metadata_optimate" / "metrics.json"
 
+applications = _load_data_from_json("applications", Application)
+attributegroups = _load_data_from_json("attributegroups", AttributeGroup)
+attributelinks = _load_data_from_json("attributelinks", AttributeLink)
+definedcolumns = _load_data_from_json("definedcolumns", DefinedColumn)
+diagrams = _load_data_from_json("diagrams", Diagram)
 metrics = _load_data_from_json("metrics", Metric)
+pages = _load_data_from_json("pages", Page)
+reports = _load_data_from_json("reports", Report)
+rules = _load_data_from_json("rules", Rule)
+subprocesses = _load_data_from_json("subprocesses", SubProcess)
+tiles = _load_data_from_json("tiles", Tile)
 
-for metric in metrics:
-    metric.displayName = metric.displayNameTranslations.get("en", metric.displayName)        
-    
+for objects in [applications, attributegroups, attributelinks, definedcolumns, diagrams, pages, reports, rules, subprocesses, tiles]:
+    for obj in objects:
+        if hasattr(obj, "displayNameTranslations"):
+            obj.displayName = obj.displayNameTranslations.get("en", obj.displayName)
+        if hasattr(obj, "descriptionTranslations"):
+            obj.description = obj.descriptionTranslations.get("en", obj.description)
+
+_export_data_to_json("applications", applications)
+_export_data_to_json("attributegroups", attributegroups)
+_export_data_to_json("attributelinks", attributelinks)
+_export_data_to_json("definedcolumns", definedcolumns)
+_export_data_to_json("diagrams", diagrams)
 _export_data_to_json("metrics", metrics)
+_export_data_to_json("pages", pages)
+_export_data_to_json("reports", reports)
+_export_data_to_json("rules", rules)
+_export_data_to_json("subprocesses", subprocesses)
+_export_data_to_json("tiles", tiles)    
 
 
