@@ -48,8 +48,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             }
         ],
@@ -110,8 +110,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
+                    "de": "Ist",
+                    "en": "Act"
                 }
             }
         ],
@@ -158,8 +158,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             },
             {
@@ -280,8 +280,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             },
             {
@@ -291,8 +291,107 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
+                }
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "basedOnMetric": true,
+        "conflictState": ""
+    },
+    {
+        "alternateVisualization": false,
+        "argument": {
+            "aggregation": "month",
+            "column": "DATE",
+            "dataType": "datetime"
+        },
+        "argumentAxisTitle": "Time",
+        "argumentAxisTitleTranslations": {
+            "en": "Time",
+            "de": "Zeit"
+        },
+        "description": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+        "descriptionTranslations": {
+            "en": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferungen - unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Lieferkategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+        },
+        "displayName": "Share of early, on-time and late deliveries",
+        "displayNameTranslations": {
+            "en": "Share of early, on-time and late deliveries",
+            "de": "Anteil verfrühte, pünktliche und verspätete Lieferungen"
+        },
+        "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
+        "report": "dummy",
+        "summary": null,
+        "valueAxisTitle": "Share (%)",
+        "valueAxisTitleTranslations": {
+            "en": "Share (%)"
+        },
+        "values": [
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "id": "",
+                "legend": "Too early",
+                "legendTranslations": {
+                    "en": "Too early (Act)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "id": "",
+                "legend": "Too Late (Pred)",
+                "legendTranslations": {
+                    "en": "Too Late (Pred)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "id": "",
+                "legend": "Too early (Pred)",
+                "legendTranslations": {
+                    "en": "Too early (Pred)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_on_time_rate",
+                "id": "",
+                "legend": "On Time (Pred)",
+                "legendTranslations": {
+                    "en": "On Time (Pred)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_on_time_rate",
+                "id": "",
+                "legend": "On Time",
+                "legendTranslations": {
+                    "en": "On Time (Act)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "id": "",
+                "legend": "Too late",
+                "legendTranslations": {
+                    "en": "Too late (Act)"
                 }
             }
         ],
@@ -342,8 +441,8 @@
                 "id": "",
                 "legend": "Too late (act)",
                 "legendTranslations": {
-                    "de": "Zu sp\u00e4t (ist)",
-                    "en": "Too late (act)"
+                    "en": "Too late (act)",
+                    "de": "Zu sp\u00e4t (ist)"
                 }
             },
             {
@@ -353,8 +452,8 @@
                 "id": "",
                 "legend": "On-Time (pred)",
                 "legendTranslations": {
-                    "de": "P\u00fcnktlich (progn)",
-                    "en": "On-Time (pred)"
+                    "en": "On-Time (pred)",
+                    "de": "P\u00fcnktlich (progn)"
                 }
             },
             {
@@ -397,8 +496,8 @@
                 "id": "",
                 "legend": "Too early (act)",
                 "legendTranslations": {
-                    "de": "Zu fr\u00fch (ist)",
-                    "en": "Too early (act)"
+                    "en": "Too early (act)",
+                    "de": "Zu fr\u00fch (ist)"
                 }
             }
         ],

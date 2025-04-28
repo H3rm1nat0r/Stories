@@ -5,7 +5,13 @@ from nemo_library.model.application import Application
 from nemo_library.model.attribute_group import AttributeGroup
 from nemo_library.model.defined_column import DefinedColumn
 from nemo_library.model.metric import Metric
-from nemo_library.model.pages import Page
+from nemo_library.model.pages import Page    
+from nemo_library.model.attribute_link import AttributeLink
+from nemo_library.model.diagram import Diagram
+from nemo_library.model.report import Report
+from nemo_library.model.rule import Rule
+from nemo_library.model.subprocess import SubProcess
+from nemo_library.model.tile import Tile
 
 T = TypeVar("T")
 
@@ -68,14 +74,11 @@ def _generic_test(items):
 def test_applications():
     _generic_test(applications)
 
-
 def test_attributegroups():
     _generic_test(attributegroups)
 
-
-def test_pages():
-    _generic_test(pages)
-
+def test_attributelinks():
+    _generic_test(attributelinks)
 
 def test_definedcolumns():
     _generic_test(definedcolumns)
@@ -102,6 +105,9 @@ def test_definedcolumns():
             
         assert found, f"defined column {definedcolumn.internalName} is not used in a metric nor another defined column"
 
+def test_diagrams():
+    _generic_test(diagrams)
+
 def test_metrics():
     _generic_test(metrics)
 
@@ -117,23 +123,40 @@ def test_metrics():
                 False
             ), f"found purchasing metric that does not have pur_order_doc_i_d as group by column: {metric.internalName}"
             
-    # Check if all metrics are part of a visual
-    metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
-    split_metrics_in_visuals = []  # some visuals have multiple metrics
-    for item in metrics_in_visuals:
-        split_metrics_in_visuals.extend(item.split(","))
-
-    split_metrics_in_visuals = list(set(split_metrics_in_visuals))
-
+    # Check if all metrics are part of a diagram
+    metrics_in_diagrams = [
+        values.column for diagram in diagrams for values in diagram.values
+    ]
     for metric in metrics:
-        if metric.internalName not in split_metrics_in_visuals:
+        if metric.internalName not in metrics_in_diagrams:
             assert (
                 False
-            ), f"found metric that is not part of a visual: {metric.internalName}"
+            ), f"found metric that is not part of a diagram: {metric.internalName}"
+    
+    
+def test_pages():
+    _generic_test(pages)
 
+def test_reports(): 
+    _generic_test(reports)
 
+def test_rules():
+    _generic_test(rules)
+    
+def test_subprocesses():
+    _generic_test(subprocesses)
+    
+def test_tiles():   
+    _generic_test(tiles)
+    
 applications = _load_data_from_json("applications", Application)
 attributegroups = _load_data_from_json("attributegroups", AttributeGroup)
+attributelinks = _load_data_from_json("attributelinks", AttributeLink)
 definedcolumns = _load_data_from_json("definedcolumns", DefinedColumn)
+diagrams = _load_data_from_json("diagrams", Diagram)
 metrics = _load_data_from_json("metrics", Metric)
 pages = _load_data_from_json("pages", Page)
+reports = _load_data_from_json("reports", Report)
+rules = _load_data_from_json("rules", Rule)
+subprocesses = _load_data_from_json("subprocesses", SubProcess)
+tiles = _load_data_from_json("tiles", Tile)

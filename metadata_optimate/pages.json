@@ -36,6 +36,16 @@
                 "type": "Diagram"
             },
             {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
+                "contentTranslations": {},
+                "id": "",
+                "row": 2,
+                "rowSpan": 1,
+                "type": "Diagram"
+            },
+            {
                 "column": 3,
                 "columnSpan": 1,
                 "content": "optimate_purchasing_order_preparation_time_days",
