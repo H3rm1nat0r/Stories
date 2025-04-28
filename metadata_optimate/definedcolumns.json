@@ -10,8 +10,8 @@
         },
         "displayName": "On-Time Sourcing (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing (boolean)",
-            "de": "Einkaufstermintreue (boolean)"
+            "de": "Einkaufstermintreue (boolean)",
+            "en": "On-Time Sourcing (boolean)"
         },
         "formula": "optimate_purchasing_on_time_sourcing_days >= 0",
         "groupByColumnInternalName": null,
@@ -38,8 +38,8 @@
         },
         "displayName": "On-Time In-Full Sourcing (OTIF) (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time In-Full Sourcing (OTIF) (boolean)",
-            "de": "Einkaufstermintreue und Mengentreue (OTIF) (boolean)"
+            "de": "Einkaufstermintreue und Mengentreue (OTIF) (boolean)",
+            "en": "On-Time In-Full Sourcing (OTIF) (boolean)"
         },
         "formula": "if(pur_order_line_delivery_date<=pur_order_line_requested_date,if(pur_order_line_qty==pur_stock_rec_line_qty,1,0),0)",
         "groupByColumnInternalName": null,
@@ -66,8 +66,8 @@
         },
         "displayName": "Payments Deviation (days)",
         "displayNameTranslations": {
-            "de": "Zahlungsabweichung (Tage)",
-            "en": "Payments Deviation (days)"
+            "en": "Payments Deviation (days)",
+            "de": "Zahlungsabweichung (Tage)"
         },
         "formula": "payment_netto_due_date-payment_last_pay_date",
         "groupByColumnInternalName": null,
@@ -234,8 +234,8 @@
         },
         "displayName": "Procurement Lead Time (PLT) (days)",
         "displayNameTranslations": {
-            "de": "Bestellvorlaufzeit (Tage)",
-            "en": "Procurement Lead Time (PLT) (days)"
+            "en": "Procurement Lead Time (PLT) (days)",
+            "de": "Bestellvorlaufzeit (Tage)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
         "groupByColumnInternalName": null,
@@ -244,34 +244,6 @@
         "unit": "days",
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_lead_time_days",
-        "parentAttributeGroupInternalName": null,
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Invoice Verification Processing Time On-Time (boolean)",
-        "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time On-Time (boolean)",
-            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)"
-        },
-        "formula": "optimate_purchasing_invoice_processing_time_days == 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time_ontimeboolean",
         "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
@@ -318,8 +290,8 @@
         },
         "displayName": "Goods Receipt Processing Time (days)",
         "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time (days)",
-            "de": "Prozessdauer Wareneingang (Tage)"
+            "de": "Prozessdauer Wareneingang (Tage)",
+            "en": "Goods Receipt Processing Time (days)"
         },
         "formula": "pur_stock_rec_line_creation_date-pur_stock_rec_doc_date",
         "groupByColumnInternalName": null,
@@ -346,8 +318,8 @@
         },
         "displayName": "In-Full Sourcing (amount)",
         "displayNameTranslations": {
-            "de": "Einkaufsmengentreue Abweichung (Menge)",
-            "en": "In-Full Sourcing (amount)"
+            "en": "In-Full Sourcing (amount)",
+            "de": "Einkaufsmengentreue Abweichung (Menge)"
         },
         "formula": "pur_order_line_qty-pur_stock_rec_line_qty",
         "groupByColumnInternalName": null,
@@ -374,8 +346,8 @@
         },
         "displayName": "On-Time Sourcing (days)",
         "displayNameTranslations": {
-            "de": "Einkaufstermintreue (Tage)",
-            "en": "On-Time Sourcing (days)"
+            "en": "On-Time Sourcing (days)",
+            "de": "Einkaufstermintreue (Tage)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_delivery_date",
         "groupByColumnInternalName": null,
@@ -402,8 +374,8 @@
         },
         "displayName": "Payments Deviation Too Early (boolean)",
         "displayNameTranslations": {
-            "de": "Zahlungsabweichung zu fr\u00fch (boolean)",
-            "en": "Payments Deviation Too Early (boolean)"
+            "en": "Payments Deviation Too Early (boolean)",
+            "de": "Zahlungsabweichung zu fr\u00fch (boolean)"
         },
         "formula": "optimate_global_payments_deviation_days > 0",
         "groupByColumnInternalName": null,
@@ -428,8 +400,8 @@
         "descriptionTranslations": {},
         "displayName": "Order Confirmation (boolean)",
         "displayNameTranslations": {
-            "en": "Order Confirmation (boolean)",
-            "de": "Auftragsbest\u00e4tigung (boolean)"
+            "de": "Auftragsbest\u00e4tigung (boolean)",
+            "en": "Order Confirmation (boolean)"
         },
         "formula": "pur_order_line_amount_conf > 0",
         "groupByColumnInternalName": null,
