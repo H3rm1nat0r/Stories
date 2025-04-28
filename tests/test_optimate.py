@@ -57,24 +57,13 @@ def _generic_test(items):
         assert (
             "en" in item.displayNameTranslations
         ), f"displayNameTranslations of item does not contain 'en': item {item.internalName}"
-        if not item.displayName.startswith("(Parking Lot)"):
-            assert (
-                "de" in item.displayNameTranslations
-            ), f"displayNameTranslations of item does not contain 'de': item {item.internalName}"
+        assert (
+            "de" in item.displayNameTranslations
+        ), f"displayNameTranslations of item does not contain 'de': item {item.internalName}"
 
         assert (
             item.displayName == item.displayNameTranslations["en"]
         ), f"displayName is not equal to displayNameTranslations['en']: {item.internalName}"
-
-        if "(Parking Lot)" in item.displayName:
-            assert (
-                "parking_lot" in item.internalName
-            ), f"internalName does not contain 'parking_lot': {item.internalName}"
-
-        if "parking_lot" in item.internalName:
-            assert (
-                "Parking Lot" in item.displayName
-            ), f"displayName does not contain '(Parking Lot)': {item.internalName}"
 
 def test_applications():
     _generic_test(applications)
@@ -104,8 +93,14 @@ def test_definedcolumns():
             if definedcolumn.internalName in metric.groupByAggregations.keys():
                 found = True
                 break
+        
+        # or in another defined column
+        for definedcolumn2 in definedcolumns:
+            if definedcolumn.internalName in definedcolumn2.formula:
+                found = True
+                break
             
-        assert found, f"defined column {definedcolumn.internalName} is not used in a metric"
+        assert found, f"defined column {definedcolumn.internalName} is not used in a metric nor another defined column"
 
 def test_metrics():
     _generic_test(metrics)
@@ -121,9 +116,6 @@ def test_metrics():
             assert (
                 False
             ), f"found purchasing metric that does not have pur_order_doc_i_d as group by column: {metric.internalName}"
-
-        if "(Parking Lot)" in metric.displayName:
-            assert (metric.isCrawlable == False), f"found metric with (Parking Lot) in displayName that is crawlable: {metric.internalName}"
             
     # Check if all metrics are part of a visual
     metrics_in_visuals = [visual.content for page in pages for visual in page.visuals]
