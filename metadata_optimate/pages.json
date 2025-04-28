@@ -26,6 +26,16 @@
                 "type": "Diagram"
             },
             {
+                "column": 1,
+                "columnSpan": 3,
+                "content": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
+                "contentTranslations": {},
+                "id": "",
+                "row": 3,
+                "rowSpan": 1,
+                "type": "Diagram"
+            },
+            {
                 "column": 2,
                 "columnSpan": 1,
                 "content": "optimate_purchasing_order_confirmation_rate",

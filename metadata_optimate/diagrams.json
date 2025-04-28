@@ -99,8 +99,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
@@ -110,8 +110,105 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
+                }
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "basedOnMetric": true,
+        "conflictState": ""
+    },
+    {
+        "alternateVisualization": false,
+        "argument": {
+            "aggregation": "month",
+            "column": "DATE",
+            "dataType": "datetime"
+        },
+        "argumentAxisTitle": "",
+        "argumentAxisTitleTranslations": {
+            "en": "Time"
+        },
+        "description": "The chart shows the monthly distribution of deliveries - divided into under-deliveries, over-deliveries and exact deliveries. The data is displayed as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+        "descriptionTranslations": {
+            "en": "The chart shows the monthly distribution of deliveries - divided into under-deliveries, over-deliveries and exact deliveries. The data is displayed as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric."
+        },
+        "displayName": "Share of complete deliveries, overdeliveries and underdeliveries",
+        "displayNameTranslations": {
+            "de": "Anteil vollst\u00e4ndige Lieferunen, \u00dcber- und Unterlieferungen",
+            "en": "Share of complete deliveries, overdeliveries and underdeliveries"
+        },
+        "internalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
+        "report": "dummy",
+        "summary": null,
+        "valueAxisTitle": "",
+        "valueAxisTitleTranslations": {
+            "en": "Share (%)"
+        },
+        "values": [
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_overdelivered_rate",
+                "id": "",
+                "legend": "Over (Pred)",
+                "legendTranslations": {
+                    "en": "Over (Pred)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
+                "id": "",
+                "legend": "Under (Pred)",
+                "legendTranslations": {
+                    "en": "Under (Pred)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_deliveries_deviation_in_full_rate",
+                "id": "",
+                "legend": "In Full (Pred)",
+                "legendTranslations": {
+                    "en": "In Full (Pred)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_deliveries_deviation_in_full_rate",
+                "id": "",
+                "legend": "In Full (Act)",
+                "legendTranslations": {
+                    "en": "In Full (Act)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
+                "id": "",
+                "legend": "Under (Act)",
+                "legendTranslations": {
+                    "en": "Under (Act)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_overdelivered_rate",
+                "id": "",
+                "legend": "Over (Act)",
+                "legendTranslations": {
+                    "en": "Over (Act)"
                 }
             }
         ],
@@ -229,8 +326,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
+                    "de": "Ist",
+                    "en": "Act"
                 }
             }
         ],
@@ -280,8 +377,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
@@ -291,8 +388,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
+                    "de": "Ist",
+                    "en": "Act"
                 }
             }
         ],
@@ -313,18 +410,16 @@
         },
         "argumentAxisTitle": "Time",
         "argumentAxisTitleTranslations": {
-            "en": "Time",
-            "de": "Zeit"
+            "en": "Time"
         },
         "description": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "en": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
-            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferungen - unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Lieferkategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+            "en": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric."
         },
         "displayName": "Share of early, on-time and late deliveries",
         "displayNameTranslations": {
             "en": "Share of early, on-time and late deliveries",
-            "de": "Anteil verfrühte, pünktliche und verspätete Lieferungen"
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen"
         },
         "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "report": "dummy",
@@ -335,13 +430,13 @@
         },
         "values": [
             {
-                "aggregation": "actuals",
+                "aggregation": "prediction",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
                 "id": "",
-                "legend": "Too early",
+                "legend": "On Time (Pred)",
                 "legendTranslations": {
-                    "en": "Too early (Act)"
+                    "en": "On Time (Pred)"
                 }
             },
             {
@@ -355,29 +450,19 @@
                 }
             },
             {
-                "aggregation": "prediction",
+                "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
                 "id": "",
-                "legend": "Too early (Pred)",
+                "legend": "Too late",
                 "legendTranslations": {
-                    "en": "Too early (Pred)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_on_time_rate",
-                "id": "",
-                "legend": "On Time (Pred)",
-                "legendTranslations": {
-                    "en": "On Time (Pred)"
+                    "en": "Too late (Act)"
                 }
             },
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_on_time_rate",
+                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
                 "id": "",
                 "legend": "On Time",
                 "legendTranslations": {
@@ -387,11 +472,21 @@
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
                 "id": "",
-                "legend": "Too late",
+                "legend": "Too early",
                 "legendTranslations": {
-                    "en": "Too late (Act)"
+                    "en": "Too early (Act)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "id": "",
+                "legend": "Too early (Pred)",
+                "legendTranslations": {
+                    "en": "Too early (Pred)"
                 }
             }
         ],
@@ -474,8 +569,8 @@
                 "id": "",
                 "legend": "On-Time (act)",
                 "legendTranslations": {
-                    "de": "P\u00fcnktlich (ist)",
-                    "en": "On-Time (act)"
+                    "en": "On-Time (act)",
+                    "de": "P\u00fcnktlich (ist)"
                 }
             },
             {
@@ -485,8 +580,8 @@
                 "id": "",
                 "legend": "Too late (pred)",
                 "legendTranslations": {
-                    "en": "Too late (pred)",
-                    "de": "Zu sp\u00e4t (progn)"
+                    "de": "Zu sp\u00e4t (progn)",
+                    "en": "Too late (pred)"
                 }
             },
             {
@@ -544,8 +639,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
@@ -555,8 +650,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -617,8 +712,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],

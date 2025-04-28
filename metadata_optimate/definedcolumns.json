@@ -10,8 +10,8 @@
         },
         "displayName": "On-Time Sourcing (boolean)",
         "displayNameTranslations": {
-            "de": "Einkaufstermintreue (boolean)",
-            "en": "On-Time Sourcing (boolean)"
+            "en": "On-Time Sourcing (boolean)",
+            "de": "Einkaufstermintreue (boolean)"
         },
         "formula": "optimate_purchasing_on_time_sourcing_days >= 0",
         "groupByColumnInternalName": null,
@@ -20,6 +20,34 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_on_time_sourcing_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "In-Full Sourcing Overdelivered (boolean)",
+        "displayNameTranslations": {
+            "de": "Einkaufsmengentreue \u00fcberliefert (boolean)",
+            "en": "In-Full Sourcing Overdelivered (boolean)"
+        },
+        "formula": "optimate_purchasing_in_full_sourcing_amount < 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_in_full_sourcing_overdelivered_boolean",
         "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
@@ -178,8 +206,8 @@
         },
         "displayName": "On-Time Sourcing Exact (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing Exact (boolean)",
-            "de": "Einkaufstermintreue exakt (boolean)"
+            "de": "Einkaufstermintreue exakt (boolean)",
+            "en": "On-Time Sourcing Exact (boolean)"
         },
         "formula": "optimate_purchasing_on_time_sourcing_days == 0",
         "groupByColumnInternalName": null,
@@ -244,6 +272,34 @@
         "unit": "days",
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_lead_time_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "In-Full Sourcing Underdelivered (boolean)",
+        "displayNameTranslations": {
+            "de": "Einkaufsmengentreue unterliefert (boolean)",
+            "en": "In-Full Sourcing Underdelivered (boolean)"
+        },
+        "formula": "optimate_purchasing_in_full_sourcing_amount > 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_in_full_sourcing_underdelivered_boolean",
         "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
@@ -400,8 +456,8 @@
         "descriptionTranslations": {},
         "displayName": "Order Confirmation (boolean)",
         "displayNameTranslations": {
-            "de": "Auftragsbest\u00e4tigung (boolean)",
-            "en": "Order Confirmation (boolean)"
+            "en": "Order Confirmation (boolean)",
+            "de": "Auftragsbest\u00e4tigung (boolean)"
         },
         "formula": "pur_order_line_amount_conf > 0",
         "groupByColumnInternalName": null,
@@ -454,8 +510,8 @@
         "descriptionTranslations": {},
         "displayName": "Replenishment Time Deviation (days)",
         "displayNameTranslations": {
-            "en": "Replenishment Time Deviation (days)",
-            "de": "Wiederbeschaffungszeitenabweichung (Tage)"
+            "de": "Wiederbeschaffungszeitenabweichung (Tage)",
+            "en": "Replenishment Time Deviation (days)"
         },
         "formula": "part_replenishment_time - (pur_stock_rec_line_creation_date - pur_order_line_creation_date)",
         "groupByColumnInternalName": null,
