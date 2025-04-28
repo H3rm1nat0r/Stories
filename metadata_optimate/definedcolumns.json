@@ -150,8 +150,8 @@
         },
         "displayName": "On-Time Sourcing Too Early (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing Too Early (boolean)",
-            "de": "Einkaufstermintreue zu fr\u00fch (boolean)"
+            "de": "Einkaufstermintreue zu fr\u00fch (boolean)",
+            "en": "On-Time Sourcing Too Early (boolean)"
         },
         "formula": "optimate_purchasing_on_time_sourcing_days > 0",
         "groupByColumnInternalName": null,
@@ -171,34 +171,6 @@
         "categorialType": false,
         "columnType": "DefinedColumn",
         "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Invoice Verification Processing Time (days)",
-        "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time (days)",
-            "de": "Prozessdauer Rechnungskontrolle (Tage)"
-        },
-        "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time_days",
-        "parentAttributeGroupInternalName": null,
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
         "dataType": "boolean",
         "description": "",
         "descriptionTranslations": {
@@ -206,8 +178,8 @@
         },
         "displayName": "On-Time Sourcing Too Late (boolean)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing Too Late (boolean)",
-            "de": "Einkaufstermintreue zu sp\u00e4t (boolean)"
+            "de": "Einkaufstermintreue zu sp\u00e4t (boolean)",
+            "en": "On-Time Sourcing Too Late (boolean)"
         },
         "formula": "optimate_purchasing_on_time_sourcing_days < 0",
         "groupByColumnInternalName": null,
@@ -216,34 +188,6 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_on_time_sourcing_too_late_boolean",
-        "parentAttributeGroupInternalName": null,
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Procurement Lead Time (PLT) (days)",
-        "displayNameTranslations": {
-            "de": "Bestellvorlaufzeit (Tage)",
-            "en": "Procurement Lead Time (PLT) (days)"
-        },
-        "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_order_lead_time_days",
         "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
@@ -272,6 +216,34 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_in_full_sourcing_underdelivered_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Procurement Lead Time (PLT) (days)",
+        "displayNameTranslations": {
+            "de": "Bestellvorlaufzeit (Tage)",
+            "en": "Procurement Lead Time (PLT) (days)"
+        },
+        "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": 128,
+        "unit": "days",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_procurement_lead_time_days",
         "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
@@ -318,8 +290,8 @@
         },
         "displayName": "Goods Receipt Processing Time (days)",
         "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang (Tage)",
-            "en": "Goods Receipt Processing Time (days)"
+            "en": "Goods Receipt Processing Time (days)",
+            "de": "Prozessdauer Wareneingang (Tage)"
         },
         "formula": "pur_stock_rec_line_creation_date-pur_stock_rec_doc_date",
         "groupByColumnInternalName": null,
@@ -346,8 +318,8 @@
         },
         "displayName": "In-Full Sourcing (amount)",
         "displayNameTranslations": {
-            "de": "Einkaufsmengentreue Abweichung (Menge)",
-            "en": "In-Full Sourcing (amount)"
+            "en": "In-Full Sourcing (amount)",
+            "de": "Einkaufsmengentreue Abweichung (Menge)"
         },
         "formula": "pur_order_line_qty-pur_stock_rec_line_qty",
         "groupByColumnInternalName": null,
@@ -374,8 +346,8 @@
         },
         "displayName": "On-Time Sourcing (days)",
         "displayNameTranslations": {
-            "en": "On-Time Sourcing (days)",
-            "de": "Einkaufstermintreue (Tage)"
+            "de": "Einkaufstermintreue (Tage)",
+            "en": "On-Time Sourcing (days)"
         },
         "formula": "pur_order_line_requested_date-pur_order_line_delivery_date",
         "groupByColumnInternalName": null,
@@ -395,6 +367,34 @@
         "categorialType": false,
         "columnType": "DefinedColumn",
         "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Invoice Verification Processing Time (days)",
+        "displayNameTranslations": {
+            "en": "Invoice Verification Processing Time (days)",
+            "de": "Prozessdauer Rechnungskontrolle (Tage)"
+        },
+        "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_invoice_verification_processing_time_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
         "dataType": "boolean",
         "description": "",
         "descriptionTranslations": {
@@ -402,8 +402,8 @@
         },
         "displayName": "Payments Deviation Too Early (boolean)",
         "displayNameTranslations": {
-            "en": "Payments Deviation Too Early (boolean)",
-            "de": "Zahlungsabweichung zu fr\u00fch (boolean)"
+            "de": "Zahlungsabweichung zu fr\u00fch (boolean)",
+            "en": "Payments Deviation Too Early (boolean)"
         },
         "formula": "optimate_global_payments_deviation_days > 0",
         "groupByColumnInternalName": null,
@@ -428,8 +428,8 @@
         "descriptionTranslations": {},
         "displayName": "Order Confirmation (boolean)",
         "displayNameTranslations": {
-            "de": "Auftragsbest\u00e4tigung (boolean)",
-            "en": "Order Confirmation (boolean)"
+            "en": "Order Confirmation (boolean)",
+            "de": "Auftragsbest\u00e4tigung (boolean)"
         },
         "formula": "pur_order_line_amount_conf > 0",
         "groupByColumnInternalName": null,
@@ -456,8 +456,8 @@
         },
         "displayName": "In-Full Sourcing (boolean)",
         "displayNameTranslations": {
-            "de": "Einkaufsmengentreue (boolean)",
-            "en": "In-Full Sourcing (boolean)"
+            "en": "In-Full Sourcing (boolean)",
+            "de": "Einkaufsmengentreue (boolean)"
         },
         "formula": "optimate_purchasing_in_full_sourcing_amount == 0",
         "groupByColumnInternalName": null,
@@ -482,8 +482,8 @@
         "descriptionTranslations": {},
         "displayName": "Replenishment Time Deviation (days)",
         "displayNameTranslations": {
-            "de": "Wiederbeschaffungszeitenabweichung (Tage)",
-            "en": "Replenishment Time Deviation (days)"
+            "en": "Replenishment Time Deviation (days)",
+            "de": "Wiederbeschaffungszeitenabweichung (Tage)"
         },
         "formula": "part_replenishment_time - (pur_stock_rec_line_creation_date - pur_order_line_creation_date)",
         "groupByColumnInternalName": null,
