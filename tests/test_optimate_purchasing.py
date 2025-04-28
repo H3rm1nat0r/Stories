@@ -9,7 +9,7 @@ from nemo_library.model.pages import Page
 
 T = TypeVar("T")
 
-COCKPIT = "optimate_purchasing"
+COCKPIT = "optimate"
 
 
 def _load_data_from_json(file: str, cls: Type[T]) -> List[T]:

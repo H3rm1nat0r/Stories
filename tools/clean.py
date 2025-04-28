@@ -54,10 +54,9 @@ def _export_data_to_json(file: str, data):
 path = Path(".") / "metadata_optimate" / "metrics.json"
 
 metrics = _load_data_from_json("metrics", Metric)
-    
+
 for metric in metrics:
-    metric.description = ""
-    metric.descriptionTranslations = {} 
+    metric.displayName = metric.displayNameTranslations.get("en", metric.displayName)        
     
 _export_data_to_json("metrics", metrics)
 

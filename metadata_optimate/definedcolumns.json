@@ -8,549 +8,24 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(Parking Lot) Purchasing Order Preparation Time too high (boolean)",
+        "displayName": "On-Time Sourcing (boolean)",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Order Preparation Time too high (boolean)"
+            "de": "Einkaufstermintreue (boolean)",
+            "en": "On-Time Sourcing (boolean)"
         },
-        "formula": "optimate_purchasing_parking_lot_order_preparation_time_days > 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Too Late (boolean)",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Deliveries Deviation Too Late (boolean)"
-        },
-        "formula": "optimate_purchasing_deliveries_deviation_days < 0",
+        "formula": "optimate_purchasing_on_time_sourcing_days >= 0",
         "groupByColumnInternalName": null,
         "importName": "",
         "stringSize": null,
         "unit": "",
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
+        "internalName": "optimate_purchasing_on_time_sourcing_boolean",
+        "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Too Early (boolean)",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Deliveries Deviation Too Early (boolean)"
-        },
-        "formula": "optimate_purchasing_deliveries_deviation_days > 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Replenishment Deviation Too HIGH",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Replenishment Deviation Too HIGH"
-        },
-        "formula": "optimate_purchasing_replenishment_deviation_days > 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_too_high",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Replenishment Deviation Too LOW",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Replenishment Deviation Too LOW"
-        },
-        "formula": "optimate_purchasing_replenishment_deviation_days < 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_too_low",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Invoice Verification Processing Time On-Time (boolean)",
-        "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)",
-            "en": "Invoice Verification Processing Time On-Time (boolean)"
-        },
-        "formula": "optimate_purchasing_invoice_processing_time_days == 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time_ontimeboolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_verification_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Goods Receipt Processing Time (days)",
-        "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time (days)",
-            "de": "Prozessdauer Wareneingang (Tage)"
-        },
-        "formula": "pur_stock_rec_line_creation_date-pur_stock_rec_doc_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_goods_receipt_processing_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Order Preparation Time too low (boolean)",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Order Preparation Time too low (boolean)"
-        },
-        "formula": "optimate_purchasing_parking_lot_order_preparation_time_days < 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Replenishment Time Deviation (days)",
-        "displayNameTranslations": {
-            "en": "Replenishment Time Deviation (days)",
-            "de": "Wiederbeschaffungszeitenabweichung (Tage)"
-        },
-        "formula": "part_replenishment_time - (pur_stock_rec_line_creation_date - pur_order_line_creation_date)",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_replenishment_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment_time_deviation",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(O) Global Payments Deviation Too Late (boolean)",
-        "displayNameTranslations": {
-            "en": "(O) Global Payments Deviation Too Late (boolean)"
-        },
-        "formula": "optimate_global_payments_deviation_days < 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_global_payments_deviation_too_late_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "Purchasing under delivery (true/false)",
-        "descriptionTranslations": {
-            "en": "Purchasing under delivery (true/false)"
-        },
-        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Underdelivered (boolean)",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Deliveries Deviation Underdelivered (boolean)"
-        },
-        "formula": "optimate_purchasing_deliveries_deviation_amount > 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "On-Time Sourcing (days)",
-        "displayNameTranslations": {
-            "de": "Einkaufstermintreue (Tage)",
-            "en": "On-Time Sourcing (days)"
-        },
-        "formula": "pur_order_line_requested_date-pur_order_line_delivery_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_sourcing_rate_ot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(O) Global Payments Deviation Too Early (boolean)",
-        "displayNameTranslations": {
-            "en": "(O) Global Payments Deviation Too Early (boolean)"
-        },
-        "formula": "optimate_global_payments_deviation_days > 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_global_payments_deviation_too_early_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Order Preparation Time on Time (boolean)",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Order Preparation Time on Time (boolean)"
-        },
-        "formula": "optimate_purchasing_parking_lot_order_preparation_time_days == 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(O) Global Payments Deviation (days)",
-        "displayNameTranslations": {
-            "en": "(O) Global Payments Deviation (days)"
-        },
-        "formula": "payment_netto_due_date-payment_last_pay_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_global_payments_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Order Confirmation (boolean)",
-        "displayNameTranslations": {
-            "en": "Order Confirmation (boolean)",
-            "de": "Auftragsbest\u00e4tigung (boolean)"
-        },
-        "formula": "pur_order_line_amount_conf > 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_order_confirmend_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_confirmation_rate",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Procurement Lead Time (PLT) (days)",
-        "displayNameTranslations": {
-            "en": "Procurement Lead Time (PLT) (days)",
-            "de": "Bestellvorlaufzeit (Tage)"
-        },
-        "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_order_lead_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_procurement_lead_time_plt",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "(Parking Lot) Purchasing Replenishment Deviation On Time",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Replenishment Deviation On Time"
-        },
-        "formula": "optimate_purchasing_replenishment_deviation_days == 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_on_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Invoice Verification Processing Time (days)",
-        "displayNameTranslations": {
-            "en": "Invoice Verification Processing Time (days)",
-            "de": "Prozessdauer Rechnungskontrolle (Tage)"
-        },
-        "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_verification_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "In-Full Sourcing (IF) (boolean)",
-        "displayNameTranslations": {
-            "de": "Einkaufsmengentreue (boolean)",
-            "en": "In-Full Sourcing (IF) (boolean)"
-        },
-        "formula": "optimate_purchasing_deliveries_deviation_amount == 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_in_full_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_sourcing_rate_if",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "Purchasing over delivery (true/false)",
-        "descriptionTranslations": {
-            "en": "Purchasing over delivery (true/false)"
-        },
-        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Overdelivered (boolean)",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Deliveries Deviation Overdelivered (boolean)"
-        },
-        "formula": "optimate_purchasing_deliveries_deviation_amount < 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "boolean",
-        "description": "",
-        "descriptionTranslations": {
-            "en": ""
-        },
-        "displayName": "Goods Receipt Processing Time On-Time (boolean)",
-        "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time On-Time (boolean)",
-            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)"
-        },
-        "formula": "optimate_purchasing_goods_receipt_processing_time_days == 0",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": null,
-        "unit": "",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_goods_receipt_processing_time_ontimeboolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
         "categorialType": false,
@@ -573,10 +48,150 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_purchasing_on_time_in_full_otif_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_in_full_otif_rate",
+        "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "(O) Global Payments Deviation (days)",
+        "displayNameTranslations": {
+            "en": "Payments Deviation (days)",
+            "de": "Zahlungsabweichung (Tage)"
+        },
+        "formula": "payment_netto_due_date-payment_last_pay_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": 128,
+        "unit": "days",
+        "focusOrder": "",
+        "internalName": "optimate_global_payments_deviation_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Goods Receipt Processing Time On-Time (boolean)",
+        "displayNameTranslations": {
+            "de": "Prozessdauer Wareneingang p\u00fcnktlich (boolean)",
+            "en": "Goods Receipt Processing Time On-Time (boolean)"
+        },
+        "formula": "optimate_purchasing_goods_receipt_processing_time_days == 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_goods_receipt_processing_time_ontimeboolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "(O) Global Payments Deviation Too Late (boolean)",
+        "displayNameTranslations": {
+            "en": "Payments Deviation Too Late (boolean)"
+        },
+        "formula": "optimate_global_payments_deviation_days < 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": 128,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_global_payments_deviation_too_late_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Too Early (boolean)",
+        "displayNameTranslations": {
+            "en": "On-Time Sourcing Too Early (boolean)"
+        },
+        "formula": "optimate_purchasing_on_time_sourcing_days > 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_on_time_sourcing_too_early_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Invoice Verification Processing Time (days)",
+        "displayNameTranslations": {
+            "de": "Prozessdauer Rechnungskontrolle (Tage)",
+            "en": "Invoice Verification Processing Time (days)"
+        },
+        "formula": "pur_inv_change_date-pur_inv_ext_doc_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_invoice_processing_time_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
         "categorialType": false,
@@ -589,20 +204,104 @@
         },
         "displayName": "On-Time Sourcing (boolean)",
         "displayNameTranslations": {
-            "de": "Einkaufstermintreue (boolean)",
-            "en": "On-Time Sourcing (boolean)"
+            "en": "On-Time Sourcing Exact (boolean)"
         },
-        "formula": "optimate_purchasing_deliveries_deviation_days >= 0",
+        "formula": "optimate_purchasing_on_time_sourcing_days >= 0",
         "groupByColumnInternalName": null,
         "importName": "",
         "stringSize": null,
         "unit": "",
         "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_on_time_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_sourcing_rate_ot",
+        "internalName": "optimate_purchasing_on_time_sourcing_exact_boolean",
+        "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "(Parking Lot) Purchasing Deliveries Deviation Too Late (boolean)",
+        "displayNameTranslations": {
+            "en": "On-Time Sourcing Too Late (boolean)"
+        },
+        "formula": "optimate_purchasing_on_time_sourcing_days < 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_on_time_sourcing_too_late_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Procurement Lead Time (PLT) (days)",
+        "displayNameTranslations": {
+            "en": "Procurement Lead Time (PLT) (days)",
+            "de": "Bestellvorlaufzeit (Tage)"
+        },
+        "formula": "pur_order_line_requested_date-pur_order_line_creation_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": 128,
+        "unit": "days",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_order_lead_time_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "Invoice Verification Processing Time On-Time (boolean)",
+        "displayNameTranslations": {
+            "en": "Invoice Verification Processing Time On-Time (boolean)",
+            "de": "Prozessdauer Rechnungskontrolle p\u00fcnktlich (boolean)"
+        },
+        "formula": "optimate_purchasing_invoice_processing_time_days == 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_invoice_processing_time_ontimeboolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
         "categorialType": false,
@@ -615,7 +314,7 @@
         },
         "displayName": "(O) Global Payments Deviation On Time (boolean)",
         "displayNameTranslations": {
-            "en": "(O) Global Payments Deviation On Time (boolean)"
+            "en": "Payments Deviation On Time (boolean)"
         },
         "formula": "optimate_global_payments_deviation_days == 0",
         "groupByColumnInternalName": null,
@@ -624,34 +323,12 @@
         "unit": "",
         "focusOrder": "",
         "internalName": "optimate_global_payments_deviation_on_time_boolean",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
+        "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
-        "tenant": ""
-    },
-    {
-        "categorialType": false,
-        "columnType": "DefinedColumn",
-        "containsSensitiveData": false,
-        "dataType": "integer",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "In-Full Sourcing Deviation (amount)",
-        "displayNameTranslations": {
-            "en": "In-Full Sourcing Deviation (amount)",
-            "de": "Einkaufsmengentreue Abweichung (Menge)"
-        },
-        "formula": "pur_order_line_qty-pur_stock_rec_line_qty",
-        "groupByColumnInternalName": null,
-        "importName": "",
-        "stringSize": 128,
-        "unit": "days",
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_amount",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_sourcing_rate_if",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
         "categorialType": false,
@@ -662,20 +339,186 @@
         "descriptionTranslations": {
             "en": ""
         },
-        "displayName": "(Parking Lot) Purchasing Order Preparation Time (days)",
+        "displayName": "Goods Receipt Processing Time (days)",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Purchasing Order Preparation Time (days)"
+            "en": "Goods Receipt Processing Time (days)",
+            "de": "Prozessdauer Wareneingang (Tage)"
         },
-        "formula": "pur_order_line_requested_date-pur_order_line_creation_date-part_replenishment_time",
+        "formula": "pur_stock_rec_line_creation_date-pur_stock_rec_doc_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_goods_receipt_processing_time_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "In-Full Sourcing Deviation (amount)",
+        "displayNameTranslations": {
+            "de": "Einkaufsmengentreue Abweichung (Menge)",
+            "en": "In-Full Sourcing (amount)"
+        },
+        "formula": "pur_order_line_qty-pur_stock_rec_line_qty",
         "groupByColumnInternalName": null,
         "importName": "",
         "stringSize": 128,
         "unit": "days",
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "internalName": "optimate_purchasing_in_full_sourcing_amount",
+        "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "On-Time Sourcing (days)",
+        "displayNameTranslations": {
+            "en": "On-Time Sourcing (days)",
+            "de": "Einkaufstermintreue (Tage)"
+        },
+        "formula": "pur_order_line_requested_date-pur_order_line_delivery_date",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": 128,
+        "unit": "days",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_on_time_sourcing_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "(O) Global Payments Deviation Too Early (boolean)",
+        "displayNameTranslations": {
+            "en": "Payments Deviation Too Early (boolean)"
+        },
+        "formula": "optimate_global_payments_deviation_days > 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": 128,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_global_payments_deviation_too_early_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Order Confirmation (boolean)",
+        "displayNameTranslations": {
+            "en": "Order Confirmation (boolean)",
+            "de": "Auftragsbest\u00e4tigung (boolean)"
+        },
+        "formula": "pur_order_line_amount_conf > 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_order_confirmend_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "boolean",
+        "description": "",
+        "descriptionTranslations": {
+            "en": ""
+        },
+        "displayName": "In-Full Sourcing (IF) (boolean)",
+        "displayNameTranslations": {
+            "en": "In-Full Sourcing (boolean)",
+            "de": "Einkaufsmengentreue (boolean)"
+        },
+        "formula": "optimate_purchasing_in_full_sourcing_amount == 0",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_in_full_sourcing_boolean",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "categorialType": false,
+        "columnType": "DefinedColumn",
+        "containsSensitiveData": false,
+        "dataType": "integer",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Replenishment Time Deviation (days)",
+        "displayNameTranslations": {
+            "de": "Wiederbeschaffungszeitenabweichung (Tage)",
+            "en": "Replenishment Time Deviation (days)"
+        },
+        "formula": "part_replenishment_time - (pur_stock_rec_line_creation_date - pur_order_line_creation_date)",
+        "groupByColumnInternalName": null,
+        "importName": "",
+        "stringSize": null,
+        "unit": "days",
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_replenishment_deviation_days",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     }
 ]

@@ -1,551 +1,13 @@
 [
     {
-        "aggregateBy": "optimate_purchasing_goods_receipt_processing_time_ontimeboolean",
-        "aggregateFunction": "mean(optimate_purchasing_goods_receipt_processing_time_ontimeboolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Goods Receipt Processing Time On Time Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Goods Receipt Processing Time On Time Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_goods_receipt_processing_time_ontimeboolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_goods_receipt_processing_time_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_deliveries_deviation_in_full_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_in_full_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "In-Full Sourcing Rate (IF)",
-        "displayNameTranslations": {
-            "de": "Einkaufsmengentreue",
-            "en": "In-Full Sourcing Rate (IF)"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_deliveries_deviation_in_full_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_in_full_sourcing_rate_if",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_on_time_in_full_otif_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_on_time_in_full_otif_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "On-Time In-Full Sourcing Rate (OTIF)",
-        "displayNameTranslations": {
-            "de": "Einkaufsliefertreue",
-            "en": "On-Time In-Full Sourcing Rate (OTIF)"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_on_time_in_full_otif_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_otif_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_in_full_otif_rate",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_replenishment_deviation_too_low",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_replenishment_deviation_too_low)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Replenishment Deviation Too Low Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Replenishment Deviation Too Low Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_replenishment_deviation_too_low": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_too_low_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Del Dev Too Early Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Del Dev Too Early Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_deliveries_deviation_too_early_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Del Dev Underdelivered Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Del Dev Underdelivered Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_underdelivered_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_order_lead_time_days",
-        "aggregateFunction": "mean(optimate_purchasing_order_lead_time_days)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Procurement Lead Time (PLT)",
-        "displayNameTranslations": {
-            "en": "Procurement Lead Time (PLT)",
-            "de": "Bestellvorlaufzeit"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_order_lead_time_days": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_order_lead_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_procurement_lead_time_plt",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_replenishment_deviation_on_time",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_replenishment_deviation_on_time)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Replenishment Deviation On Time Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Replenishment Deviation On Time Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_replenishment_deviation_on_time": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Order Preparation Time Too High Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Order Preparation Time Too High Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_order_preparation_time_too_high_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_too_high_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_invoice_processing_time_ontimeboolean",
-        "aggregateFunction": "mean(optimate_purchasing_invoice_processing_time_ontimeboolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Invoice Processing Time On Time Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Invoice Processing Time On Time Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_invoice_processing_time_ontimeboolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_invoice_processing_time_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Order Preparation Time On Time Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Order Preparation Time On Time Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_order_preparation_time_on_time_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_deliveries_deviation_on_time_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_on_time_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "On-Time Sourcing Rate (OT)",
-        "displayNameTranslations": {
-            "de": "Einkaufstermintreue",
-            "en": "On-Time Sourcing Rate (OT)"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_deliveries_deviation_on_time_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_sourcing_rate_ot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Del Dev Overdelivered Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Del Dev Overdelivered Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_overdelivered_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_days",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_days)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Payments Deviation",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Payments Deviation"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_days": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_payments_deviation",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_invoice_processing_time_days",
-        "aggregateFunction": "mean(optimate_purchasing_invoice_processing_time_days)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Invoice Verification Processing Time",
-        "displayNameTranslations": {
-            "de": "Prozessdauer Rechnungskontrolle",
-            "en": "Invoice Verification Processing Time"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_invoice_processing_time_days": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_verification_processing_time",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_on_time_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_on_time_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "On-Time Supplier Payments Rate",
-        "displayNameTranslations": {
-            "en": "On-Time Supplier Payments Rate",
-            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_on_time_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_payments_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_too_late_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_too_late_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Late Supplier Payments Rate",
-        "displayNameTranslations": {
-            "en": "Late Supplier Payments Rate",
-            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_too_late_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_payments_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_replenishment_deviation_days",
-        "aggregateFunction": "mean(optimate_purchasing_replenishment_deviation_days)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Replenishment Time Deviation",
-        "displayNameTranslations": {
-            "en": "Replenishment Time Deviation",
-            "de": "Wiederbeschaffungszeitenabweichung"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_replenishment_deviation_days": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "days",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_replenishment_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment_time_deviation",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_global_payments_deviation_too_early_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_too_early_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Early Supplier Payments Rate",
-        "displayNameTranslations": {
-            "de": "Anteil Verfr\u00fchte Lieferantenzahlungen",
-            "en": "Early Supplier Payments Rate"
-        },
-        "groupByAggregations": {
-            "optimate_global_payments_deviation_too_early_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_payments_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
         "aggregateBy": "optimate_purchasing_goods_receipt_processing_time_days",
         "aggregateFunction": "mean(optimate_purchasing_goods_receipt_processing_time_days)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
+        "description": "This key figure measures the time between the physical delivery of goods and their complete booking in the ERP system. It shows the efficiency of the incoming goods process - from receipt, inspection and storage to system entry - and serves as an indicator of the speed and quality of logistics processes.\n\nThe creation date of the goods receipt item and the document date of the goods receipt are used for the calculation. The process duration of the goods receipt results from the difference between the creation date of the goods receipt item and the document date of the goods receipt.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the time between the physical delivery of goods and their complete booking in the ERP system. It shows the efficiency of the incoming goods process - from receipt, inspection and storage to system entry - and serves as an indicator of the speed and quality of logistics processes.\n\nThe creation date of the goods receipt item and the document date of the goods receipt are used for the calculation. The process duration of the goods receipt results from the difference between the creation date of the goods receipt item and the document date of the goods receipt.",
+            "de": "Diese Kennzahl misst die Zeitspanne zwischen der physischen Anlieferung einer Ware und ihrer vollst\u00e4ndigen Buchung im ERP-System. Sie zeigt die Effizienz des Wareneingangsprozesses \u2013 von der Annahme \u00fcber die Pr\u00fcfung und Einlagerung bis zur Systemerfassung \u2013 und dient als Indikator f\u00fcr die Geschwindigkeit und Qualit\u00e4t der logistischen Abl\u00e4ufe.\n\nZur Berechnung werden das Anlagedatum der Wareingangsposition und das Belegdatum des Wareneingangs herangezogen. Die Prozessdauer des Wareneingangs ergibt sich aus der Differenz zwischen dem Anlagedatum der Wareneingangsposition und dem Belegdatum des Wareneingangs."
+        },
         "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
             "en": "Goods Receipt Processing Time",
@@ -564,26 +26,32 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_goods_receipt_processing_time",
-        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time",
+        "parentAttributeGroupInternalName": "metrics",
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_days",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_days)",
+        "aggregateBy": "optimate_purchasing_invoice_processing_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_invoice_processing_time_days)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Order Preparation Time (days)",
+        "description": "This key figure measures the time between the receipt of a supplier invoice and its complete release for payment. It provides information on the efficiency and transparency of the invoice verification process and highlights potential delays in processing.\n\nA short processing time enables timely payment, improves the supplier relationship and increases the opportunity to take advantage of discounts. Longer processing times, on the other hand, can lead to payment arrears, missed discount deadlines and unnecessary financial burdens. The KPI is therefore a key indicator of the performance of the procure-to-pay process\n\nThe invoice date of the supplier invoice and the change date of the A/P invoice voucher document are used for the calculation. The invoice verification process duration is the difference between these two dates.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the time between the receipt of a supplier invoice and its complete release for payment. It provides information on the efficiency and transparency of the invoice verification process and highlights potential delays in processing.\n\nA short processing time enables timely payment, improves the supplier relationship and increases the opportunity to take advantage of discounts. Longer processing times, on the other hand, can lead to payment arrears, missed discount deadlines and unnecessary financial burdens. The KPI is therefore a key indicator of the performance of the procure-to-pay process\n\nThe invoice date of the supplier invoice and the change date of the A/P invoice voucher document are used for the calculation. The invoice verification process duration is the difference between these two dates.",
+            "de": "Diese Kennzahl misst die Zeitspanne zwischen dem Eingang einer Lieferantenrechnung und ihrer vollst\u00e4ndigen Freigabe zur Zahlung. Sie gibt Aufschluss \u00fcber die Effizienz und Transparenz des Rechnungspr\u00fcfungsprozesses und zeigt potenzielle Verz\u00f6gerungen in der Bearbeitung auf.\n\nEine kurze Durchlaufzeit erm\u00f6glicht eine fristgerechte Zahlung, verbessert das Lieferantenverh\u00e4ltnis und erh\u00f6ht die Chance auf die Nutzung von Skonti. L\u00e4ngere Bearbeitungszeiten k\u00f6nnen dagegen zu Zahlungsr\u00fcckst\u00e4nden, verpassten Skontofristen und unn\u00f6tigen finanziellen Belastungen f\u00fchren. Die Kennzahl ist daher ein zentraler Indikator f\u00fcr die Leistungsf\u00e4higkeit des Procure-to-Pay-Prozesses\n\nZur Berechnung werden das Rechnungsdatum der Lieferantenrechnung und das \u00c4nderungsdatum des Rechnungskontrollbelegs herangezogen. Die Prozessdauer der Rechnungskontrolle ergibt sich aus der Differenz zwischen diesen beiden Zeitpunkten."
+        },
+        "displayName": "Invoice Processing Time",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Order Preparation Time (days)"
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Processing Time"
         },
         "groupByAggregations": {
-            "optimate_purchasing_parking_lot_order_preparation_time_days": "mean"
+            "optimate_purchasing_invoice_processing_time_days": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
+        "isCrawlable": true,
         "optimizationOrientation": "Min",
         "optimizationTarget": false,
         "scopeId": null,
@@ -591,46 +59,23 @@
         "unit": "days",
         "defaultScopeRestrictions": [],
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "internalName": "optimate_purchasing_invoice_processing_time",
+        "parentAttributeGroupInternalName": "metrics",
         "id": "",
         "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_replenishment_deviation_too_high",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_replenishment_deviation_too_high)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Replenishment Deviation Too High Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Replenishment Deviation Too High Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_replenishment_deviation_too_high": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_replenishment_deviation_too_high_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_replenishment",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
         "aggregateBy": "optimate_purchasing_order_confirmend_boolean",
         "aggregateFunction": "mean(optimate_purchasing_order_confirmend_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
+        "description": "This key figure measures the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. It provides information on the reliability and response speed of suppliers with regard to feedback on orders received. A high rate indicates good communication and transparency in the ordering process, while a low rate potentially indicates process gaps or unreliable supplier relationships.\n\nFor the calculation, the number of confirmed order items by an order confirmation is set in relation to the total number of all order items.",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl misst den Anteil der Bestellpositionen, die vom Lieferanten durch eine Auftragsbest\u00e4tigung offiziell best\u00e4tigt wurden. Sie gibt Auskunft \u00fcber die Zuverl\u00e4ssigkeit und Reaktionsgeschwindigkeit der Lieferanten im Hinblick auf die R\u00fcckmeldung zu eingegangenen Bestellungen. Eine hohe Quote deutet auf eine gute Kommunikation und Transparenz im Bestellprozess hin, w\u00e4hrend eine niedrige Quote potenziell auf Prozessl\u00fccken oder unzuverl\u00e4ssige Lieferantenbeziehungen hinweist.\n\nZur Berechnung wird die Anzahl der best\u00e4tigten Bestellpositionen durch eine Auftragsbest\u00e4tigung ins Verh\u00e4ltnis zur Gesamtzahl aller Bestellpositionen gesetzt.",
+            "en": "This key figure measures the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. It provides information on the reliability and response speed of suppliers with regard to feedback on orders received. A high rate indicates good communication and transparency in the ordering process, while a low rate potentially indicates process gaps or unreliable supplier relationships.\n\nFor the calculation, the number of confirmed order items by an order confirmation is set in relation to the total number of all order items."
+        },
         "displayName": "Order Confirmation Rate",
         "displayNameTranslations": {
             "de": "Auftragsbest\u00e4tigungsquote",
@@ -649,26 +94,168 @@
         "defaultScopeRestrictions": [],
         "focusOrder": "",
         "internalName": "optimate_purchasing_order_confirmation_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_order_confirmation_rate",
+        "parentAttributeGroupInternalName": "metrics",
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_deliveries_deviation_days",
-        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_days)",
+        "aggregateBy": "optimate_global_payments_deviation_too_early_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_too_early_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Del Dev (days)",
+        "description": "This key figure measures the proportion of supplier invoices that were paid before the agreed due date. It shows the extent to which a company makes payments early - whether voluntarily, for example to take advantage of discounts, or involuntarily as a result of inefficient payment processes. A high value can therefore be interpreted both positively and critically and should be viewed in the respective context.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid too early in relation to the total number of all supplier invoices.",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl misst den Anteil der Lieferantenrechnungen, die vor dem vereinbarten F\u00e4lligkeitsdatum beglichen wurden. Sie zeigt auf, inwieweit ein Unternehmen Zahlungen vorzeitig leistet \u2013 sei es freiwillig, etwa zur Inanspruchnahme von Skonto, oder unfreiwillig infolge ineffizienter Zahlungsprozesse. Ein hoher Wert kann somit sowohl positiv als auch kritisch interpretiert werden und sollte im jeweiligen Kontext betrachtet werden.\n\nDie Berechnung basiert auf dem Vergleich zwischen den vereinbarten F\u00e4lligkeitsterminen und den tats\u00e4chlichen Zahlungsterminen aller Lieferantenzahlungen. Das Ergebnis ist der Anteil der zu fr\u00fch bezahlten Lieferantenrechnungen im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferantenrechnungen.",
+            "en": "This key figure measures the proportion of supplier invoices that were paid before the agreed due date. It shows the extent to which a company makes payments early - whether voluntarily, for example to take advantage of discounts, or involuntarily as a result of inefficient payment processes. A high value can therefore be interpreted both positively and critically and should be viewed in the respective context.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid too early in relation to the total number of all supplier invoices."
+        },
+        "displayName": "Share of early supplier payments",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Del Dev (days)"
+            "en": "Share of early supplier payments",
+            "de": "Anteil Verfr\u00fchte Lieferantenzahlungen"
         },
         "groupByAggregations": {
-            "optimate_purchasing_deliveries_deviation_days": "mean"
+            "optimate_global_payments_deviation_too_early_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_payments_deviation_too_early_rate",
+        "parentAttributeGroupInternalName": "metrics",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_in_full_sourcing_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the extent to which a delivery arrives at the recipient in the ordered quantity (\u201cin-full\u201d). It is used to evaluate the delivery completeness of suppliers with regard to the quantity delivered. It is based on a comparison between the quantity ordered and the quantity actually delivered for each item.\n\nThe calculation is based on a comparison between the order quantity and the actual quantity of goods received per item. The key figure measures the percentage of deliveries for which the delivered quantity corresponds exactly to the ordered quantity in relation to the total number of all deliveries.",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl misst, inwieweit eine Lieferung in der bestellten Menge (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Liefervollst\u00e4ndigkeit von Lieferanten im Hinblick auf die gelieferte Menge. Grundlage ist der Vergleich zwischen bestellter und tats\u00e4chlich gelieferter Menge je Position.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen der Bestellmenge und der tats\u00e4chlichen Menge des Wareneingangs je Position. Die Kennzahl misst den prozentualen Anteil der Lieferungen, bei denen die gelieferte Menge exakt der bestellten Menge entspricht, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen.",
+            "en": "This key figure measures the extent to which a delivery arrives at the recipient in the ordered quantity (\u201cin-full\u201d). It is used to evaluate the delivery completeness of suppliers with regard to the quantity delivered. It is based on a comparison between the quantity ordered and the quantity actually delivered for each item.\n\nThe calculation is based on a comparison between the order quantity and the actual quantity of goods received per item. The key figure measures the percentage of deliveries for which the delivered quantity corresponds exactly to the ordered quantity in relation to the total number of all deliveries."
+        },
+        "displayName": "In Full",
+        "displayNameTranslations": {
+            "de": "Einkaufsmengentreue",
+            "en": "In Full"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_in_full_sourcing_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
+        "parentAttributeGroupInternalName": "metrics",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_too_late_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_too_late_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the proportion of supplier invoices that were paid after the agreed due date. It provides information on the extent to which a company exceeds payment deadlines - whether deliberately to secure liquidity or as a result of inefficient or faulty payment processes. A high value can indicate targeted working capital management, but can also signal potential risks for the supplier relationship.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid late in relation to the total number of all supplier invoices.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the proportion of supplier invoices that were paid after the agreed due date. It provides information on the extent to which a company exceeds payment deadlines - whether deliberately to secure liquidity or as a result of inefficient or faulty payment processes. A high value can indicate targeted working capital management, but can also signal potential risks for the supplier relationship.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid late in relation to the total number of all supplier invoices.",
+            "de": "Diese Kennzahl misst den Anteil der Lieferantenrechnungen, die nach dem vereinbarten F\u00e4lligkeitsdatum beglichen wurden. Sie gibt Aufschluss dar\u00fcber, inwieweit ein Unternehmen Zahlungsfristen \u00fcberschreitet \u2013 sei es bewusst zur Liquidit\u00e4tssicherung oder infolge ineffizienter bzw. fehlerhafter Zahlungsprozesse. Ein hoher Wert kann auf ein gezieltes Working-Capital-Management hinweisen, aber auch potenzielle Risiken f\u00fcr die Lieferantenbeziehung signalisieren.\n\nDie Berechnung basiert auf dem Vergleich zwischen den vereinbarten F\u00e4lligkeitsterminen und den tats\u00e4chlichen Zahlungsterminen aller Lieferantenzahlungen. Das Ergebnis ist der Anteil der zu sp\u00e4t bezahlten Lieferantenrechnungen im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferantenrechnungen."
+        },
+        "displayName": "Share of late supplier payments",
+        "displayNameTranslations": {
+            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen",
+            "en": "Share of late supplier payments"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_too_late_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_payments_deviation_too_late_rate",
+        "parentAttributeGroupInternalName": "metrics",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_on_time_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_on_time_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the proportion of supplier invoices that were paid exactly on the agreed due date. It reflects the efficiency and reliability of payment processes and is considered an indicator of balanced liquidity management and trusting cooperation with suppliers. A high value shows that payment targets are consistently met without unnecessary discount losses or missed deadlines.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid on time in relation to the total number of all supplier invoices.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the proportion of supplier invoices that were paid exactly on the agreed due date. It reflects the efficiency and reliability of payment processes and is considered an indicator of balanced liquidity management and trusting cooperation with suppliers. A high value shows that payment targets are consistently met without unnecessary discount losses or missed deadlines.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid on time in relation to the total number of all supplier invoices.",
+            "de": "Diese Kennzahl misst den Anteil der Lieferantenrechnungen, die exakt zum vereinbarten F\u00e4lligkeitstermin beglichen wurden. Sie spiegelt die Effizienz und Zuverl\u00e4ssigkeit der Zahlungsprozesse wider und gilt als Indikator f\u00fcr eine ausgewogene Liquidit\u00e4tssteuerung sowie eine vertrauensvolle Zusammenarbeit mit Lieferanten. Ein hoher Wert zeigt, dass Zahlungsziele konsequent eingehalten werden, ohne unn\u00f6tige Skontoverluste oder Frist\u00fcberschreitungen.\n\nDie Berechnung basiert auf dem Vergleich zwischen den vereinbarten F\u00e4lligkeitsterminen und den tats\u00e4chlichen Zahlungsterminen aller Lieferantenzahlungen. Das Ergebnis ist der Anteil der p\u00fcnktlich bezahlten Lieferantenrechnungen im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferantenrechnungen."
+        },
+        "displayName": "Share of on-time supplier payments",
+        "displayNameTranslations": {
+            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen",
+            "en": "Share of on-time supplier payments"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_on_time_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_payments_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "metrics",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_replenishment_deviation_days",
+        "aggregateFunction": "mean(optimate_purchasing_replenishment_deviation_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. It provides important information on the quality of master data maintenance and the reliability of suppliers in terms of adherence to planned delivery times.\n\nA small deviation indicates realistic, well-maintained replenishment times and stable delivery processes. Larger deviations, on the other hand, can indicate outdated or inaccurate master data, a changed delivery situation or poor supplier performance. The KPI is therefore a key instrument for evaluating and continuously improving data quality and supplier management in the procurement process.\n\nThe creation date of the purchase order item, the replenishment lead time of the part stored in the system and the creation date of the corresponding goods receipt item are used for the calculation. The actual replenishment lead time results from the difference between the creation date of the order item and the creation date of the goods receipt item. Finally, the deviation from the replenishment lead time is calculated as the difference between the actual replenishment lead time and the replenishment lead time stored in the system for the part in question.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. It provides important information on the quality of master data maintenance and the reliability of suppliers in terms of adherence to planned delivery times.\n\nA small deviation indicates realistic, well-maintained replenishment times and stable delivery processes. Larger deviations, on the other hand, can indicate outdated or inaccurate master data, a changed delivery situation or poor supplier performance. The KPI is therefore a key instrument for evaluating and continuously improving data quality and supplier management in the procurement process.\n\nThe creation date of the purchase order item, the replenishment lead time of the part stored in the system and the creation date of the corresponding goods receipt item are used for the calculation. The actual replenishment lead time results from the difference between the creation date of the order item and the creation date of the goods receipt item. Finally, the deviation from the replenishment lead time is calculated as the difference between the actual replenishment lead time and the replenishment lead time stored in the system for the part in question.",
+            "de": "Diese Kennzahl misst die Differenz zwischen der im ERP-System hinterlegten Wiederbeschaffungszeit und der tats\u00e4chlich ben\u00f6tigten Lieferzeit. Sie liefert wichtige Hinweise auf die Qualit\u00e4t der Stammdatenpflege sowie auf die Zuverl\u00e4ssigkeit der Lieferanten in Bezug auf die Einhaltung der geplanten Lieferzeiten.\n\nEine geringe Abweichung deutet auf realistische, gut gepflegte Wiederbeschaffungszeiten und stabile Lieferprozesse hin. Gr\u00f6\u00dfere Abweichungen hingegen k\u00f6nnen auf veraltete oder ungenaue Stammdaten, eine ver\u00e4nderte Liefersituation oder eine mangelnde Lieferantenperformance hinweisen. Die Kennzahl ist daher ein zentrales Instrument zur Bewertung und kontinuierlichen Verbesserung der Datenqualit\u00e4t und Lieferantensteuerung im Beschaffungsprozess.\n\nZur Berechnung werden das Anlagedatum der Bestellposition, die im System hinterlegte Wiederbeschaffungszeit des Teils sowie das Anlagedatum der zugeh\u00f6rigen Wareneingangsposition herangezogen. Die tats\u00e4chliche Wiederbeschaffungszeit ergibt sich aus der Differenz zwischen dem Anlagedatum der Bestellposition und dem Anlagedatum der Wareneingangsposition. Die Abweichung von der Wiederbeschaffungszeit errechnet sich schlie\u00dflich als Differenz zwischen der tats\u00e4chlichen Wiederbeschaffungszeit und der im System hinterlegten Wiederbeschaffungszeit des betreffenden Teils."
+        },
+        "displayName": "Replenishment Deviation",
+        "displayNameTranslations": {
+            "en": "Replenishment Deviation",
+            "de": "Wiederbeschaffungszeitenabweichung"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_replenishment_deviation_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
         "optimizationOrientation": "Min",
         "optimizationTarget": false,
         "scopeId": null,
@@ -676,94 +263,114 @@
         "unit": "days",
         "defaultScopeRestrictions": [],
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_days",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
+        "internalName": "optimate_purchasing_replenishment_deviation_days",
+        "parentAttributeGroupInternalName": "metrics",
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_deliveries_deviation_amount",
-        "aggregateFunction": "mean(optimate_purchasing_deliveries_deviation_amount)",
+        "aggregateBy": "optimate_purchasing_on_time_sourcing_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_on_time_sourcing_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Del Dev (amount)",
+        "description": "This key figure measures the extent to which a delivery arrives at the recipient on the agreed date (\u201con time\u201d). It is used to evaluate the accuracy of suppliers with regard to delivery times. It is based on a comparison between the desired delivery date and the actual goods receipt date for each item.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each order item.\nThe key figure measures the percentage of deliveries that are made on time in relation to the total number of all deliveries.",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl misst, inwieweit eine Lieferung zum vereinbarten Termin (\u201eOn-Time\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Termingenauigkeit von Lieferanten hinsichtlich der Lieferzeit. Grundlage ist der Vergleich zwischen dem gew\u00fcnschten Liefertermin und dem tats\u00e4chlichen Wareneingangsdatum je Position.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen dem in der Bestellung angegebenen Wunschtermin und dem tats\u00e4chlichen Liefertermin je Bestellposition.\nDie Kennzahl misst den prozentualen Anteil der Lieferungen, die termingerecht erfolgen, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen. ",
+            "en": "This key figure measures the extent to which a delivery arrives at the recipient on the agreed date (\u201con time\u201d). It is used to evaluate the accuracy of suppliers with regard to delivery times. It is based on a comparison between the desired delivery date and the actual goods receipt date for each item.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each order item.\nThe key figure measures the percentage of deliveries that are made on time in relation to the total number of all deliveries."
+        },
+        "displayName": "On Time",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Del Dev (amount)"
+            "de": "Einkaufstermintreue",
+            "en": "On Time"
         },
         "groupByAggregations": {
-            "optimate_purchasing_deliveries_deviation_amount": "mean"
+            "optimate_purchasing_on_time_sourcing_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_amount",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_in_full_delivery",
-        "id": "",
-        "projectId": "",
-        "tenant": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Order Preparation Time Too Low Rate",
-        "displayNameTranslations": {
-            "en": "(Parking Lot) Order Preparation Time Too Low Rate"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_parking_lot_order_preparation_time_too_low_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
-        "optimizationOrientation": "Min",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_order_preparation_time_too_low_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_order_preparation_time",
+        "internalName": "optimate_purchasing_deliveries_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "metrics",
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean)",
+        "aggregateBy": "optimate_purchasing_order_lead_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_order_lead_time_days)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "(Parking Lot) Del Dev Too Late Rate",
+        "description": "This key figure measures the time span between the creation date of the order item and the requested delivery date communicated to the supplier. It provides information on the efficiency of procurement planning, the quality of demand forecasting and the ability to identify demand at an early stage. A short lead time indicates more reactive planning, while a longer lead time reflects a more strategic, forward-looking management of the procurement process.\n\nThe creation date and the requested date of the order item are used for the calculation. The difference between these two dates is the order lead time. The key figure therefore corresponds to the average difference between the creation date and the requested date of all order items.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the time span between the creation date of the order item and the requested delivery date communicated to the supplier. It provides information on the efficiency of procurement planning, the quality of demand forecasting and the ability to identify demand at an early stage. A short lead time indicates more reactive planning, while a longer lead time reflects a more strategic, forward-looking management of the procurement process.\n\nThe creation date and the requested date of the order item are used for the calculation. The difference between these two dates is the order lead time. The key figure therefore corresponds to the average difference between the creation date and the requested date of all order items.",
+            "de": "Diese Kennzahl misst die Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Sie gibt Aufschluss \u00fcber die Effizienz der Beschaffungsplanung, die Qualit\u00e4t der Bedarfsvorhersage und die F\u00e4higkeit zur fr\u00fchzeitigen Bedarfserkennung. Eine kurze Vorlaufzeit deutet auf eine eher reaktive Planung hin, w\u00e4hrend eine l\u00e4ngere Vorlaufzeit eine strategischere, vorausschauende Steuerung des Beschaffungsprozesses widerspiegelt.\n\nZur Berechnung wird das Anlagedatum und der Wunschtermin der Bestellposition herangezogen. Die Differenz zwischen diesen beiden Zeitpunkten ergibt die Bestellvorlaufzeit. Die Kennzahl entspricht somit der durchschnittlichen Differenz zwischen Anlagedatum und Wunschtermin aller Bestellpositionen."
+        },
+        "displayName": "Order Preparation Time",
         "displayNameTranslations": {
-            "en": "(Parking Lot) Del Dev Too Late Rate"
+            "en": "Order Preparation Time",
+            "de": "Bestellvorlaufzeit"
         },
         "groupByAggregations": {
-            "optimate_purchasing_parking_lot_deliveries_deviation_too_late_boolean": "mean"
+            "optimate_purchasing_order_lead_time_days": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": false,
+        "isCrawlable": true,
         "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_order_lead_time_days",
+        "parentAttributeGroupInternalName": "metrics",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_on_time_in_full_otif_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_on_time_in_full_otif_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This indicator records the extent to which a delivery reaches the recipient both on time and in full. It is used to evaluate the delivery performance of suppliers or the company's own reliability towards customers. It combines the two sub-indicators purchasing delivery reliability and purchasing on-time delivery reliability.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each item. In addition, the ordered quantity and the quantity recorded in the goods receipt are compared for each item. The key figure measures the percentage of deliveries that are made on time and in the correct quantity in relation to the total number of all deliveries. ",
+        "descriptionTranslations": {
+            "en": "This indicator records the extent to which a delivery reaches the recipient both on time and in full. It is used to evaluate the delivery performance of suppliers or the company's own reliability towards customers. It combines the two sub-indicators purchasing delivery reliability and purchasing on-time delivery reliability.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each item. In addition, the ordered quantity and the quantity recorded in the goods receipt are compared for each item. The key figure measures the percentage of deliveries that are made on time and in the correct quantity in relation to the total number of all deliveries. ",
+            "de": "Diese Kennzahl erfasst, inwieweit eine Lieferung sowohl p\u00fcnktlich (\u201eOn-Time\u201c) als auch vollst\u00e4ndig (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Lieferperformance von Lieferanten oder der eigenen Zuverl\u00e4ssigkeit gegen\u00fcber Kunden. Dabei kombiniert sie die beiden Teilkennzahlen Einkaufsliefertreue und Einkaufstermintreue.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen dem in der Bestellung angegebenen Wunsch- und dem tats\u00e4chlichen Liefertermin je Position. Zus\u00e4tzlich werden die bestellte Menge und die im Wareneingang erfasste Menge je Position gegen\u00fcbergestellt. Die Kennzahl misst den prozentualen Anteil der Lieferungen, die termin- und mengengerecht erfolgen, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen. "
+        },
+        "displayName": "On Time in Full",
+        "displayNameTranslations": {
+            "de": "Einkaufsliefertreue",
+            "en": "On Time in Full"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_on_time_in_full_otif_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
         "focusOrder": "",
-        "internalName": "optimate_purchasing_parking_lot_deliveries_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_parking_lot_on_time_delivery",
+        "internalName": "optimate_purchasing_otif_rate",
+        "parentAttributeGroupInternalName": "metrics",
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     }
 ]

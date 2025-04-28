@@ -28,15 +28,13 @@
             {
                 "order": 2,
                 "page": "optimate_purchasing_cockpit_otif"
-            },
-            {
-                "order": 3,
-                "page": "optimate_purchasing_parking_lot"
             }
         ],
         "scopeName": "",
         "id": "",
         "projectId": "",
-        "tenant": ""
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
     }
 ]
