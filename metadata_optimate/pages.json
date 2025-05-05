@@ -2,12 +2,13 @@
     {
         "description": "",
         "descriptionTranslations": {
+            "de": "",
             "en": ""
         },
         "displayName": "On Time in Full",
         "displayNameTranslations": {
             "en": "On Time in Full",
-            "de": "P\u00fcnktlich und vollst\u00e4ndig"
+            "de": "P\u00fcnktlich und vollst\u00e4ndig (OTIF)"
         },
         "hideIfColumns": [],
         "internalName": "optimate_purchasing_cockpit_otif",
@@ -75,11 +76,12 @@
     {
         "description": "",
         "descriptionTranslations": {
-            "en": ""
+            "en": "",
+            "de": ""
         },
         "displayName": "DPO",
         "displayNameTranslations": {
-            "de": "DPO",
+            "de": "Days Payables Outstanding (DPO)",
             "en": "DPO"
         },
         "hideIfColumns": [],

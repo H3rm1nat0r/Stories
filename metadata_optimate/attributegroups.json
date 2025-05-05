@@ -1,1 +1,90 @@
-[]
+[
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Optimate Purchasing OTIF",
+        "displayNameTranslations": {
+            "en": "OTIF"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_otif",
+        "parentAttributeGroupInternalName": "optimate_purchasing",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Optimate Purchasing",
+        "displayNameTranslations": {
+            "en": "Purchasing"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing",
+        "parentAttributeGroupInternalName": "optimate",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Optimate",
+        "displayNameTranslations": {},
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate",
+        "parentAttributeGroupInternalName": null,
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Optimate Purchasing DPO",
+        "displayNameTranslations": {
+            "en": "DPO"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_dpo",
+        "parentAttributeGroupInternalName": "optimate_purchasing",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Optimate Purchasing Overview",
+        "displayNameTranslations": {
+            "en": "Overview"
+        },
+        "isCoupled": false,
+        "focusOrder": "",
+        "internalName": "optimate_purchasing_overview",
+        "parentAttributeGroupInternalName": "optimate_purchasing",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    }
+]

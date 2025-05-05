@@ -37,8 +37,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
+                    "de": "Ist",
+                    "en": "Act"
                 }
             },
             {
@@ -48,8 +48,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             }
         ],
@@ -132,23 +132,26 @@
         },
         "argumentAxisTitle": "",
         "argumentAxisTitleTranslations": {
+            "de": "Zeit",
             "en": "Time"
         },
         "description": "The chart shows the monthly distribution of deliveries - divided into under-deliveries, over-deliveries and exact deliveries. The data is displayed as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
+            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferungen \u2013 unterteilt in Unterlieferungen, \u00dcberlieferungen und exakte Lieferungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Lieferkategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik.",
             "en": "The chart shows the monthly distribution of deliveries - divided into under-deliveries, over-deliveries and exact deliveries. The data is displayed as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric."
         },
         "displayName": "Share of complete deliveries, overdeliveries and underdeliveries",
         "displayNameTranslations": {
-            "de": "Anteil vollst\u00e4ndige Lieferunen, \u00dcber- und Unterlieferungen",
-            "en": "Share of complete deliveries, overdeliveries and underdeliveries"
+            "en": "Share of complete deliveries, overdeliveries and underdeliveries",
+            "de": "Anteil vollst\u00e4ndige Lieferungen, \u00dcber- und Unterlieferungen"
         },
         "internalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
         "report": "dummy",
         "summary": null,
         "valueAxisTitle": "",
         "valueAxisTitleTranslations": {
-            "en": "Share (%)"
+            "en": "Share (%)",
+            "de": "Anteil (%)"
         },
         "values": [
             {
@@ -158,27 +161,8 @@
                 "id": "",
                 "legend": "Over (Pred)",
                 "legendTranslations": {
-                    "en": "Over (Pred)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
-                "id": "",
-                "legend": "Under (Pred)",
-                "legendTranslations": {
-                    "en": "Under (Pred)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_deliveries_deviation_in_full_rate",
-                "id": "",
-                "legend": "In Full (Pred)",
-                "legendTranslations": {
-                    "en": "In Full (Pred)"
+                    "en": "Over (Pred)",
+                    "de": "\u00dcber (progn)"
                 }
             },
             {
@@ -188,7 +172,8 @@
                 "id": "",
                 "legend": "In Full (Act)",
                 "legendTranslations": {
-                    "en": "In Full (Act)"
+                    "en": "In Full (Act)",
+                    "de": "Vollst\u00e4ndig (Ist)"
                 }
             },
             {
@@ -198,7 +183,30 @@
                 "id": "",
                 "legend": "Under (Act)",
                 "legendTranslations": {
+                    "de": "Unter (Ist)",
                     "en": "Under (Act)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_deliveries_deviation_in_full_rate",
+                "id": "",
+                "legend": "In Full (Pred)",
+                "legendTranslations": {
+                    "de": "Vollst\u00e4ndig (progn)",
+                    "en": "In Full (Pred)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
+                "id": "",
+                "legend": "Under (Pred)",
+                "legendTranslations": {
+                    "de": "Unter (progn)",
+                    "en": "Under (Pred)"
                 }
             },
             {
@@ -208,7 +216,8 @@
                 "id": "",
                 "legend": "Over (Act)",
                 "legendTranslations": {
-                    "en": "Over (Act)"
+                    "en": "Over (Act)",
+                    "de": "\u00dcber (Ist)"
                 }
             }
         ],
@@ -293,8 +302,8 @@
         },
         "description": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der Bestellvorlaufzeit - Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik",
-            "en": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
+            "en": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der Bestellvorlaufzeit - Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
         },
         "displayName": "Order Preparation Time (Days)",
         "displayNameTranslations": {
@@ -316,6 +325,7 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
+                    "de": "Progn",
                     "en": "Pred"
                 }
             },
@@ -326,8 +336,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -377,8 +387,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
@@ -388,8 +398,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -410,53 +420,37 @@
         },
         "argumentAxisTitle": "Time",
         "argumentAxisTitleTranslations": {
-            "en": "Time"
+            "en": "Time",
+            "de": "Zeit"
         },
         "description": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
+            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferungen \u2013 unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Lieferkategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik.",
             "en": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric."
         },
         "displayName": "Share of early, on-time and late deliveries",
         "displayNameTranslations": {
-            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen",
-            "en": "Share of early, on-time and late deliveries"
+            "en": "Share of early, on-time and late deliveries",
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen"
         },
         "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "report": "dummy",
         "summary": null,
         "valueAxisTitle": "Share (%)",
         "valueAxisTitleTranslations": {
+            "de": "Anteil (%)",
             "en": "Share (%)"
         },
         "values": [
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
                 "id": "",
-                "legend": "Too late",
+                "legend": "Too early",
                 "legendTranslations": {
-                    "en": "Too late (Act)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
-                "id": "",
-                "legend": "On Time (Pred)",
-                "legendTranslations": {
-                    "en": "On Time (Pred)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
-                "id": "",
-                "legend": "Too Late (Pred)",
-                "legendTranslations": {
-                    "en": "Too Late (Pred)"
+                    "en": "Too early",
+                    "de": "Zu fr\u00fch (ist)"
                 }
             },
             {
@@ -466,7 +460,19 @@
                 "id": "",
                 "legend": "On Time (Act)",
                 "legendTranslations": {
-                    "en": "On Time (Act)"
+                    "en": "On Time (Act)",
+                    "de": "P\u00fcnktlich (ist)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "id": "",
+                "legend": "Too late",
+                "legendTranslations": {
+                    "en": "Too late (Act)",
+                    "de": "Zu sp\u00e4t (ist)"
                 }
             },
             {
@@ -476,17 +482,30 @@
                 "id": "",
                 "legend": "Too early (Pred)",
                 "legendTranslations": {
-                    "en": "Too early (Pred)"
+                    "en": "Too early (Pred)",
+                    "de": "Zu fr\u00fch (progn)"
                 }
             },
             {
-                "aggregation": "actuals",
+                "aggregation": "prediction",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
                 "id": "",
-                "legend": "Too early",
+                "legend": "On Time (Pred)",
                 "legendTranslations": {
-                    "en": "Too early (Act)"
+                    "en": "On Time (Pred)",
+                    "de": "P\u00fcnktlich (progn)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "id": "",
+                "legend": "Too Late (Pred)",
+                "legendTranslations": {
+                    "de": "Zu sp\u00e4t (progn)",
+                    "en": "Too Late (Pred)"
                 }
             }
         ],
@@ -536,8 +555,8 @@
                 "id": "",
                 "legend": "Too late (act)",
                 "legendTranslations": {
-                    "en": "Too late (act)",
-                    "de": "Zu sp\u00e4t (ist)"
+                    "de": "Zu sp\u00e4t (ist)",
+                    "en": "Too late (act)"
                 }
             },
             {
@@ -580,8 +599,8 @@
                 "id": "",
                 "legend": "Too late (pred)",
                 "legendTranslations": {
-                    "en": "Too late (pred)",
-                    "de": "Zu sp\u00e4t (progn)"
+                    "de": "Zu sp\u00e4t (progn)",
+                    "en": "Too late (pred)"
                 }
             },
             {
@@ -639,8 +658,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
@@ -650,8 +669,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -701,8 +720,8 @@
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
