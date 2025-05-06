@@ -45,31 +45,37 @@ for customer in customers:
         filter_type=FilterType.STARTSWITH,
         filter_value=FilterValue.DISPLAYNAME,
     )
-
-    nl = NemoLibrary(
-        tenant=tenant,
-        userid=userid,
-        password=password,
-        environment=environment,
-        metadata="./metadata_optimate_purchasing"
-    )
-    nl.MetaDataCreate(
+    nl.MetaDataDelete(
         projectname=PROJECT_NAME,
-        filter="optimate_purchasing",
+        filter="optimate",
         filter_type=FilterType.STARTSWITH,
-        filter_value=FilterValue.DISPLAYNAME,
+        filter_value=FilterValue.INTERNALNAME,
     )
 
-    nl = NemoLibrary(
-        tenant=tenant,
-        userid=userid,
-        password=password,
-        environment=environment,
-        metadata="./metadata_optimate_global"
-    )
-    nl.MetaDataCreate(
-        projectname=PROJECT_NAME,
-        filter="optimate_global",
-        filter_type=FilterType.STARTSWITH,
-        filter_value=FilterValue.DISPLAYNAME,
-    )
+    # nl = NemoLibrary(
+    #     tenant=tenant,
+    #     userid=userid,
+    #     password=password,
+    #     environment=environment,
+    #     metadata="./metadata_optimate_purchasing"
+    # )
+    # nl.MetaDataCreate(
+    #     projectname=PROJECT_NAME,
+    #     filter="optimate_purchasing",
+    #     filter_type=FilterType.STARTSWITH,
+    #     filter_value=FilterValue.DISPLAYNAME,
+    # )
+
+    # nl = NemoLibrary(
+    #     tenant=tenant,
+    #     userid=userid,
+    #     password=password,
+    #     environment=environment,
+    #     metadata="./metadata_optimate_global"
+    # )
+    # nl.MetaDataCreate(
+    #     projectname=PROJECT_NAME,
+    #     filter="optimate_global",
+    #     filter_type=FilterType.STARTSWITH,
+    #     filter_value=FilterValue.DISPLAYNAME,
+    # )
