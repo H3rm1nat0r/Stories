@@ -6,134 +6,10 @@
             "column": "DATE",
             "dataType": "datetime"
         },
-        "argumentAxisTitle": "Time",
-        "argumentAxisTitleTranslations": {
-            "en": "Time",
-            "de": "Zeit"
-        },
-        "description": "The diagram shows the monthly development of the average process duration in goods receipt - i.e. the time between the physical delivery of goods and their complete booking in the ERP system. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
-        "descriptionTranslations": {
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der durchschnittlichen Prozessdauer im Wareneingang \u2013 also der Zeitspanne zwischen der physischen Anlieferung einer Ware und ihrer vollst\u00e4ndigen Buchung im ERP-System. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik.",
-            "en": "The diagram shows the monthly development of the average process duration in goods receipt - i.e. the time between the physical delivery of goods and their complete booking in the ERP system. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
-        },
-        "displayName": "Goods Receipt Processing Time",
-        "displayNameTranslations": {
-            "de": "Prozessdauer Wareneingang",
-            "en": "Goods Receipt Processing Time"
-        },
-        "internalName": "optimate_purchasing_goods_receipt_processing_time",
-        "report": "dummy",
-        "summary": null,
-        "valueAxisTitle": "Time (Days)",
-        "valueAxisTitleTranslations": {
-            "de": "Zeit (Tage)",
-            "en": "Time (Days)"
-        },
-        "values": [
-            {
-                "aggregation": "actuals",
-                "chartType": "line",
-                "column": "optimate_purchasing_goods_receipt_processing_time",
-                "id": "",
-                "legend": "Act",
-                "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "line",
-                "column": "optimate_purchasing_goods_receipt_processing_time",
-                "id": "",
-                "legend": "Pred",
-                "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
-                }
-            }
-        ],
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": "",
-        "basedOnMetric": true,
-        "conflictState": ""
-    },
-    {
-        "alternateVisualization": false,
-        "argument": {
-            "aggregation": "month",
-            "column": "DATE",
-            "dataType": "datetime"
-        },
-        "argumentAxisTitle": "Time",
-        "argumentAxisTitleTranslations": {
-            "en": "Time",
-            "de": "Zeit"
-        },
-        "description": "The diagram shows the monthly development of the replenishment lead time deviation - i.e. the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. The zero line marks the exact match with the actual replenishment lead time; downward deviations indicate that replenishment lead times are too low and upward deviations indicate that replenishment lead times are too high compared to the actual replenishment lead time. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
-        "descriptionTranslations": {
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der Wiedebeschaffungszeitenabweichung - also der Differenz zwischen der im ERP-System hinterlegten Wiederbeschaffungszeit und der tats\u00e4chlich ben\u00f6tigten Lieferzeit. Die Nulllinie markiert die exakte \u00dcbereinstimmung mit der tats\u00e4chlichen Wiederbeschaffungszeit; Abweichungen nach unten deuten auf zu niedrige, Abweichungen nach oben auf zu hohe Wiederbeschaffungszeiten im Vergleich zur realen Beschaffungsdauer hin. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik",
-            "en": "The diagram shows the monthly development of the replenishment lead time deviation - i.e. the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. The zero line marks the exact match with the actual replenishment lead time; downward deviations indicate that replenishment lead times are too low and upward deviations indicate that replenishment lead times are too high compared to the actual replenishment lead time. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
-        },
-        "displayName": "Replenishment Deviation",
-        "displayNameTranslations": {
-            "en": "Replenishment Deviation",
-            "de": "Wiederbeschaffungszeitenabweichung"
-        },
-        "internalName": "optimate_purchasing_replenishment_deviation",
-        "report": "dummy",
-        "summary": null,
-        "valueAxisTitle": "Time (Days)",
-        "valueAxisTitleTranslations": {
-            "en": "Time (Days)",
-            "de": "Zeit (Tage)"
-        },
-        "values": [
-            {
-                "aggregation": "prediction",
-                "chartType": "line",
-                "column": "optimate_purchasing_replenishment_deviation_days",
-                "id": "",
-                "legend": "Pred",
-                "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
-                }
-            },
-            {
-                "aggregation": "actuals",
-                "chartType": "line",
-                "column": "optimate_purchasing_replenishment_deviation_days",
-                "id": "",
-                "legend": "Act",
-                "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
-                }
-            }
-        ],
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": "",
-        "basedOnMetric": true,
-        "conflictState": ""
-    },
-    {
-        "alternateVisualization": false,
-        "argument": {
-            "aggregation": "month",
-            "column": "DATE",
-            "dataType": "datetime"
-        },
         "argumentAxisTitle": "",
         "argumentAxisTitleTranslations": {
-            "de": "Zeit",
-            "en": "Time"
+            "en": "Time",
+            "de": "Zeit"
         },
         "description": "The chart shows the monthly distribution of deliveries - divided into under-deliveries, over-deliveries and exact deliveries. The data is displayed as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
@@ -142,8 +18,8 @@
         },
         "displayName": "Share of complete deliveries, overdeliveries and underdeliveries",
         "displayNameTranslations": {
-            "en": "Share of complete deliveries, overdeliveries and underdeliveries",
-            "de": "Anteil vollst\u00e4ndige Lieferungen, \u00dcber- und Unterlieferungen"
+            "de": "Anteil vollst\u00e4ndige Lieferungen, \u00dcber- und Unterlieferungen",
+            "en": "Share of complete deliveries, overdeliveries and underdeliveries"
         },
         "internalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
         "report": "dummy",
@@ -154,6 +30,39 @@
             "de": "Anteil (%)"
         },
         "values": [
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_deliveries_deviation_in_full_rate",
+                "id": "",
+                "legend": "In Full (Pred)",
+                "legendTranslations": {
+                    "de": "Vollst\u00e4ndig (progn)",
+                    "en": "In Full (Pred)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
+                "id": "",
+                "legend": "Under (Act)",
+                "legendTranslations": {
+                    "de": "Unter (Ist)",
+                    "en": "Under (Act)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
+                "id": "",
+                "legend": "Under (Pred)",
+                "legendTranslations": {
+                    "en": "Under (Pred)",
+                    "de": "Unter (progn)"
+                }
+            },
             {
                 "aggregation": "prediction",
                 "chartType": "stackedbar",
@@ -172,41 +81,8 @@
                 "id": "",
                 "legend": "In Full (Act)",
                 "legendTranslations": {
-                    "en": "In Full (Act)",
-                    "de": "Vollst\u00e4ndig (Ist)"
-                }
-            },
-            {
-                "aggregation": "actuals",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
-                "id": "",
-                "legend": "Under (Act)",
-                "legendTranslations": {
-                    "de": "Unter (Ist)",
-                    "en": "Under (Act)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_deliveries_deviation_in_full_rate",
-                "id": "",
-                "legend": "In Full (Pred)",
-                "legendTranslations": {
-                    "de": "Vollst\u00e4ndig (progn)",
-                    "en": "In Full (Pred)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
-                "id": "",
-                "legend": "Under (Pred)",
-                "legendTranslations": {
-                    "de": "Unter (progn)",
-                    "en": "Under (Pred)"
+                    "de": "Vollst\u00e4ndig (Ist)",
+                    "en": "In Full (Act)"
                 }
             },
             {
@@ -238,13 +114,74 @@
         },
         "argumentAxisTitle": "Time",
         "argumentAxisTitleTranslations": {
-            "de": "Zeit",
-            "en": "Time"
+            "en": "Time",
+            "de": "Zeit"
+        },
+        "description": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+        "descriptionTranslations": {
+            "en": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der Bestellvorlaufzeit - Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+        },
+        "displayName": "Order Preparation Time (Days)",
+        "displayNameTranslations": {
+            "de": "Bestellvorlaufzeit (Tage)",
+            "en": "Order Preparation Time (Days)"
+        },
+        "internalName": "optimate_purchasing_order_preparation_time_days",
+        "report": "dummy",
+        "summary": null,
+        "valueAxisTitle": "Time (Days)",
+        "valueAxisTitleTranslations": {
+            "en": "Time (Days)"
+        },
+        "values": [
+            {
+                "aggregation": "actuals",
+                "chartType": "line",
+                "column": "optimate_purchasing_procurement_lead_time_days_metric",
+                "id": "",
+                "legend": "Act",
+                "legendTranslations": {
+                    "en": "Act",
+                    "de": "Ist"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "line",
+                "column": "optimate_purchasing_procurement_lead_time_days_metric",
+                "id": "",
+                "legend": "Pred",
+                "legendTranslations": {
+                    "en": "Pred",
+                    "de": "Progn"
+                }
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "basedOnMetric": true,
+        "conflictState": ""
+    },
+    {
+        "alternateVisualization": false,
+        "argument": {
+            "aggregation": "month",
+            "column": "DATE",
+            "dataType": "datetime"
+        },
+        "argumentAxisTitle": "Time",
+        "argumentAxisTitleTranslations": {
+            "en": "Time",
+            "de": "Zeit"
         },
         "description": "The diagram shows the monthly development of purchasing delivery reliability, i.e. how reliably suppliers deliver ordered goods on time.  This key figure records the extent to which a delivery reaches the recipient both on time and in full. The development of the values is shown as a line, separated into actual values and forecast values for future periods.  The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "en": "The diagram shows the monthly development of purchasing delivery reliability, i.e. how reliably suppliers deliver ordered goods on time.  This key figure records the extent to which a delivery reaches the recipient both on time and in full. The development of the values is shown as a line, separated into actual values and forecast values for future periods.  The details of the calculation can be found in the underlying metric.",
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der Einkausfliefertreue, also wie zuverl\u00e4ssig Lieferanten bestellte Waren termingerecht liefern.  Diese Kennzahl erfasst, inwieweit eine Lieferung sowohl p\u00fcnktlich (\u201eOn-Time\u201c) als auch vollst\u00e4ndig (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der Einkausfliefertreue, also wie zuverl\u00e4ssig Lieferanten bestellte Waren termingerecht liefern.  Diese Kennzahl erfasst, inwieweit eine Lieferung sowohl p\u00fcnktlich (\u201eOn-Time\u201c) als auch vollst\u00e4ndig (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik",
+            "en": "The diagram shows the monthly development of purchasing delivery reliability, i.e. how reliably suppliers deliver ordered goods on time.  This key figure records the extent to which a delivery reaches the recipient both on time and in full. The development of the values is shown as a line, separated into actual values and forecast values for future periods.  The details of the calculation can be found in the underlying metric."
         },
         "displayName": "On Time  in Full (OTIF)",
         "displayNameTranslations": {
@@ -275,8 +212,8 @@
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
-                    "de": "Ist",
-                    "en": "Act"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -297,47 +234,48 @@
         },
         "argumentAxisTitle": "Time",
         "argumentAxisTitleTranslations": {
-            "de": "Zeit",
-            "en": "Time"
+            "en": "Time",
+            "de": "Zeit"
         },
-        "description": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+        "description": "The diagram shows the monthly development of the replenishment lead time deviation - i.e. the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. The zero line marks the exact match with the actual replenishment lead time; downward deviations indicate that replenishment lead times are too low and upward deviations indicate that replenishment lead times are too high compared to the actual replenishment lead time. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "en": "The diagram shows the monthly development of the order lead time - the period between the creation date of the order item and the requested delivery date communicated to the supplier. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der Bestellvorlaufzeit - Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+            "en": "The diagram shows the monthly development of the replenishment lead time deviation - i.e. the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. The zero line marks the exact match with the actual replenishment lead time; downward deviations indicate that replenishment lead times are too low and upward deviations indicate that replenishment lead times are too high compared to the actual replenishment lead time. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der Wiedebeschaffungszeitenabweichung - also der Differenz zwischen der im ERP-System hinterlegten Wiederbeschaffungszeit und der tats\u00e4chlich ben\u00f6tigten Lieferzeit. Die Nulllinie markiert die exakte \u00dcbereinstimmung mit der tats\u00e4chlichen Wiederbeschaffungszeit; Abweichungen nach unten deuten auf zu niedrige, Abweichungen nach oben auf zu hohe Wiederbeschaffungszeiten im Vergleich zur realen Beschaffungsdauer hin. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
         },
-        "displayName": "Order Preparation Time (Days)",
+        "displayName": "Replenishment Deviation",
         "displayNameTranslations": {
-            "de": "Bestellvorlaufzeit (Tage)",
-            "en": "Order Preparation Time (Days)"
+            "de": "Wiederbeschaffungszeitenabweichung",
+            "en": "Replenishment Deviation"
         },
-        "internalName": "optimate_purchasing_order_preparation_time_days",
+        "internalName": "optimate_purchasing_replenishment_deviation",
         "report": "dummy",
         "summary": null,
         "valueAxisTitle": "Time (Days)",
         "valueAxisTitleTranslations": {
-            "en": "Time (Days)"
+            "en": "Time (Days)",
+            "de": "Zeit (Tage)"
         },
         "values": [
             {
-                "aggregation": "prediction",
-                "chartType": "line",
-                "column": "optimate_purchasing_procurement_lead_time_days",
-                "id": "",
-                "legend": "Pred",
-                "legendTranslations": {
-                    "de": "Progn",
-                    "en": "Pred"
-                }
-            },
-            {
                 "aggregation": "actuals",
                 "chartType": "line",
-                "column": "optimate_purchasing_procurement_lead_time_days",
+                "column": "optimate_purchasing_replenishment_deviation_days_metric",
                 "id": "",
                 "legend": "Act",
                 "legendTranslations": {
                     "en": "Act",
                     "de": "Ist"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "line",
+                "column": "optimate_purchasing_replenishment_deviation_days_metric",
+                "id": "",
+                "legend": "Pred",
+                "legendTranslations": {
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             }
         ],
@@ -363,13 +301,13 @@
         },
         "description": "The chart shows the monthly development of the DPO (Days Payable Outstanding) key figure - i.e. the average number of days a company needs to pay supplier invoices. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der DPO-Kennzahl (Days Payable Outstanding) \u2013 also der durchschnittlichen Anzahl an Tagen, die ein Unternehmen ben\u00f6tigt, um Lieferantenrechnungen zu bezahlen. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik",
-            "en": "The chart shows the monthly development of the DPO (Days Payable Outstanding) key figure - i.e. the average number of days a company needs to pay supplier invoices. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
+            "en": "The chart shows the monthly development of the DPO (Days Payable Outstanding) key figure - i.e. the average number of days a company needs to pay supplier invoices. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der DPO-Kennzahl (Days Payable Outstanding) \u2013 also der durchschnittlichen Anzahl an Tagen, die ein Unternehmen ben\u00f6tigt, um Lieferantenrechnungen zu bezahlen. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
         },
         "displayName": "Days Payables Outstanding (DPO)",
         "displayNameTranslations": {
-            "en": "Days Payables Outstanding (DPO)",
-            "de": "Im Einkauf zur\u00fcckgehaltens Kapital (DPO)"
+            "de": "Im Einkauf zur\u00fcckgehaltens Kapital (DPO)",
+            "en": "Days Payables Outstanding (DPO)"
         },
         "internalName": "optimate_purchasing_days_payables_outstanding_dpo",
         "report": "dummy",
@@ -381,17 +319,6 @@
         },
         "values": [
             {
-                "aggregation": "prediction",
-                "chartType": "line",
-                "column": "d_p_o",
-                "id": "",
-                "legend": "Pred",
-                "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
-                }
-            },
-            {
                 "aggregation": "actuals",
                 "chartType": "line",
                 "column": "d_p_o",
@@ -400,6 +327,17 @@
                 "legendTranslations": {
                     "en": "Act",
                     "de": "Ist"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "line",
+                "column": "d_p_o",
+                "id": "",
+                "legend": "Pred",
+                "legendTranslations": {
+                    "de": "Progn",
+                    "en": "Pred"
                 }
             }
         ],
@@ -423,17 +361,79 @@
             "en": "Time",
             "de": "Zeit"
         },
-        "description": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+        "description": "The diagram shows the monthly development of the average process duration in goods receipt - i.e. the time between the physical delivery of goods and their complete booking in the ERP system. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferungen \u2013 unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Lieferkategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik.",
-            "en": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric."
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der durchschnittlichen Prozessdauer im Wareneingang \u2013 also der Zeitspanne zwischen der physischen Anlieferung einer Ware und ihrer vollst\u00e4ndigen Buchung im ERP-System. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik.",
+            "en": "The diagram shows the monthly development of the average process duration in goods receipt - i.e. the time between the physical delivery of goods and their complete booking in the ERP system. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
         },
-        "displayName": "Share of early, on-time and late deliveries",
+        "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "Share of early, on-time and late deliveries",
-            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen"
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
         },
-        "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
+        "internalName": "optimate_purchasing_goods_receipt_processing_time_diagram",
+        "report": "dummy",
+        "summary": null,
+        "valueAxisTitle": "Time (Days)",
+        "valueAxisTitleTranslations": {
+            "de": "Zeit (Tage)",
+            "en": "Time (Days)"
+        },
+        "values": [
+            {
+                "aggregation": "actuals",
+                "chartType": "line",
+                "column": "optimate_purchasing_goods_receipt_processing_time",
+                "id": "",
+                "legend": "Act",
+                "legendTranslations": {
+                    "en": "Act",
+                    "de": "Ist"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "line",
+                "column": "optimate_purchasing_goods_receipt_processing_time",
+                "id": "",
+                "legend": "Pred",
+                "legendTranslations": {
+                    "en": "Pred",
+                    "de": "Progn"
+                }
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "basedOnMetric": true,
+        "conflictState": ""
+    },
+    {
+        "alternateVisualization": false,
+        "argument": {
+            "aggregation": "month",
+            "column": "DATE",
+            "dataType": "datetime"
+        },
+        "argumentAxisTitle": "Time",
+        "argumentAxisTitleTranslations": {
+            "en": "Time",
+            "de": "Zeit"
+        },
+        "description": "The chart shows the monthly distribution of supplier payments based on payment timing \u2013 categorized into early, on-time, and late payments. The data is presented as stacked bars for each month, with each bar illustrating the relative share of the three payment categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+        "descriptionTranslations": {
+            "en": "The chart shows the monthly distribution of supplier payments based on payment timing \u2013 categorized into early, on-time, and late payments. The data is presented as stacked bars for each month, with each bar illustrating the relative share of the three payment categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferantenzahlungen nach Zahlungstermin \u2013 unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Zahlungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Zahlungskategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+        },
+        "displayName": "Share of early, on-time and late supplier payments",
+        "displayNameTranslations": {
+            "en": "Share of early, on-time and late supplier payments",
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferantenzahlungen"
+        },
+        "internalName": "optimate_purchasing_supplier_payments",
         "report": "dummy",
         "summary": null,
         "valueAxisTitle": "Share (%)",
@@ -445,67 +445,67 @@
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "column": "optimate_purchasing_payments_deviation_too_early_rate",
                 "id": "",
-                "legend": "Too early",
+                "legend": "Too early (act)",
                 "legendTranslations": {
-                    "en": "Too early",
-                    "de": "Zu fr\u00fch (ist)"
+                    "de": "Zu fr\u00fch (ist)",
+                    "en": "Too early (act)"
                 }
             },
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
+                "column": "optimate_purchasing_payments_deviation_too_late_rate",
                 "id": "",
-                "legend": "On Time (Act)",
+                "legend": "Too late (act)",
                 "legendTranslations": {
-                    "en": "On Time (Act)",
-                    "de": "P\u00fcnktlich (ist)"
-                }
-            },
-            {
-                "aggregation": "actuals",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
-                "id": "",
-                "legend": "Too late",
-                "legendTranslations": {
-                    "en": "Too late (Act)",
-                    "de": "Zu sp\u00e4t (ist)"
+                    "de": "Zu sp\u00e4t (ist)",
+                    "en": "Too late (act)"
                 }
             },
             {
                 "aggregation": "prediction",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "column": "optimate_purchasing_payments_deviation_too_early_rate",
                 "id": "",
-                "legend": "Too early (Pred)",
+                "legend": "Too early (pred)",
                 "legendTranslations": {
-                    "en": "Too early (Pred)",
+                    "en": "Too early (pred)",
                     "de": "Zu fr\u00fch (progn)"
                 }
             },
             {
                 "aggregation": "prediction",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
+                "column": "optimate_purchasing_payments_deviation_on_time_rate",
                 "id": "",
-                "legend": "On Time (Pred)",
+                "legend": "On-Time (pred)",
                 "legendTranslations": {
-                    "en": "On Time (Pred)",
+                    "en": "On-Time (pred)",
                     "de": "P\u00fcnktlich (progn)"
                 }
             },
             {
                 "aggregation": "prediction",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
+                "column": "optimate_purchasing_payments_deviation_too_late_rate",
                 "id": "",
-                "legend": "Too Late (Pred)",
+                "legend": "Too late (pred)",
                 "legendTranslations": {
-                    "de": "Zu sp\u00e4t (progn)",
-                    "en": "Too Late (Pred)"
+                    "en": "Too late (pred)",
+                    "de": "Zu sp\u00e4t (progn)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_payments_deviation_on_time_rate",
+                "id": "",
+                "legend": "On-Time (act)",
+                "legendTranslations": {
+                    "en": "On-Time (act)",
+                    "de": "P\u00fcnktlich (ist)"
                 }
             }
         ],
@@ -529,17 +529,17 @@
             "de": "Zeit",
             "en": "Time"
         },
-        "description": "The chart shows the monthly distribution of supplier payments based on payment timing \u2013 categorized into early, on-time, and late payments. The data is presented as stacked bars for each month, with each bar illustrating the relative share of the three payment categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
+        "description": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
         "descriptionTranslations": {
-            "en": "The chart shows the monthly distribution of supplier payments based on payment timing \u2013 categorized into early, on-time, and late payments. The data is presented as stacked bars for each month, with each bar illustrating the relative share of the three payment categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric.",
-            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferantenzahlungen nach Zahlungstermin \u2013 unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Zahlungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Zahlungskategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik"
+            "de": "Das Diagramm zeigt die monatliche Verteilung der Lieferungen \u2013 unterteilt in verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen. Die Daten werden als gestapelte Balken pro Monat dargestellt, wobei jeder Balken die relative Verteilung der drei Lieferkategorien abbildet. Zus\u00e4tzlich werden Prognosewerte f\u00fcr kommende Monate dargestellt. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik.",
+            "en": "The chart shows the monthly distribution of deliveries - divided into early, on-time and late deliveries. The data is presented as stacked bars per month, with each bar showing the relative distribution of the three delivery categories. Additionally, forecast values for upcoming months are included. The details of the calculation can be found in the underlying metric."
         },
-        "displayName": "Share of early, on-time and late supplier payments",
+        "displayName": "Share of early, on-time and late deliveries",
         "displayNameTranslations": {
-            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferantenzahlungen",
-            "en": "Share of early, on-time and late supplier payments"
+            "en": "Share of early, on-time and late deliveries",
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen"
         },
-        "internalName": "optimate_purchasing_supplier_payments",
+        "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "report": "dummy",
         "summary": null,
         "valueAxisTitle": "Share (%)",
@@ -551,67 +551,129 @@
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_payments_deviation_too_late_rate",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
                 "id": "",
-                "legend": "Too late (act)",
+                "legend": "Too late",
                 "legendTranslations": {
                     "de": "Zu sp\u00e4t (ist)",
-                    "en": "Too late (act)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_payments_deviation_on_time_rate",
-                "id": "",
-                "legend": "On-Time (pred)",
-                "legendTranslations": {
-                    "de": "P\u00fcnktlich (progn)",
-                    "en": "On-Time (pred)"
-                }
-            },
-            {
-                "aggregation": "prediction",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_payments_deviation_too_early_rate",
-                "id": "",
-                "legend": "Too early (pred)",
-                "legendTranslations": {
-                    "en": "Too early (pred)",
-                    "de": "Zu fr\u00fch (progn)"
+                    "en": "Too late (Act)"
                 }
             },
             {
                 "aggregation": "actuals",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_payments_deviation_on_time_rate",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
                 "id": "",
-                "legend": "On-Time (act)",
+                "legend": "Too early",
                 "legendTranslations": {
-                    "en": "On-Time (act)",
+                    "en": "Too early",
+                    "de": "Zu fr\u00fch (ist)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
+                "id": "",
+                "legend": "On Time (Pred)",
+                "legendTranslations": {
+                    "de": "P\u00fcnktlich (progn)",
+                    "en": "On Time (Pred)"
+                }
+            },
+            {
+                "aggregation": "actuals",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_deliveries_deviation_on_time_rate",
+                "id": "",
+                "legend": "On Time (Act)",
+                "legendTranslations": {
+                    "en": "On Time (Act)",
                     "de": "P\u00fcnktlich (ist)"
                 }
             },
             {
                 "aggregation": "prediction",
                 "chartType": "stackedbar",
-                "column": "optimate_purchasing_payments_deviation_too_late_rate",
+                "column": "optimate_purchasing_on_time_sourcing_too_late_rate",
                 "id": "",
-                "legend": "Too late (pred)",
+                "legend": "Too Late (Pred)",
                 "legendTranslations": {
                     "de": "Zu sp\u00e4t (progn)",
-                    "en": "Too late (pred)"
+                    "en": "Too Late (Pred)"
+                }
+            },
+            {
+                "aggregation": "prediction",
+                "chartType": "stackedbar",
+                "column": "optimate_purchasing_on_time_sourcing_too_early_rate",
+                "id": "",
+                "legend": "Too early (Pred)",
+                "legendTranslations": {
+                    "de": "Zu fr\u00fch (progn)",
+                    "en": "Too early (Pred)"
+                }
+            }
+        ],
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "basedOnMetric": true,
+        "conflictState": ""
+    },
+    {
+        "alternateVisualization": false,
+        "argument": {
+            "aggregation": "month",
+            "column": "DATE",
+            "dataType": "datetime"
+        },
+        "argumentAxisTitle": "Time",
+        "argumentAxisTitleTranslations": {
+            "en": "Time",
+            "de": "Zeit"
+        },
+        "description": "The diagram shows the monthly development of the order confirmation rate - i.e. the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
+        "descriptionTranslations": {
+            "de": "Das Diagramm zeigt die monatliche Entwicklung der Auftragsbest\u00e4tigungsquote - also der Anteil der Bestellpositionen, die vom Lieferanten durch eine Auftragsbest\u00e4tigung offiziell best\u00e4tigt wurden. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik",
+            "en": "The diagram shows the monthly development of the order confirmation rate - i.e. the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
+        },
+        "displayName": "Order Confirmation Rate",
+        "displayNameTranslations": {
+            "de": "Auftragsbest\u00e4tigungsquote",
+            "en": "Order Confirmation Rate"
+        },
+        "internalName": "optimate_purchasing_order_confirmation_rate_diagramm",
+        "report": "dummy",
+        "summary": null,
+        "valueAxisTitle": "Rate (%)",
+        "valueAxisTitleTranslations": {
+            "en": "Rate (%)",
+            "de": "Quote (%)"
+        },
+        "values": [
+            {
+                "aggregation": "prediction",
+                "chartType": "line",
+                "column": "optimate_purchasing_order_confirmation_rate",
+                "id": "",
+                "legend": "Pred",
+                "legendTranslations": {
+                    "en": "Pred",
+                    "de": "Progn"
                 }
             },
             {
                 "aggregation": "actuals",
-                "chartType": "stackedbar",
-                "column": "optimate_purchasing_payments_deviation_too_early_rate",
+                "chartType": "line",
+                "column": "optimate_purchasing_order_confirmation_rate",
                 "id": "",
-                "legend": "Too early (act)",
+                "legend": "Act",
                 "legendTranslations": {
-                    "en": "Too early (act)",
-                    "de": "Zu fr\u00fch (ist)"
+                    "en": "Act",
+                    "de": "Ist"
                 }
             }
         ],
@@ -642,27 +704,16 @@
         },
         "displayName": "Invoice Processing Time",
         "displayNameTranslations": {
-            "en": "Invoice Processing Time",
-            "de": "Prozessdauer Rechnungskontrolle"
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Processing Time"
         },
-        "internalName": "optimate_purchasing_invoice_processing_time",
+        "internalName": "optimate_purchasing_invoice_processing_time_diagram",
         "report": "dummy",
         "summary": null,
         "valueAxisTitle": "Time (Days)",
         "valueAxisTitleTranslations": {},
         "values": [
             {
-                "aggregation": "prediction",
-                "chartType": "line",
-                "column": "optimate_purchasing_invoice_processing_time",
-                "id": "",
-                "legend": "Pred",
-                "legendTranslations": {
-                    "en": "Pred",
-                    "de": "Progn"
-                }
-            },
-            {
                 "aggregation": "actuals",
                 "chartType": "line",
                 "column": "optimate_purchasing_invoice_processing_time",
@@ -672,67 +723,16 @@
                     "en": "Act",
                     "de": "Ist"
                 }
-            }
-        ],
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": "",
-        "basedOnMetric": true,
-        "conflictState": ""
-    },
-    {
-        "alternateVisualization": false,
-        "argument": {
-            "aggregation": "month",
-            "column": "DATE",
-            "dataType": "datetime"
-        },
-        "argumentAxisTitle": "Time",
-        "argumentAxisTitleTranslations": {
-            "de": "Zeit",
-            "en": "Time"
-        },
-        "description": "The diagram shows the monthly development of the order confirmation rate - i.e. the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric.",
-        "descriptionTranslations": {
-            "de": "Das Diagramm zeigt die monatliche Entwicklung der Auftragsbest\u00e4tigungsquote - also der Anteil der Bestellpositionen, die vom Lieferanten durch eine Auftragsbest\u00e4tigung offiziell best\u00e4tigt wurden. Die Entwicklung der Werte ist als Linie dargestellt, getrennt nach Ist-Werten und Prognosewerten f\u00fcr kommende Zeitr\u00e4ume. Die Details zur Berechnung finden sich an der zu grundeliegenden Metrik",
-            "en": "The diagram shows the monthly development of the order confirmation rate - i.e. the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. The development of the values is shown as a line, separated into actual values and forecast values for future periods. The details of the calculation can be found in the underlying metric."
-        },
-        "displayName": "Order Confirmation Rate",
-        "displayNameTranslations": {
-            "de": "Auftragsbest\u00e4tigungsquote",
-            "en": "Order Confirmation Rate"
-        },
-        "internalName": "optimate_purchasing_order_confirmation_rate",
-        "report": "dummy",
-        "summary": null,
-        "valueAxisTitle": "Rate (%)",
-        "valueAxisTitleTranslations": {
-            "de": "Quote (%)",
-            "en": "Rate (%)"
-        },
-        "values": [
+            },
             {
                 "aggregation": "prediction",
                 "chartType": "line",
-                "column": "optimate_purchasing_order_confirmation_rate",
+                "column": "optimate_purchasing_invoice_processing_time",
                 "id": "",
                 "legend": "Pred",
                 "legendTranslations": {
                     "en": "Pred",
                     "de": "Progn"
-                }
-            },
-            {
-                "aggregation": "actuals",
-                "chartType": "line",
-                "column": "optimate_purchasing_order_confirmation_rate",
-                "id": "",
-                "legend": "Act",
-                "legendTranslations": {
-                    "en": "Act",
-                    "de": "Ist"
                 }
             }
         ],

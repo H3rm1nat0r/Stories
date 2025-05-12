@@ -3,88 +3,300 @@
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "Optimate Purchasing OTIF",
+        "displayName": "On Time in Full",
         "displayNameTranslations": {
-            "en": "OTIF"
+            "de": "P\u00fcnktlich und vollst\u00e4ndig (OTIF)",
+            "en": "On Time in Full"
         },
         "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_otif",
-        "parentAttributeGroupInternalName": "optimate_purchasing",
+        "internalName": "optimate_purchasing_finder_otif",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder",
         "id": "",
         "projectId": "",
         "tenant": "",
         "isCustom": true,
-        "metadataClassificationInternalName": ""
+        "metadataClassificationInternalName": "",
+        "order": "02",
+        "conflictState": "NoConflict"
     },
     {
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "Optimate Purchasing",
+        "displayName": "Purchasing Finder",
         "displayNameTranslations": {
-            "en": "Purchasing"
+            "de": "Purchasing Finder",
+            "en": "Purchasing Finder"
         },
         "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing",
+        "internalName": "optimate_purchasing_finder",
         "parentAttributeGroupInternalName": "optimate",
         "id": "",
         "projectId": "",
         "tenant": "",
         "isCustom": true,
-        "metadataClassificationInternalName": ""
+        "metadataClassificationInternalName": "",
+        "order": "00",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "On Time  in Full (OTIF)",
+        "displayNameTranslations": {
+            "de": "Einkaufsliefertreue",
+            "en": "On Time  in Full (OTIF)"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_on_time_in_full_otif",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_overview",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "00",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Overview",
+        "displayNameTranslations": {
+            "de": "\u00dcbersicht",
+            "en": "Overview"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_finder_overview",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "00",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Share of complete deliveries, overdeliveries and underdeliveries",
+        "displayNameTranslations": {
+            "de": "Anteil vollst\u00e4ndige Lieferungen, \u00dcber- und Unterlieferungen",
+            "en": "Share of complete deliveries, overdeliveries and underdeliveries"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_otif",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "04",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Goods Receipt Processing Time",
+        "displayNameTranslations": {
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_goods_receipt_processing_time_diagram",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_dpo",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "00",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Order Confirmation Rate",
+        "displayNameTranslations": {
+            "de": "Auftragsbest\u00e4tigungsquote",
+            "en": "Order Confirmation Rate"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_order_confirmation_rate_diagramm",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_otif",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "00",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Days Payables Outstanding (DPO)",
+        "displayNameTranslations": {
+            "en": "Days Payables Outstanding (DPO)",
+            "de": "Im Einkauf zur\u00fcckgehaltens Kapital (DPO)"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_days_payables_outstanding_dpo",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_overview",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "01",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Share of early, on-time and late supplier payments",
+        "displayNameTranslations": {
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferantenzahlungen",
+            "en": "Share of early, on-time and late supplier payments"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_supplier_payments",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_dpo",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "01",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Replenishment Deviation",
+        "displayNameTranslations": {
+            "en": "Replenishment Deviation",
+            "de": "Wiederbeschaffungszeitenabweichung"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_replenishment_deviation",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_otif",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "01",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Share of early, on-time and late deliveries",
+        "displayNameTranslations": {
+            "de": "Anteil verfr\u00fchte, p\u00fcnktliche und versp\u00e4tete Lieferungen",
+            "en": "Share of early, on-time and late deliveries"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_otif",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "02",
+        "conflictState": "NoConflict"
+    },
+    {
+        "attributeGroupType": "Standard",
+        "defaultMetricGroup": false,
+        "defaultDefinedColumnGroup": false,
+        "displayName": "Order Preparation Time (Days)",
+        "displayNameTranslations": {
+            "de": "Bestellvorlaufzeit (Tage)",
+            "en": "Order Preparation Time (Days)"
+        },
+        "isCoupled": false,
+        "internalName": "optimate_purchasing_order_preparation_time_days",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_otif",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": "",
+        "order": "03",
+        "conflictState": "NoConflict"
     },
     {
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
         "displayName": "Optimate",
-        "displayNameTranslations": {},
+        "displayNameTranslations": {
+            "de": "Optimate",
+            "en": "Optimate"
+        },
         "isCoupled": false,
-        "focusOrder": "",
         "internalName": "optimate",
         "parentAttributeGroupInternalName": null,
         "id": "",
         "projectId": "",
         "tenant": "",
         "isCustom": true,
-        "metadataClassificationInternalName": ""
+        "metadataClassificationInternalName": "",
+        "order": "00",
+        "conflictState": "NoConflict"
     },
     {
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "Optimate Purchasing DPO",
+        "displayName": "DPO",
         "displayNameTranslations": {
-            "en": "DPO"
+            "en": "DPO",
+            "de": "Days Payables Outstanding (DPO)"
         },
         "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_dpo",
-        "parentAttributeGroupInternalName": "optimate_purchasing",
+        "internalName": "optimate_purchasing_finder_dpo",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder",
         "id": "",
         "projectId": "",
         "tenant": "",
         "isCustom": true,
-        "metadataClassificationInternalName": ""
+        "metadataClassificationInternalName": "",
+        "order": "01",
+        "conflictState": "NoConflict"
     },
     {
         "attributeGroupType": "Standard",
         "defaultMetricGroup": false,
         "defaultDefinedColumnGroup": false,
-        "displayName": "Optimate Purchasing Overview",
+        "displayName": "Invoice Processing Time",
         "displayNameTranslations": {
-            "en": "Overview"
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Processing Time"
         },
         "isCoupled": false,
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_overview",
-        "parentAttributeGroupInternalName": "optimate_purchasing",
+        "internalName": "optimate_purchasing_invoice_processing_time_diagram",
+        "parentAttributeGroupInternalName": "optimate_purchasing_finder_dpo",
         "id": "",
         "projectId": "",
         "tenant": "",
         "isCustom": true,
-        "metadataClassificationInternalName": ""
+        "metadataClassificationInternalName": "",
+        "order": "02",
+        "conflictState": "NoConflict"
     }
 ]

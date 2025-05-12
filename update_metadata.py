@@ -56,7 +56,7 @@ um = UpdateMetadata()
 # um.MetaDataCreate("optimate_global")
 # um.MetaDataCreate("optimate")
 
-# um.MetaDataLoad("optimate")
+um.MetaDataLoad("optimate")
 # um.MetaDataLoad("optimate_sales")
 # um.MetaDataLoad("optimate_global")
 

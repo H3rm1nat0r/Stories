@@ -1,20 +1,17 @@
 [
     {
-        "aggregateBy": "optimate_purchasing_goods_receipt_processing_time_days",
-        "aggregateFunction": "mean(optimate_purchasing_goods_receipt_processing_time_days)",
+        "aggregateBy": "optimate_purchasing_on_time_sourcing_too_late_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_on_time_sourcing_too_late_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "This key figure measures the time between the physical delivery of goods and their complete booking in the ERP system. It shows the efficiency of the incoming goods process - from receipt, inspection and storage to system entry - and serves as an indicator of the speed and quality of logistics processes.\n\nThe creation date of the goods receipt item and the document date of the goods receipt are used for the calculation. The process duration of the goods receipt results from the difference between the creation date of the goods receipt item and the document date of the goods receipt.",
-        "descriptionTranslations": {
-            "en": "This key figure measures the time between the physical delivery of goods and their complete booking in the ERP system. It shows the efficiency of the incoming goods process - from receipt, inspection and storage to system entry - and serves as an indicator of the speed and quality of logistics processes.\n\nThe creation date of the goods receipt item and the document date of the goods receipt are used for the calculation. The process duration of the goods receipt results from the difference between the creation date of the goods receipt item and the document date of the goods receipt.",
-            "de": "Diese Kennzahl misst die Zeitspanne zwischen der physischen Anlieferung einer Ware und ihrer vollst\u00e4ndigen Buchung im ERP-System. Sie zeigt die Effizienz des Wareneingangsprozesses \u2013 von der Annahme \u00fcber die Pr\u00fcfung und Einlagerung bis zur Systemerfassung \u2013 und dient als Indikator f\u00fcr die Geschwindigkeit und Qualit\u00e4t der logistischen Abl\u00e4ufe.\n\nZur Berechnung werden das Anlagedatum der Wareingangsposition und das Belegdatum des Wareneingangs herangezogen. Die Prozessdauer des Wareneingangs ergibt sich aus der Differenz zwischen dem Anlagedatum der Wareneingangsposition und dem Belegdatum des Wareneingangs."
-        },
-        "displayName": "Goods Receipt Processing Time",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Share of late deliveries",
         "displayNameTranslations": {
-            "en": "Goods Receipt Processing Time",
-            "de": "Prozessdauer Wareneingang"
+            "en": "Share of late deliveries",
+            "de": "Anteil versp\u00e4tete Lieferungen"
         },
         "groupByAggregations": {
-            "optimate_purchasing_goods_receipt_processing_time_days": "mean"
+            "optimate_purchasing_on_time_sourcing_too_late_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
@@ -22,11 +19,10 @@
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
-        "unit": "days",
+        "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_goods_receipt_processing_time",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_on_time_sourcing_too_late_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -34,21 +30,18 @@
         "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_invoice_verification_processing_time_days",
-        "aggregateFunction": "mean(optimate_purchasing_invoice_verification_processing_time_days)",
+        "aggregateBy": "optimate_purchasing_on_time_sourcing_too_early_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_on_time_sourcing_too_early_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "This key figure measures the time between the receipt of a supplier invoice and its complete release for payment. It provides information on the efficiency and transparency of the invoice verification process and highlights potential delays in processing.\n\nA short processing time enables timely payment, improves the supplier relationship and increases the opportunity to take advantage of discounts. Longer processing times, on the other hand, can lead to payment arrears, missed discount deadlines and unnecessary financial burdens. The KPI is therefore a key indicator of the performance of the procure-to-pay process\n\nThe invoice date of the supplier invoice and the change date of the A/P invoice voucher document are used for the calculation. The invoice verification process duration is the difference between these two dates.",
-        "descriptionTranslations": {
-            "en": "This key figure measures the time between the receipt of a supplier invoice and its complete release for payment. It provides information on the efficiency and transparency of the invoice verification process and highlights potential delays in processing.\n\nA short processing time enables timely payment, improves the supplier relationship and increases the opportunity to take advantage of discounts. Longer processing times, on the other hand, can lead to payment arrears, missed discount deadlines and unnecessary financial burdens. The KPI is therefore a key indicator of the performance of the procure-to-pay process\n\nThe invoice date of the supplier invoice and the change date of the A/P invoice voucher document are used for the calculation. The invoice verification process duration is the difference between these two dates.",
-            "de": "Diese Kennzahl misst die Zeitspanne zwischen dem Eingang einer Lieferantenrechnung und ihrer vollst\u00e4ndigen Freigabe zur Zahlung. Sie gibt Aufschluss \u00fcber die Effizienz und Transparenz des Rechnungspr\u00fcfungsprozesses und zeigt potenzielle Verz\u00f6gerungen in der Bearbeitung auf.\n\nEine kurze Durchlaufzeit erm\u00f6glicht eine fristgerechte Zahlung, verbessert das Lieferantenverh\u00e4ltnis und erh\u00f6ht die Chance auf die Nutzung von Skonti. L\u00e4ngere Bearbeitungszeiten k\u00f6nnen dagegen zu Zahlungsr\u00fcckst\u00e4nden, verpassten Skontofristen und unn\u00f6tigen finanziellen Belastungen f\u00fchren. Die Kennzahl ist daher ein zentraler Indikator f\u00fcr die Leistungsf\u00e4higkeit des Procure-to-Pay-Prozesses\n\nZur Berechnung werden das Rechnungsdatum der Lieferantenrechnung und das \u00c4nderungsdatum des Rechnungskontrollbelegs herangezogen. Die Prozessdauer der Rechnungskontrolle ergibt sich aus der Differenz zwischen diesen beiden Zeitpunkten."
-        },
-        "displayName": "Invoice Processing Time",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Share of early deliveries",
         "displayNameTranslations": {
-            "en": "Invoice Processing Time",
-            "de": "Prozessdauer Rechnungskontrolle"
+            "en": "Share of early deliveries",
+            "de": "Anteil Verfr\u00fchte Lieferungen"
         },
         "groupByAggregations": {
-            "optimate_purchasing_invoice_verification_processing_time_days": "mean"
+            "optimate_purchasing_on_time_sourcing_too_early_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
@@ -56,11 +49,10 @@
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
-        "unit": "days",
+        "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_invoice_processing_time",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_on_time_sourcing_too_early_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -68,21 +60,21 @@
         "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_order_confirmend_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_order_confirmend_boolean)",
+        "aggregateBy": "optimate_purchasing_in_full_sourcing_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "This key figure measures the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. It provides information on the reliability and response speed of suppliers with regard to feedback on orders received. A high rate indicates good communication and transparency in the ordering process, while a low rate potentially indicates process gaps or unreliable supplier relationships.\n\nFor the calculation, the number of confirmed order items by an order confirmation is set in relation to the total number of all order items.",
+        "description": "This key figure measures the extent to which a delivery arrives at the recipient in the ordered quantity (\u201cin-full\u201d). It is used to evaluate the delivery completeness of suppliers with regard to the quantity delivered. It is based on a comparison between the quantity ordered and the quantity actually delivered for each item.\n\nThe calculation is based on a comparison between the order quantity and the actual quantity of goods received per item. The key figure measures the percentage of deliveries for which the delivered quantity corresponds exactly to the ordered quantity in relation to the total number of all deliveries.",
         "descriptionTranslations": {
-            "de": "Diese Kennzahl misst den Anteil der Bestellpositionen, die vom Lieferanten durch eine Auftragsbest\u00e4tigung offiziell best\u00e4tigt wurden. Sie gibt Auskunft \u00fcber die Zuverl\u00e4ssigkeit und Reaktionsgeschwindigkeit der Lieferanten im Hinblick auf die R\u00fcckmeldung zu eingegangenen Bestellungen. Eine hohe Quote deutet auf eine gute Kommunikation und Transparenz im Bestellprozess hin, w\u00e4hrend eine niedrige Quote potenziell auf Prozessl\u00fccken oder unzuverl\u00e4ssige Lieferantenbeziehungen hinweist.\n\nZur Berechnung wird die Anzahl der best\u00e4tigten Bestellpositionen durch eine Auftragsbest\u00e4tigung ins Verh\u00e4ltnis zur Gesamtzahl aller Bestellpositionen gesetzt.",
-            "en": "This key figure measures the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. It provides information on the reliability and response speed of suppliers with regard to feedback on orders received. A high rate indicates good communication and transparency in the ordering process, while a low rate potentially indicates process gaps or unreliable supplier relationships.\n\nFor the calculation, the number of confirmed order items by an order confirmation is set in relation to the total number of all order items."
+            "en": "This key figure measures the extent to which a delivery arrives at the recipient in the ordered quantity (\u201cin-full\u201d). It is used to evaluate the delivery completeness of suppliers with regard to the quantity delivered. It is based on a comparison between the quantity ordered and the quantity actually delivered for each item.\n\nThe calculation is based on a comparison between the order quantity and the actual quantity of goods received per item. The key figure measures the percentage of deliveries for which the delivered quantity corresponds exactly to the ordered quantity in relation to the total number of all deliveries.",
+            "de": "Diese Kennzahl misst, inwieweit eine Lieferung in der bestellten Menge (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Liefervollst\u00e4ndigkeit von Lieferanten im Hinblick auf die gelieferte Menge. Grundlage ist der Vergleich zwischen bestellter und tats\u00e4chlich gelieferter Menge je Position.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen der Bestellmenge und der tats\u00e4chlichen Menge des Wareneingangs je Position. Die Kennzahl misst den prozentualen Anteil der Lieferungen, bei denen die gelieferte Menge exakt der bestellten Menge entspricht, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen."
         },
-        "displayName": "Order Confirmation Rate",
+        "displayName": "In Full",
         "displayNameTranslations": {
-            "de": "Auftragsbest\u00e4tigungsquote",
-            "en": "Order Confirmation Rate"
+            "en": "In Full",
+            "de": "Einkaufsmengentreue"
         },
         "groupByAggregations": {
-            "optimate_purchasing_order_confirmend_boolean": "mean"
+            "optimate_purchasing_in_full_sourcing_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
@@ -92,9 +84,8 @@
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_order_confirmation_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -102,33 +93,62 @@
         "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_procurement_lead_time_days",
-        "aggregateFunction": "mean(optimate_purchasing_procurement_lead_time_days)",
+        "aggregateBy": "optimate_purchasing_in_full_sourcing_underdelivered_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_underdelivered_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "This key figure measures the time span between the creation date of the order item and the requested delivery date communicated to the supplier. It provides information on the efficiency of procurement planning, the quality of demand forecasting and the ability to identify demand at an early stage. A short lead time indicates more reactive planning, while a longer lead time reflects a more strategic, forward-looking management of the procurement process.\n\nThe creation date and the requested date of the order item are used for the calculation. The difference between these two dates is the order lead time. The key figure therefore corresponds to the average difference between the creation date and the requested date of all order items.",
-        "descriptionTranslations": {
-            "en": "This key figure measures the time span between the creation date of the order item and the requested delivery date communicated to the supplier. It provides information on the efficiency of procurement planning, the quality of demand forecasting and the ability to identify demand at an early stage. A short lead time indicates more reactive planning, while a longer lead time reflects a more strategic, forward-looking management of the procurement process.\n\nThe creation date and the requested date of the order item are used for the calculation. The difference between these two dates is the order lead time. The key figure therefore corresponds to the average difference between the creation date and the requested date of all order items.",
-            "de": "Diese Kennzahl misst die Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Sie gibt Aufschluss \u00fcber die Effizienz der Beschaffungsplanung, die Qualit\u00e4t der Bedarfsvorhersage und die F\u00e4higkeit zur fr\u00fchzeitigen Bedarfserkennung. Eine kurze Vorlaufzeit deutet auf eine eher reaktive Planung hin, w\u00e4hrend eine l\u00e4ngere Vorlaufzeit eine strategischere, vorausschauende Steuerung des Beschaffungsprozesses widerspiegelt.\n\nZur Berechnung wird das Anlagedatum und der Wunschtermin der Bestellposition herangezogen. Die Differenz zwischen diesen beiden Zeitpunkten ergibt die Bestellvorlaufzeit. Die Kennzahl entspricht somit der durchschnittlichen Differenz zwischen Anlagedatum und Wunschtermin aller Bestellpositionen."
-        },
-        "displayName": "Order Preparation Time",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Underdelivered",
         "displayNameTranslations": {
-            "en": "Order Preparation Time",
-            "de": "Bestellvorlaufzeit"
+            "en": "Underdelivered",
+            "de": "Unterlieferung"
         },
         "groupByAggregations": {
-            "optimate_purchasing_procurement_lead_time_days": "mean"
+            "optimate_purchasing_in_full_sourcing_underdelivered_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
-        "optimizationOrientation": "Min",
+        "optimizationOrientation": "Max",
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
-        "unit": "days",
+        "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_procurement_lead_time_days",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_global_payments_deviation_on_time_boolean",
+        "aggregateFunction": "mean(optimate_global_payments_deviation_on_time_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the proportion of supplier invoices that were paid exactly on the agreed due date. It reflects the efficiency and reliability of payment processes and is considered an indicator of balanced liquidity management and trusting cooperation with suppliers. A high value shows that payment targets are consistently met without unnecessary discount losses or missed deadlines.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid on time in relation to the total number of all supplier invoices.",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl misst den Anteil der Lieferantenrechnungen, die exakt zum vereinbarten F\u00e4lligkeitstermin beglichen wurden. Sie spiegelt die Effizienz und Zuverl\u00e4ssigkeit der Zahlungsprozesse wider und gilt als Indikator f\u00fcr eine ausgewogene Liquidit\u00e4tssteuerung sowie eine vertrauensvolle Zusammenarbeit mit Lieferanten. Ein hoher Wert zeigt, dass Zahlungsziele konsequent eingehalten werden, ohne unn\u00f6tige Skontoverluste oder Frist\u00fcberschreitungen.\n\nDie Berechnung basiert auf dem Vergleich zwischen den vereinbarten F\u00e4lligkeitsterminen und den tats\u00e4chlichen Zahlungsterminen aller Lieferantenzahlungen. Das Ergebnis ist der Anteil der p\u00fcnktlich bezahlten Lieferantenrechnungen im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferantenrechnungen.",
+            "en": "This key figure measures the proportion of supplier invoices that were paid exactly on the agreed due date. It reflects the efficiency and reliability of payment processes and is considered an indicator of balanced liquidity management and trusting cooperation with suppliers. A high value shows that payment targets are consistently met without unnecessary discount losses or missed deadlines.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid on time in relation to the total number of all supplier invoices."
+        },
+        "displayName": "Share of on-time supplier payments",
+        "displayNameTranslations": {
+            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen",
+            "en": "Share of on-time supplier payments"
+        },
+        "groupByAggregations": {
+            "optimate_global_payments_deviation_on_time_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "internalName": "optimate_purchasing_payments_deviation_on_time_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -160,9 +180,8 @@
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation_too_early_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -170,49 +189,21 @@
         "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_in_full_sourcing_overdelivered_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_overdelivered_boolean)",
+        "aggregateBy": "optimate_purchasing_procurement_lead_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_procurement_lead_time_days)",
         "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Overdelivered",
+        "description": "This key figure measures the time span between the creation date of the order item and the requested delivery date communicated to the supplier. It provides information on the efficiency of procurement planning, the quality of demand forecasting and the ability to identify demand at an early stage. A short lead time indicates more reactive planning, while a longer lead time reflects a more strategic, forward-looking management of the procurement process.\n\nThe creation date and the requested date of the order item are used for the calculation. The difference between these two dates is the order lead time. The key figure therefore corresponds to the average difference between the creation date and the requested date of all order items.",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl misst die Zeitspanne zwischen dem Anlagedatum der Bestellposition und dem dem Lieferanten kommunizierten Wunschtermin f\u00fcr die Lieferung. Sie gibt Aufschluss \u00fcber die Effizienz der Beschaffungsplanung, die Qualit\u00e4t der Bedarfsvorhersage und die F\u00e4higkeit zur fr\u00fchzeitigen Bedarfserkennung. Eine kurze Vorlaufzeit deutet auf eine eher reaktive Planung hin, w\u00e4hrend eine l\u00e4ngere Vorlaufzeit eine strategischere, vorausschauende Steuerung des Beschaffungsprozesses widerspiegelt.\n\nZur Berechnung wird das Anlagedatum und der Wunschtermin der Bestellposition herangezogen. Die Differenz zwischen diesen beiden Zeitpunkten ergibt die Bestellvorlaufzeit. Die Kennzahl entspricht somit der durchschnittlichen Differenz zwischen Anlagedatum und Wunschtermin aller Bestellpositionen.",
+            "en": "This key figure measures the time span between the creation date of the order item and the requested delivery date communicated to the supplier. It provides information on the efficiency of procurement planning, the quality of demand forecasting and the ability to identify demand at an early stage. A short lead time indicates more reactive planning, while a longer lead time reflects a more strategic, forward-looking management of the procurement process.\n\nThe creation date and the requested date of the order item are used for the calculation. The difference between these two dates is the order lead time. The key figure therefore corresponds to the average difference between the creation date and the requested date of all order items."
+        },
+        "displayName": "Order Preparation Time",
         "displayNameTranslations": {
-            "de": "\u00dcberlieferung",
-            "en": "Overdelivered"
+            "de": "Bestellvorlaufzeit",
+            "en": "Order Preparation Time"
         },
         "groupByAggregations": {
-            "optimate_purchasing_in_full_sourcing_overdelivered_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_in_full_sourcing_overdelivered_rate",
-        "parentAttributeGroupInternalName": "metrics",
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_on_time_sourcing_too_early_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_on_time_sourcing_too_early_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Share of early deliveries",
-        "displayNameTranslations": {
-            "de": "Anteil Verfr\u00fchte Lieferungen",
-            "en": "Share of early deliveries"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_on_time_sourcing_too_early_boolean": "mean"
+            "optimate_purchasing_procurement_lead_time_days": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
@@ -220,11 +211,10 @@
         "optimizationTarget": false,
         "scopeId": null,
         "scopeName": null,
-        "unit": "percent",
+        "unit": "days",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_on_time_sourcing_too_early_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_procurement_lead_time_days_metric",
+        "parentAttributeGroupInternalName": "optimate_purchasing_order_preparation_time_days",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -232,21 +222,54 @@
         "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_purchasing_in_full_sourcing_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_boolean)",
+        "aggregateBy": "optimate_purchasing_goods_receipt_processing_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_goods_receipt_processing_time_days)",
         "dateColumn": "pur_order_doc_date",
-        "description": "This key figure measures the extent to which a delivery arrives at the recipient in the ordered quantity (\u201cin-full\u201d). It is used to evaluate the delivery completeness of suppliers with regard to the quantity delivered. It is based on a comparison between the quantity ordered and the quantity actually delivered for each item.\n\nThe calculation is based on a comparison between the order quantity and the actual quantity of goods received per item. The key figure measures the percentage of deliveries for which the delivered quantity corresponds exactly to the ordered quantity in relation to the total number of all deliveries.",
+        "description": "This key figure measures the time between the physical delivery of goods and their complete booking in the ERP system. It shows the efficiency of the incoming goods process - from receipt, inspection and storage to system entry - and serves as an indicator of the speed and quality of logistics processes.\n\nThe creation date of the goods receipt item and the document date of the goods receipt are used for the calculation. The process duration of the goods receipt results from the difference between the creation date of the goods receipt item and the document date of the goods receipt.",
         "descriptionTranslations": {
-            "de": "Diese Kennzahl misst, inwieweit eine Lieferung in der bestellten Menge (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Liefervollst\u00e4ndigkeit von Lieferanten im Hinblick auf die gelieferte Menge. Grundlage ist der Vergleich zwischen bestellter und tats\u00e4chlich gelieferter Menge je Position.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen der Bestellmenge und der tats\u00e4chlichen Menge des Wareneingangs je Position. Die Kennzahl misst den prozentualen Anteil der Lieferungen, bei denen die gelieferte Menge exakt der bestellten Menge entspricht, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen.",
-            "en": "This key figure measures the extent to which a delivery arrives at the recipient in the ordered quantity (\u201cin-full\u201d). It is used to evaluate the delivery completeness of suppliers with regard to the quantity delivered. It is based on a comparison between the quantity ordered and the quantity actually delivered for each item.\n\nThe calculation is based on a comparison between the order quantity and the actual quantity of goods received per item. The key figure measures the percentage of deliveries for which the delivered quantity corresponds exactly to the ordered quantity in relation to the total number of all deliveries."
+            "de": "Diese Kennzahl misst die Zeitspanne zwischen der physischen Anlieferung einer Ware und ihrer vollst\u00e4ndigen Buchung im ERP-System. Sie zeigt die Effizienz des Wareneingangsprozesses \u2013 von der Annahme \u00fcber die Pr\u00fcfung und Einlagerung bis zur Systemerfassung \u2013 und dient als Indikator f\u00fcr die Geschwindigkeit und Qualit\u00e4t der logistischen Abl\u00e4ufe.\n\nZur Berechnung werden das Anlagedatum der Wareingangsposition und das Belegdatum des Wareneingangs herangezogen. Die Prozessdauer des Wareneingangs ergibt sich aus der Differenz zwischen dem Anlagedatum der Wareneingangsposition und dem Belegdatum des Wareneingangs.",
+            "en": "This key figure measures the time between the physical delivery of goods and their complete booking in the ERP system. It shows the efficiency of the incoming goods process - from receipt, inspection and storage to system entry - and serves as an indicator of the speed and quality of logistics processes.\n\nThe creation date of the goods receipt item and the document date of the goods receipt are used for the calculation. The process duration of the goods receipt results from the difference between the creation date of the goods receipt item and the document date of the goods receipt."
         },
-        "displayName": "In Full",
+        "displayName": "Goods Receipt Processing Time",
         "displayNameTranslations": {
-            "en": "In Full",
-            "de": "Einkaufsmengentreue"
+            "de": "Prozessdauer Wareneingang",
+            "en": "Goods Receipt Processing Time"
         },
         "groupByAggregations": {
-            "optimate_purchasing_in_full_sourcing_boolean": "mean"
+            "optimate_purchasing_goods_receipt_processing_time_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "internalName": "optimate_purchasing_goods_receipt_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_goods_receipt_processing_time_diagram",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_on_time_in_full_otif_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_on_time_in_full_otif_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This indicator records the extent to which a delivery reaches the recipient both on time and in full. It is used to evaluate the delivery performance of suppliers or the company's own reliability towards customers. It combines the two sub-indicators purchasing delivery reliability and purchasing on-time delivery reliability.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each item. In addition, the ordered quantity and the quantity recorded in the goods receipt are compared for each item. The key figure measures the percentage of deliveries that are made on time and in the correct quantity in relation to the total number of all deliveries. ",
+        "descriptionTranslations": {
+            "de": "Diese Kennzahl erfasst, inwieweit eine Lieferung sowohl p\u00fcnktlich (\u201eOn-Time\u201c) als auch vollst\u00e4ndig (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Lieferperformance von Lieferanten oder der eigenen Zuverl\u00e4ssigkeit gegen\u00fcber Kunden. Dabei kombiniert sie die beiden Teilkennzahlen Einkaufsliefertreue und Einkaufstermintreue.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen dem in der Bestellung angegebenen Wunsch- und dem tats\u00e4chlichen Liefertermin je Position. Zus\u00e4tzlich werden die bestellte Menge und die im Wareneingang erfasste Menge je Position gegen\u00fcbergestellt. Die Kennzahl misst den prozentualen Anteil der Lieferungen, die termin- und mengengerecht erfolgen, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen. ",
+            "en": "This indicator records the extent to which a delivery reaches the recipient both on time and in full. It is used to evaluate the delivery performance of suppliers or the company's own reliability towards customers. It combines the two sub-indicators purchasing delivery reliability and purchasing on-time delivery reliability.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each item. In addition, the ordered quantity and the quantity recorded in the goods receipt are compared for each item. The key figure measures the percentage of deliveries that are made on time and in the correct quantity in relation to the total number of all deliveries. "
+        },
+        "displayName": "On Time in Full",
+        "displayNameTranslations": {
+            "en": "On Time in Full",
+            "de": "Einkaufsliefertreue"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_on_time_in_full_otif_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
@@ -256,9 +279,8 @@
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_deliveries_deviation_in_full_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_otif_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_on_time_in_full_otif",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -276,8 +298,8 @@
         },
         "displayName": "Share of late supplier payments",
         "displayNameTranslations": {
-            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen",
-            "en": "Share of late supplier payments"
+            "en": "Share of late supplier payments",
+            "de": "Anteil Versp\u00e4tete Lieferantenzahlungen"
         },
         "groupByAggregations": {
             "optimate_global_payments_deviation_too_late_boolean": "mean"
@@ -290,9 +312,8 @@
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
         "internalName": "optimate_purchasing_payments_deviation_too_late_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "parentAttributeGroupInternalName": "optimate_purchasing_supplier_payments",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -300,21 +321,18 @@
         "metadataClassificationInternalName": ""
     },
     {
-        "aggregateBy": "optimate_global_payments_deviation_on_time_boolean",
-        "aggregateFunction": "mean(optimate_global_payments_deviation_on_time_boolean)",
+        "aggregateBy": "optimate_purchasing_in_full_sourcing_overdelivered_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_overdelivered_boolean)",
         "dateColumn": "pur_order_doc_date",
-        "description": "This key figure measures the proportion of supplier invoices that were paid exactly on the agreed due date. It reflects the efficiency and reliability of payment processes and is considered an indicator of balanced liquidity management and trusting cooperation with suppliers. A high value shows that payment targets are consistently met without unnecessary discount losses or missed deadlines.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid on time in relation to the total number of all supplier invoices.",
-        "descriptionTranslations": {
-            "en": "This key figure measures the proportion of supplier invoices that were paid exactly on the agreed due date. It reflects the efficiency and reliability of payment processes and is considered an indicator of balanced liquidity management and trusting cooperation with suppliers. A high value shows that payment targets are consistently met without unnecessary discount losses or missed deadlines.\n\nThe calculation is based on a comparison between the agreed due dates and the actual payment dates of all supplier payments. The result is the proportion of supplier invoices paid on time in relation to the total number of all supplier invoices.",
-            "de": "Diese Kennzahl misst den Anteil der Lieferantenrechnungen, die exakt zum vereinbarten F\u00e4lligkeitstermin beglichen wurden. Sie spiegelt die Effizienz und Zuverl\u00e4ssigkeit der Zahlungsprozesse wider und gilt als Indikator f\u00fcr eine ausgewogene Liquidit\u00e4tssteuerung sowie eine vertrauensvolle Zusammenarbeit mit Lieferanten. Ein hoher Wert zeigt, dass Zahlungsziele konsequent eingehalten werden, ohne unn\u00f6tige Skontoverluste oder Frist\u00fcberschreitungen.\n\nDie Berechnung basiert auf dem Vergleich zwischen den vereinbarten F\u00e4lligkeitsterminen und den tats\u00e4chlichen Zahlungsterminen aller Lieferantenzahlungen. Das Ergebnis ist der Anteil der p\u00fcnktlich bezahlten Lieferantenrechnungen im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferantenrechnungen."
-        },
-        "displayName": "Share of on-time supplier payments",
+        "description": "",
+        "descriptionTranslations": {},
+        "displayName": "Overdelivered",
         "displayNameTranslations": {
-            "en": "Share of on-time supplier payments",
-            "de": "Anteil P\u00fcnktliche Lieferantenzahlungen"
+            "en": "Overdelivered",
+            "de": "\u00dcberlieferung"
         },
         "groupByAggregations": {
-            "optimate_global_payments_deviation_on_time_boolean": "mean"
+            "optimate_purchasing_in_full_sourcing_overdelivered_boolean": "mean"
         },
         "groupByColumn": "pur_order_doc_i_d",
         "isCrawlable": true,
@@ -324,9 +342,41 @@
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_payments_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_in_full_sourcing_overdelivered_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_share_of_complete_deliveries_overdeliveries_and_underdeliveries",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_order_confirmend_boolean",
+        "aggregateFunction": "mean(optimate_purchasing_order_confirmend_boolean)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. It provides information on the reliability and response speed of suppliers with regard to feedback on orders received. A high rate indicates good communication and transparency in the ordering process, while a low rate potentially indicates process gaps or unreliable supplier relationships.\n\nFor the calculation, the number of confirmed order items by an order confirmation is set in relation to the total number of all order items.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the proportion of order items that have been officially confirmed by the supplier in the form of an order confirmation. It provides information on the reliability and response speed of suppliers with regard to feedback on orders received. A high rate indicates good communication and transparency in the ordering process, while a low rate potentially indicates process gaps or unreliable supplier relationships.\n\nFor the calculation, the number of confirmed order items by an order confirmation is set in relation to the total number of all order items.",
+            "de": "Diese Kennzahl misst den Anteil der Bestellpositionen, die vom Lieferanten durch eine Auftragsbest\u00e4tigung offiziell best\u00e4tigt wurden. Sie gibt Auskunft \u00fcber die Zuverl\u00e4ssigkeit und Reaktionsgeschwindigkeit der Lieferanten im Hinblick auf die R\u00fcckmeldung zu eingegangenen Bestellungen. Eine hohe Quote deutet auf eine gute Kommunikation und Transparenz im Bestellprozess hin, w\u00e4hrend eine niedrige Quote potenziell auf Prozessl\u00fccken oder unzuverl\u00e4ssige Lieferantenbeziehungen hinweist.\n\nZur Berechnung wird die Anzahl der best\u00e4tigten Bestellpositionen durch eine Auftragsbest\u00e4tigung ins Verh\u00e4ltnis zur Gesamtzahl aller Bestellpositionen gesetzt."
+        },
+        "displayName": "Order Confirmation Rate",
+        "displayNameTranslations": {
+            "en": "Order Confirmation Rate",
+            "de": "Auftragsbest\u00e4tigungsquote"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_order_confirmend_boolean": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Max",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "percent",
+        "defaultScopeRestrictions": [],
+        "internalName": "optimate_purchasing_order_confirmation_rate",
+        "parentAttributeGroupInternalName": "optimate_purchasing_order_confirmation_rate_diagramm",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -339,8 +389,8 @@
         "dateColumn": "pur_order_doc_date",
         "description": "This key figure measures the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. It provides important information on the quality of master data maintenance and the reliability of suppliers in terms of adherence to planned delivery times.\n\nA small deviation indicates realistic, well-maintained replenishment times and stable delivery processes. Larger deviations, on the other hand, can indicate outdated or inaccurate master data, a changed delivery situation or poor supplier performance. The KPI is therefore a key instrument for evaluating and continuously improving data quality and supplier management in the procurement process.\n\nThe creation date of the purchase order item, the replenishment lead time of the part stored in the system and the creation date of the corresponding goods receipt item are used for the calculation. The actual replenishment lead time results from the difference between the creation date of the order item and the creation date of the goods receipt item. Finally, the deviation from the replenishment lead time is calculated as the difference between the actual replenishment lead time and the replenishment lead time stored in the system for the part in question.",
         "descriptionTranslations": {
-            "de": "Diese Kennzahl misst die Differenz zwischen der im ERP-System hinterlegten Wiederbeschaffungszeit und der tats\u00e4chlich ben\u00f6tigten Lieferzeit. Sie liefert wichtige Hinweise auf die Qualit\u00e4t der Stammdatenpflege sowie auf die Zuverl\u00e4ssigkeit der Lieferanten in Bezug auf die Einhaltung der geplanten Lieferzeiten.\n\nEine geringe Abweichung deutet auf realistische, gut gepflegte Wiederbeschaffungszeiten und stabile Lieferprozesse hin. Gr\u00f6\u00dfere Abweichungen hingegen k\u00f6nnen auf veraltete oder ungenaue Stammdaten, eine ver\u00e4nderte Liefersituation oder eine mangelnde Lieferantenperformance hinweisen. Die Kennzahl ist daher ein zentrales Instrument zur Bewertung und kontinuierlichen Verbesserung der Datenqualit\u00e4t und Lieferantensteuerung im Beschaffungsprozess.\n\nZur Berechnung werden das Anlagedatum der Bestellposition, die im System hinterlegte Wiederbeschaffungszeit des Teils sowie das Anlagedatum der zugeh\u00f6rigen Wareneingangsposition herangezogen. Die tats\u00e4chliche Wiederbeschaffungszeit ergibt sich aus der Differenz zwischen dem Anlagedatum der Bestellposition und dem Anlagedatum der Wareneingangsposition. Die Abweichung von der Wiederbeschaffungszeit errechnet sich schlie\u00dflich als Differenz zwischen der tats\u00e4chlichen Wiederbeschaffungszeit und der im System hinterlegten Wiederbeschaffungszeit des betreffenden Teils.",
-            "en": "This key figure measures the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. It provides important information on the quality of master data maintenance and the reliability of suppliers in terms of adherence to planned delivery times.\n\nA small deviation indicates realistic, well-maintained replenishment times and stable delivery processes. Larger deviations, on the other hand, can indicate outdated or inaccurate master data, a changed delivery situation or poor supplier performance. The KPI is therefore a key instrument for evaluating and continuously improving data quality and supplier management in the procurement process.\n\nThe creation date of the purchase order item, the replenishment lead time of the part stored in the system and the creation date of the corresponding goods receipt item are used for the calculation. The actual replenishment lead time results from the difference between the creation date of the order item and the creation date of the goods receipt item. Finally, the deviation from the replenishment lead time is calculated as the difference between the actual replenishment lead time and the replenishment lead time stored in the system for the part in question."
+            "en": "This key figure measures the difference between the replenishment lead time stored in the ERP system and the actual delivery time required. It provides important information on the quality of master data maintenance and the reliability of suppliers in terms of adherence to planned delivery times.\n\nA small deviation indicates realistic, well-maintained replenishment times and stable delivery processes. Larger deviations, on the other hand, can indicate outdated or inaccurate master data, a changed delivery situation or poor supplier performance. The KPI is therefore a key instrument for evaluating and continuously improving data quality and supplier management in the procurement process.\n\nThe creation date of the purchase order item, the replenishment lead time of the part stored in the system and the creation date of the corresponding goods receipt item are used for the calculation. The actual replenishment lead time results from the difference between the creation date of the order item and the creation date of the goods receipt item. Finally, the deviation from the replenishment lead time is calculated as the difference between the actual replenishment lead time and the replenishment lead time stored in the system for the part in question.",
+            "de": "Diese Kennzahl misst die Differenz zwischen der im ERP-System hinterlegten Wiederbeschaffungszeit und der tats\u00e4chlich ben\u00f6tigten Lieferzeit. Sie liefert wichtige Hinweise auf die Qualit\u00e4t der Stammdatenpflege sowie auf die Zuverl\u00e4ssigkeit der Lieferanten in Bezug auf die Einhaltung der geplanten Lieferzeiten.\n\nEine geringe Abweichung deutet auf realistische, gut gepflegte Wiederbeschaffungszeiten und stabile Lieferprozesse hin. Gr\u00f6\u00dfere Abweichungen hingegen k\u00f6nnen auf veraltete oder ungenaue Stammdaten, eine ver\u00e4nderte Liefersituation oder eine mangelnde Lieferantenperformance hinweisen. Die Kennzahl ist daher ein zentrales Instrument zur Bewertung und kontinuierlichen Verbesserung der Datenqualit\u00e4t und Lieferantensteuerung im Beschaffungsprozess.\n\nZur Berechnung werden das Anlagedatum der Bestellposition, die im System hinterlegte Wiederbeschaffungszeit des Teils sowie das Anlagedatum der zugeh\u00f6rigen Wareneingangsposition herangezogen. Die tats\u00e4chliche Wiederbeschaffungszeit ergibt sich aus der Differenz zwischen dem Anlagedatum der Bestellposition und dem Anlagedatum der Wareneingangsposition. Die Abweichung von der Wiederbeschaffungszeit errechnet sich schlie\u00dflich als Differenz zwischen der tats\u00e4chlichen Wiederbeschaffungszeit und der im System hinterlegten Wiederbeschaffungszeit des betreffenden Teils."
         },
         "displayName": "Replenishment Deviation",
         "displayNameTranslations": {
@@ -358,9 +408,41 @@
         "scopeName": null,
         "unit": "days",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_replenishment_deviation_days",
-        "parentAttributeGroupInternalName": "metrics",
+        "internalName": "optimate_purchasing_replenishment_deviation_days_metric",
+        "parentAttributeGroupInternalName": "optimate_purchasing_replenishment_deviation",
+        "id": "",
+        "projectId": "",
+        "tenant": "",
+        "isCustom": true,
+        "metadataClassificationInternalName": ""
+    },
+    {
+        "aggregateBy": "optimate_purchasing_invoice_verification_processing_time_days",
+        "aggregateFunction": "mean(optimate_purchasing_invoice_verification_processing_time_days)",
+        "dateColumn": "pur_order_doc_date",
+        "description": "This key figure measures the time between the receipt of a supplier invoice and its complete release for payment. It provides information on the efficiency and transparency of the invoice verification process and highlights potential delays in processing.\n\nA short processing time enables timely payment, improves the supplier relationship and increases the opportunity to take advantage of discounts. Longer processing times, on the other hand, can lead to payment arrears, missed discount deadlines and unnecessary financial burdens. The KPI is therefore a key indicator of the performance of the procure-to-pay process\n\nThe invoice date of the supplier invoice and the change date of the A/P invoice voucher document are used for the calculation. The invoice verification process duration is the difference between these two dates.",
+        "descriptionTranslations": {
+            "en": "This key figure measures the time between the receipt of a supplier invoice and its complete release for payment. It provides information on the efficiency and transparency of the invoice verification process and highlights potential delays in processing.\n\nA short processing time enables timely payment, improves the supplier relationship and increases the opportunity to take advantage of discounts. Longer processing times, on the other hand, can lead to payment arrears, missed discount deadlines and unnecessary financial burdens. The KPI is therefore a key indicator of the performance of the procure-to-pay process\n\nThe invoice date of the supplier invoice and the change date of the A/P invoice voucher document are used for the calculation. The invoice verification process duration is the difference between these two dates.",
+            "de": "Diese Kennzahl misst die Zeitspanne zwischen dem Eingang einer Lieferantenrechnung und ihrer vollst\u00e4ndigen Freigabe zur Zahlung. Sie gibt Aufschluss \u00fcber die Effizienz und Transparenz des Rechnungspr\u00fcfungsprozesses und zeigt potenzielle Verz\u00f6gerungen in der Bearbeitung auf.\n\nEine kurze Durchlaufzeit erm\u00f6glicht eine fristgerechte Zahlung, verbessert das Lieferantenverh\u00e4ltnis und erh\u00f6ht die Chance auf die Nutzung von Skonti. L\u00e4ngere Bearbeitungszeiten k\u00f6nnen dagegen zu Zahlungsr\u00fcckst\u00e4nden, verpassten Skontofristen und unn\u00f6tigen finanziellen Belastungen f\u00fchren. Die Kennzahl ist daher ein zentraler Indikator f\u00fcr die Leistungsf\u00e4higkeit des Procure-to-Pay-Prozesses\n\nZur Berechnung werden das Rechnungsdatum der Lieferantenrechnung und das \u00c4nderungsdatum des Rechnungskontrollbelegs herangezogen. Die Prozessdauer der Rechnungskontrolle ergibt sich aus der Differenz zwischen diesen beiden Zeitpunkten."
+        },
+        "displayName": "Invoice Processing Time",
+        "displayNameTranslations": {
+            "de": "Prozessdauer Rechnungskontrolle",
+            "en": "Invoice Processing Time"
+        },
+        "groupByAggregations": {
+            "optimate_purchasing_invoice_verification_processing_time_days": "mean"
+        },
+        "groupByColumn": "pur_order_doc_i_d",
+        "isCrawlable": true,
+        "optimizationOrientation": "Min",
+        "optimizationTarget": false,
+        "scopeId": null,
+        "scopeName": null,
+        "unit": "days",
+        "defaultScopeRestrictions": [],
+        "internalName": "optimate_purchasing_invoice_processing_time",
+        "parentAttributeGroupInternalName": "optimate_purchasing_invoice_processing_time_diagram",
         "id": "",
         "projectId": "",
         "tenant": "",
@@ -378,8 +460,8 @@
         },
         "displayName": "On Time",
         "displayNameTranslations": {
-            "en": "On Time",
-            "de": "Einkaufstermintreue"
+            "de": "Einkaufstermintreue",
+            "en": "On Time"
         },
         "groupByAggregations": {
             "optimate_purchasing_on_time_sourcing_boolean": "mean"
@@ -392,105 +474,8 @@
         "scopeName": null,
         "unit": "percent",
         "defaultScopeRestrictions": [],
-        "focusOrder": "",
         "internalName": "optimate_purchasing_deliveries_deviation_on_time_rate",
-        "parentAttributeGroupInternalName": "metrics",
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_on_time_in_full_otif_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_on_time_in_full_otif_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "This indicator records the extent to which a delivery reaches the recipient both on time and in full. It is used to evaluate the delivery performance of suppliers or the company's own reliability towards customers. It combines the two sub-indicators purchasing delivery reliability and purchasing on-time delivery reliability.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each item. In addition, the ordered quantity and the quantity recorded in the goods receipt are compared for each item. The key figure measures the percentage of deliveries that are made on time and in the correct quantity in relation to the total number of all deliveries. ",
-        "descriptionTranslations": {
-            "en": "This indicator records the extent to which a delivery reaches the recipient both on time and in full. It is used to evaluate the delivery performance of suppliers or the company's own reliability towards customers. It combines the two sub-indicators purchasing delivery reliability and purchasing on-time delivery reliability.\n\nThe calculation is based on a comparison between the requested delivery date specified in the order and the actual delivery date for each item. In addition, the ordered quantity and the quantity recorded in the goods receipt are compared for each item. The key figure measures the percentage of deliveries that are made on time and in the correct quantity in relation to the total number of all deliveries. ",
-            "de": "Diese Kennzahl erfasst, inwieweit eine Lieferung sowohl p\u00fcnktlich (\u201eOn-Time\u201c) als auch vollst\u00e4ndig (\u201eIn-Full\u201c) beim Empf\u00e4nger eintrifft. Sie dient zur Bewertung der Lieferperformance von Lieferanten oder der eigenen Zuverl\u00e4ssigkeit gegen\u00fcber Kunden. Dabei kombiniert sie die beiden Teilkennzahlen Einkaufsliefertreue und Einkaufstermintreue.\n\nDie Berechnung erfolgt auf Basis des Abgleichs zwischen dem in der Bestellung angegebenen Wunsch- und dem tats\u00e4chlichen Liefertermin je Position. Zus\u00e4tzlich werden die bestellte Menge und die im Wareneingang erfasste Menge je Position gegen\u00fcbergestellt. Die Kennzahl misst den prozentualen Anteil der Lieferungen, die termin- und mengengerecht erfolgen, im Verh\u00e4ltnis zur Gesamtanzahl aller Lieferungen. "
-        },
-        "displayName": "On Time in Full",
-        "displayNameTranslations": {
-            "de": "Einkaufsliefertreue",
-            "en": "On Time in Full"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_on_time_in_full_otif_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_otif_rate",
-        "parentAttributeGroupInternalName": "optimate_purchasing_otif",
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_on_time_sourcing_too_late_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_on_time_sourcing_too_late_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Share of late deliveries",
-        "displayNameTranslations": {
-            "en": "Share of late deliveries",
-            "de": "Anteil versp\u00e4tete Lieferungen"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_on_time_sourcing_too_late_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Min",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_on_time_sourcing_too_late_rate",
-        "parentAttributeGroupInternalName": "metrics",
-        "id": "",
-        "projectId": "",
-        "tenant": "",
-        "isCustom": true,
-        "metadataClassificationInternalName": ""
-    },
-    {
-        "aggregateBy": "optimate_purchasing_in_full_sourcing_underdelivered_boolean",
-        "aggregateFunction": "mean(optimate_purchasing_in_full_sourcing_underdelivered_boolean)",
-        "dateColumn": "pur_order_doc_date",
-        "description": "",
-        "descriptionTranslations": {},
-        "displayName": "Underdelivered",
-        "displayNameTranslations": {
-            "en": "Underdelivered",
-            "de": "Unterlieferung"
-        },
-        "groupByAggregations": {
-            "optimate_purchasing_in_full_sourcing_underdelivered_boolean": "mean"
-        },
-        "groupByColumn": "pur_order_doc_i_d",
-        "isCrawlable": true,
-        "optimizationOrientation": "Max",
-        "optimizationTarget": false,
-        "scopeId": null,
-        "scopeName": null,
-        "unit": "percent",
-        "defaultScopeRestrictions": [],
-        "focusOrder": "",
-        "internalName": "optimate_purchasing_in_full_sourcing_underdelivered_rate",
-        "parentAttributeGroupInternalName": "metrics",
+        "parentAttributeGroupInternalName": "optimate_purchasing_share_of_early_on_time_and_late_deliveries",
         "id": "",
         "projectId": "",
         "tenant": "",
